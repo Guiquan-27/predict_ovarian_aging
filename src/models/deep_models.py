@@ -113,48 +113,55 @@ class DeepSurvNet(nn.Module):
 
 
 class DeepSurvModel(BaseSurvivalModel):
-    """DeepSurv生存分析模型"""
+    """Deep learning survival model (DeepSurv)"""
     
-    def __init__(self, name: str = "deepsurv", hidden_layers: List[int] = [64, 32], 
-                 dropout: float = 0.1, batch_norm: bool = True, learning_rate: float = 0.001, 
-                 batch_size: int = 64, epochs: int = 100, patience: int = 10, **kwargs):
+    def __init__(self, name: str = "deepsurv", 
+                hidden_layers: List[int] = [32, 16], 
+                activation: str = 'relu',
+                dropout: float = 0.1,
+                batch_norm: bool = True,
+                learning_rate: float = 0.001,
+                batch_size: int = 64,
+                epochs: int = 100,
+                patience: int = 10):
         """
-        初始化DeepSurv模型
+        Initialize DeepSurv model
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "deepsurv"
-            模型名称
-        hidden_layers: List[int], 默认 [64, 32]
-            隐藏层节点数列表
-        dropout: float, 默认 0.1
-            Dropout比例
-        batch_norm: bool, 默认 True
-            是否使用批归一化
-        learning_rate: float, 默认 0.001
-            学习率
-        batch_size: int, 默认 64
-            批大小
-        epochs: int, 默认 100
-            训练轮数
-        patience: int, 默认 10
-            早停耐心值
-        **kwargs:
-            其他参数
+        name: str, default "deepsurv"
+            Model name
+        hidden_layers: List[int], default [32, 16]
+            Hidden layer dimensions
+        activation: str, default 'relu'
+            Activation function
+        dropout: float, default 0.1
+            Dropout rate
+        batch_norm: bool, default True
+            Whether to use batch normalization
+        learning_rate: float, default 0.001
+            Learning rate
+        batch_size: int, default 64
+            Batch size
+        epochs: int, default 100
+            Number of epochs
+        patience: int, default 10
+            Patience for early stopping
         """
-        super(DeepSurvModel, self).__init__(name=name)
-        
+        super().__init__(name=name)
         self.hidden_layers = hidden_layers
+        self.activation = activation
         self.dropout = dropout
         self.batch_norm = batch_norm
         self.learning_rate = learning_rate
         self.batch_size = batch_size
         self.epochs = epochs
         self.patience = patience
+        self.feature_names = None
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
         # 保存其他参数
-        self.kwargs = kwargs
+        self.kwargs = {}
         
         # 初始化网络
         self.net = None
@@ -163,9 +170,6 @@ class DeepSurvModel(BaseSurvivalModel):
         
         # 保存训练历史
         self.history = None
-        
-        # 保存特征名称
-        self.feature_names = None
         
         # 保存基线生存函数
         self.baseline_hazard = None

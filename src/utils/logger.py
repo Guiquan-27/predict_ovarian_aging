@@ -54,37 +54,37 @@ def setup_logger(name: str,
                 capture_warnings: bool = True,
                 log_system_info: bool = True) -> logging.Logger:
     """
-    设置日志记录器
+    Setup logger
     
-    参数:
+    Parameters:
     -----
     name: str
-        日志记录器名称
-    log_level: str, 默认 "info"
-        日志级别，可选 "debug", "info", "warning", "error", "critical"
-    log_file: str, 可选
-        日志文件路径，默认为None(不记录到文件)
-    log_dir: str, 可选
-        日志目录路径，如果提供，将在该目录下创建日志文件
-    use_color: bool, 默认 True
-        是否使用彩色日志
-    console_output: bool, 默认 True
-        是否输出到控制台
-    file_rotation: bool, 默认 True
-        是否启用日志文件轮转
-    max_bytes: int, 默认 10MB
-        单个日志文件的最大大小
-    backup_count: int, 默认 5
-        保留的日志文件数量
-    capture_warnings: bool, 默认 True
-        是否捕获Python警告
-    log_system_info: bool, 默认 True
-        是否记录系统信息
+        Logger name
+    log_level: str, default "info"
+        Log level, can be "debug", "info", "warning", "error", "critical"
+    log_file: str, optional
+        Log file path, default None (no file logging)
+    log_dir: str, optional
+        Log directory path, if provided, log file will be created in this directory
+    use_color: bool, default True
+        Whether to use colored logs
+    console_output: bool, default True
+        Whether to output to console
+    file_rotation: bool, default True
+        Whether to enable log file rotation
+    max_bytes: int, default 10MB
+        Maximum size of a single log file
+    backup_count: int, default 5
+        Number of log files to keep
+    capture_warnings: bool, default True
+        Whether to capture Python warnings
+    log_system_info: bool, default True
+        Whether to log system information
         
-    返回:
+    Returns:
     -----
     logging.Logger
-        配置好的日志记录器
+        Configured logger
     """
     # 获取日志级别
     level = LOG_LEVELS.get(log_level.lower(), logging.INFO)

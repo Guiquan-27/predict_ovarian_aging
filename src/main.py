@@ -529,49 +529,47 @@ def predict(model: Any, data_path: str, config: Dict[str, Any], output_path: str
     logger.info(f"预测结果已保存: {output_path}")
 
 def main():
-    """主函数"""
-    # 解析命令行参数
+    """Main function for running the survival analysis workflow"""
+    # Parse command line arguments
     args = parse_args()
     
-    # 加载配置
-    config = load_config(args.config)
+    # Load configuration
+    if args.config:
+        with open(args.config, 'r') as f:
+            config = yaml.safe_load(f)
+    else:
+        # Use default configuration
+        config = {}
     
-    # 设置实验环境
-    experiment_dir, config = setup_experiment(args, config)
+    # Setup experiment directory
+    experiment_name = args.experiment_name or config.get('experiment_name', f"experiment_{datetime.now().strftime('%Y%m%d_%H%M%S')}")
+    output_dir = args.output_dir or config.get('output_dir', 'outputs')
+    experiment_dir = os.path.join(output_dir, experiment_name)
+    os.makedirs(experiment_dir, exist_ok=True)
     
-    # 根据运行模式执行相应操作
+    # Setup logger
+    log_dir = os.path.join(experiment_dir, 'logs')
+    logger = setup_logger(
+        name="survival_model",
+        log_level=args.log_level or config.get('log_level', 'info'),
+        log_dir=log_dir,
+        use_color=True
+    )
+    
+    # Log experiment start
+    logger.info(f"Starting experiment: {experiment_name}")
+    
+    # Set random seed for reproducibility
+    seed = args.seed or config.get('seed', 42)
+    set_random_seed(seed)
+    logger.info(f"Random seed set to: {seed}")
+    
+    # Set visualization style
+    set_visualization_style()
+    
+    # Determine execution mode
     if args.mode == "train":
-        # 训练模型
-        model, data = train_model(config, experiment_dir)
-        
-        # 评估模型
-        evaluate_model(model, data, config, experiment_dir)
-        
-        # 解释模型
-        if config.get('interpretation', {}).get('enabled', True):
-            interpret_model(model, data, config, experiment_dir)
-    
-    elif args.mode == "evaluate":
-        # 加载模型
-        model_path = args.model_path or config.get('model', {}).get('path')
-        if not model_path:
-            logger.error("未指定模型路径")
-            return
-        
-        model_type = args.model_type or config.get('model', {}).get('type', 'cox')
-        if model_type == 'cox':
-            model = CoxPHModel.load(model_path)
-        elif model_type == 'rsf':
-            model = RandomSurvivalForestModel.load(model_path)
-        elif model_type == 'deepsurv':
-            model = DeepSurvModel.load(model_path)
-        elif model_type == 'ensemble':
-            model = EnsembleSurvivalModel.load(model_path)
-        else:
-            logger.error(f"不支持的模型类型: {model_type}")
-            return
-        
-        # 加载数据
+        # Load data
         data_config = config.get('data', {})
         data = load_data(
             data_path=args.data_path or data_config.get('path'),
@@ -581,14 +579,21 @@ def main():
             feature_cols=data_config.get('feature_cols'),
             categorical_cols=data_config.get('categorical_cols'),
             test_size=data_config.get('test_size', 0.2),
-            random_state=config.get('seed', 42)
+            random_state=seed
         )
         
-        # 评估模型
+        # Train model
+        model, data = train_model(config, experiment_dir)
+        
+        # Evaluate model
         evaluate_model(model, data, config, experiment_dir)
+        
+        # Interpret model
+        if config.get('interpretation', {}).get('enabled', True):
+            interpret_model(model, data, config, experiment_dir)
     
-    elif args.mode == "predict":
-        # 加载模型
+    elif args.mode == "evaluate":
+        # Load model
         model_path = args.model_path or config.get('model', {}).get('path')
         if not model_path:
             logger.error("未指定模型路径")
@@ -607,7 +612,43 @@ def main():
             logger.error(f"不支持的模型类型: {model_type}")
             return
         
-        # 预测
+        # Load data
+        data_config = config.get('data', {})
+        data = load_data(
+            data_path=args.data_path or data_config.get('path'),
+            time_col=data_config.get('time_col', 'time'),
+            event_col=data_config.get('event_col', 'event'),
+            id_col=data_config.get('id_col'),
+            feature_cols=data_config.get('feature_cols'),
+            categorical_cols=data_config.get('categorical_cols'),
+            test_size=data_config.get('test_size', 0.2),
+            random_state=seed
+        )
+        
+        # Evaluate model
+        evaluate_model(model, data, config, experiment_dir)
+    
+    elif args.mode == "predict":
+        # Load model
+        model_path = args.model_path or config.get('model', {}).get('path')
+        if not model_path:
+            logger.error("未指定模型路径")
+            return
+        
+        model_type = args.model_type or config.get('model', {}).get('type', 'cox')
+        if model_type == 'cox':
+            model = CoxPHModel.load(model_path)
+        elif model_type == 'rsf':
+            model = RandomSurvivalForestModel.load(model_path)
+        elif model_type == 'deepsurv':
+            model = DeepSurvModel.load(model_path)
+        elif model_type == 'ensemble':
+            model = EnsembleSurvivalModel.load(model_path)
+        else:
+            logger.error(f"不支持的模型类型: {model_type}")
+            return
+        
+        # Predict
         data_path = args.data_path or config.get('prediction', {}).get('data_path')
         if not data_path:
             logger.error("未指定预测数据路径")
@@ -617,7 +658,7 @@ def main():
         predict(model, data_path, config, output_path)
     
     elif args.mode == "interpret":
-        # 加载模型
+        # Load model
         model_path = args.model_path or config.get('model', {}).get('path')
         if not model_path:
             logger.error("未指定模型路径")
@@ -636,7 +677,7 @@ def main():
             logger.error(f"不支持的模型类型: {model_type}")
             return
         
-        # 加载数据
+        # Load data
         data_config = config.get('data', {})
         data = load_data(
             data_path=args.data_path or data_config.get('path'),
@@ -646,10 +687,10 @@ def main():
             feature_cols=data_config.get('feature_cols'),
             categorical_cols=data_config.get('categorical_cols'),
             test_size=data_config.get('test_size', 0.2),
-            random_state=config.get('seed', 42)
+            random_state=seed
         )
         
-        # 解释模型
+        # Interpret model
         interpret_model(model, data, config, experiment_dir)
     
     logger.info(f"实验完成: {config['experiment_name']}")

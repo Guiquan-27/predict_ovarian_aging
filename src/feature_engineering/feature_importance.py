@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-特征重要性评估模块
-提供用于评估特征重要性的方法，支持多种生存分析模型
+Feature importance evaluation module
+Provides methods for evaluating feature importance for various survival analysis models
 """
 
 import pandas as pd
@@ -23,137 +23,107 @@ def calculate_feature_importance(model: Any,
                                 event_col: str = 'event',
                                 method: str = 'permutation',
                                 n_repeats: int = 10,
-                                random_state: int = 42) -> pd.DataFrame:
+                                random_state: int = None) -> pd.DataFrame:
     """
-    计算特征重要性
-
-    参数:
+    Calculate feature importance for survival models
+    
+    Parameters:
     -----
     model: Any
-        训练好的模型对象
+        Trained survival model
     X: pd.DataFrame
-        特征矩阵
+        Feature matrix
     y: pd.DataFrame
-        目标变量(时间和事件)
-    time_col: str, 默认 'time'
-        时间列名
-    event_col: str, 默认 'event'
-        事件列名
-    method: str, 默认 'permutation'
-        重要性计算方法，可选 'permutation', 'model_specific'
-    n_repeats: int, 默认 10
-        置换重要性的重复次数
-    random_state: int, 默认 42
-        随机种子
-
-    返回:
+        Target dataframe with time and event columns
+    time_col: str, default 'time'
+        Time column name
+    event_col: str, default 'event'
+        Event column name
+    method: str, default 'permutation'
+        Method to calculate feature importance: 'permutation', 'model'
+    n_repeats: int, default 10
+        Number of times to permute each feature (for permutation importance)
+    random_state: int, optional
+        Random seed for reproducibility
+        
+    Returns:
     -----
     pd.DataFrame
-        特征重要性结果
+        DataFrame with feature importance values
     """
-    logger.info(f"使用{method}方法计算特征重要性")
-    
-    # 检查模型类型
-    model_type = type(model).__name__
+    logger.info(f"Calculating feature importance using {method} method")
     
     if method == 'permutation':
-        # 对于置换重要性，需要准备适当的目标变量格式
-        if model_type in ['CoxPHFitter', 'CoxnetSurvivalAnalysis']:
-            # 对于Cox模型，使用DataFrame格式的y
-            y_for_perm = y
-        else:
-            # 对于其他模型，可能需要转换为结构化数组
-            try:
-                from sksurv.util import Surv
-                structured_y = Surv.from_dataframe(event_col, time_col, y)
-                y_for_perm = structured_y
-            except Exception as e:
-                logger.error(f"转换目标变量格式失败: {str(e)}")
-                y_for_perm = y
+        # Calculate base score (C-index) without permutation
+        risk_scores = model.predict_risk(X)
+        baseline_score = concordance_index(y[time_col], -risk_scores, y[event_col])
         
-        # 定义评分函数
-        def score_func(model, X, y):
-            if model_type == 'CoxPHFitter':
-                # 对于lifelines的Cox模型，使用concordance_index
-                pred = model.predict_partial_hazard(X)
-                return model.score(y)
-            else:
-                # 对于scikit-survival模型，使用内置评分
-                return model.score(X, y)
+        # Initialize importance dataframe
+        importance_values = []
         
-        # 计算置换重要性
-        try:
-            perm_importance = permutation_importance(
-                model, X, y_for_perm,
-                scoring=score_func,
-                n_repeats=n_repeats,
-                random_state=random_state
-            )
+        # For each feature, permute and calculate performance drop
+        for feature in X.columns:
+            # Create copied data for permutation
+            X_permuted = X.copy()
             
-            # 创建结果DataFrame
-            importance_df = pd.DataFrame({
-                'feature': X.columns,
-                'importance_mean': perm_importance.importances_mean,
-                'importance_std': perm_importance.importances_std
+            # Accumulate importance across repeats
+            feature_importance = 0
+            
+            for i in range(n_repeats):
+                # Permute the feature
+                X_permuted[feature] = X_permuted[feature].sample(frac=1, random_state=random_state + i if random_state else None).values
+                
+                # Calculate new score
+                permuted_risk_scores = model.predict_risk(X_permuted)
+                permuted_score = concordance_index(y[time_col], -permuted_risk_scores, y[event_col])
+                
+                # Calculate importance (drop in performance)
+                importance = baseline_score - permuted_score
+                feature_importance += importance
+            
+            # Average importance over repeats
+            feature_importance /= n_repeats
+            
+            importance_values.append({
+                'feature': feature,
+                'importance': feature_importance
             })
-            
-            # 按重要性排序
-            importance_df = importance_df.sort_values('importance_mean', ascending=False)
-            
-        except Exception as e:
-            logger.error(f"计算置换重要性失败: {str(e)}")
-            logger.warning("切换到模型特定的重要性计算方法")
-            method = 'model_specific'
+        
+        # Create and sort importance dataframe
+        importance_df = pd.DataFrame(importance_values)
+        importance_df = importance_df.sort_values('importance', ascending=False)
+        
+        return importance_df
     
-    if method == 'model_specific':
-        # 根据模型类型提取特征重要性
-        if model_type == 'CoxPHFitter':
-            # 对于lifelines的Cox模型，使用系数绝对值
-            importance = np.abs(model.params_)
+    elif method == 'model':
+        # Use model's built-in feature importance if available
+        if hasattr(model, 'get_feature_importance'):
+            return model.get_feature_importance()
+        elif hasattr(model, 'model') and hasattr(model.model, 'feature_importances_'):
+            # For models like Random Survival Forest
             importance_df = pd.DataFrame({
                 'feature': X.columns,
-                'importance_mean': importance,
-                'importance_std': np.zeros_like(importance)
+                'importance': model.model.feature_importances_
             })
-            
-        elif model_type == 'RandomSurvivalForest':
-            # 对于随机生存森林，使用内置特征重要性
-            importance = model.feature_importances_
-            importance_df = pd.DataFrame({
-                'feature': X.columns,
-                'importance_mean': importance,
-                'importance_std': np.zeros_like(importance)
-            })
-            
-        elif hasattr(model, 'feature_importances_'):
-            # 对于其他具有feature_importances_属性的模型
-            importance = model.feature_importances_
-            importance_df = pd.DataFrame({
-                'feature': X.columns,
-                'importance_mean': importance,
-                'importance_std': np.zeros_like(importance)
-            })
-            
-        elif hasattr(model, 'coef_'):
-            # 对于线性模型
-            importance = np.abs(model.coef_)
-            if importance.ndim > 1:
-                importance = importance[0]
-            importance_df = pd.DataFrame({
-                'feature': X.columns,
-                'importance_mean': importance,
-                'importance_std': np.zeros_like(importance)
-            })
-            
-        else:
-            logger.error(f"无法提取模型 {model_type} 的特征重要性")
-            return pd.DataFrame(columns=['feature', 'importance_mean', 'importance_std'])
+            return importance_df.sort_values('importance', ascending=False)
+        elif hasattr(model, 'model') and hasattr(model.model, 'coef_'):
+            # For models like Cox regression
+            coef = model.model.coef_
+            if isinstance(coef, np.ndarray):
+                importance_df = pd.DataFrame({
+                    'feature': X.columns,
+                    'importance': np.abs(coef)
+                })
+                return importance_df.sort_values('importance', ascending=False)
         
-        # 按重要性排序
-        importance_df = importance_df.sort_values('importance_mean', ascending=False)
+        # If built-in method not available, fall back to permutation importance
+        logger.warning("Model does not provide built-in feature importance. Using permutation importance instead.")
+        return calculate_feature_importance(model, X, y, time_col, event_col, 
+                                           method='permutation', n_repeats=n_repeats, 
+                                           random_state=random_state)
     
-    logger.info(f"特征重要性计算完成，共{len(importance_df)}个特征")
-    return importance_df
+    else:
+        raise ValueError(f"Unsupported feature importance method: {method}")
 
 def plot_feature_importance(importance_df: pd.DataFrame, 
                            top_n: int = 20, 
@@ -191,18 +161,18 @@ def plot_feature_importance(importance_df: pd.DataFrame,
     fig, ax = plt.subplots(figsize=figsize)
     
     # 绘制条形图
-    bars = ax.barh(plot_df['feature'], plot_df['importance_mean'], 
+    bars = ax.barh(plot_df['feature'], plot_df['importance'], 
                   color='skyblue', edgecolor='black', alpha=0.7)
     
     # 添加误差条
     if show_std and 'importance_std' in plot_df.columns:
-        ax.errorbar(plot_df['importance_mean'], plot_df['feature'], 
+        ax.errorbar(plot_df['importance'], plot_df['feature'], 
                    xerr=plot_df['importance_std'], fmt='none', color='black', 
                    capsize=5, elinewidth=1.5)
     
     # 添加标题和标签
-    ax.set_title('特征重要性', fontsize=14)
-    ax.set_xlabel('重要性', fontsize=12)
+    ax.set_title('Feature Importance', fontsize=14)
+    ax.set_xlabel('Importance', fontsize=12)
     
     # 添加网格线
     ax.grid(True, axis='x', alpha=0.3)
@@ -251,14 +221,14 @@ def compare_feature_importance(importance_dfs: Dict[str, pd.DataFrame],
         plot_df = plot_df.iloc[::-1]
         
         # 绘制条形图
-        axes[i].barh(plot_df['feature'], plot_df['importance_mean'], 
+        axes[i].barh(plot_df['feature'], plot_df['importance'], 
                     color=f'C{i}', edgecolor='black', alpha=0.7)
         
         # 添加标题和标签
         axes[i].set_title(f'{model_name}', fontsize=12)
         if i == 0:
-            axes[i].set_ylabel('特征', fontsize=10)
-        axes[i].set_xlabel('重要性', fontsize=10)
+            axes[i].set_ylabel('Feature', fontsize=10)
+        axes[i].set_xlabel('Importance', fontsize=10)
         
         # 添加网格线
         axes[i].grid(True, axis='x', alpha=0.3)

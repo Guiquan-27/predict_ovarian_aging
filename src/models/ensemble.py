@@ -246,68 +246,66 @@ class EnsembleSurvivalModel(BaseSurvivalModel):
 
 
 class AveragingEnsemble(EnsembleSurvivalModel):
-    """平均集成模型"""
+    """Averaging ensemble for survival models"""
     
-    def __init__(self, name: str = "averaging_ensemble", models: List[BaseSurvivalModel] = None):
+    def __init__(self, models: List[BaseSurvivalModel] = None, weights: List[float] = None, name: str = "averaging_ensemble"):
         """
-        初始化平均集成模型
+        Initialize averaging ensemble
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "averaging_ensemble"
-            模型名称
-        models: List[BaseSurvivalModel], 可选
-            基础模型列表
+        models: List[BaseSurvivalModel], optional
+            List of base models
+        weights: List[float], optional
+            Weights for each model
+        name: str, default "averaging_ensemble"
+            Model name
         """
-        super().__init__(name=name, models=models)
-    
-    def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', 
-            optimize_weights: bool = False, **kwargs) -> 'AveragingEnsemble':
-        """
-        训练平均集成模型
+        super().__init__(name=name)
+        self.models = models or []
         
-        参数:
+        # Initialize weights as equal if not provided
+        if weights is None and models is not None:
+            self.weights = [1.0 / len(models)] * len(models)
+        else:
+            self.weights = weights or []
+    
+    def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', **kwargs) -> 'AveragingEnsemble':
+        """
+        Train ensemble model
+        
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
-        optimize_weights: bool, 默认 False
-            是否优化模型权重
+            Target dataframe with time and event columns
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
         **kwargs:
-            额外的训练参数
-            
-        返回:
+            Additional parameters to pass to base models
+        
+        Returns:
         -----
-        self: AveragingEnsemble
-            训练后的模型实例
+        AveragingEnsemble
+            Fitted model
         """
-        logger.info(f"开始训练平均集成模型，基础模型数量: {len(self.models)}")
+        logger.info(f"Training averaging ensemble with {len(self.models)} base models")
         
-        if len(self.models) == 0:
-            raise ValueError("没有基础模型")
+        self.feature_names = list(X.columns)
         
-        # 检查基础模型是否已训练
-        untrained_models = [i for i, model in enumerate(self.models) if not model.fitted]
+        # Store time and event columns
+        self.time_col = time_col
+        self.event_col = event_col
         
-        if untrained_models:
-            logger.warning(f"以下模型尚未训练: {untrained_models}")
-            raise ValueError("所有基础模型必须先训练")
-        
-        # 如果需要优化权重
-        if optimize_weights:
-            logger.info("开始优化模型权重")
-            self._optimize_weights(X, y, time_col, event_col)
-        else:
-            # 使用均等权重
-            self.weights = np.ones(len(self.models)) / len(self.models)
+        # Fit each base model
+        for i, model in enumerate(self.models):
+            logger.info(f"Training base model {i+1}/{len(self.models)}: {model.name}")
+            model.fit(X, y, time_col=time_col, event_col=event_col, **kwargs)
         
         self.fitted = True
-        logger.info("平均集成模型训练完成")
         return self
     
     def _optimize_weights(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str, event_col: str):

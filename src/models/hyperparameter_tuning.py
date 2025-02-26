@@ -552,4 +552,135 @@ def get_default_param_space(model_type: str) -> Dict[str, Any]:
             'batch_norm': {'type': 'bool'}
         }
     else:
-        raise ValueError(f"不支持的模型类型: {model_type}") 
+        raise ValueError(f"不支持的模型类型: {model_type}")
+
+
+def optimize_hyperparameters(model_class: Any, 
+                            X_train: pd.DataFrame, 
+                            y_train: pd.DataFrame,
+                            X_val: pd.DataFrame = None,
+                            y_val: pd.DataFrame = None,
+                            time_col: str = 'time',
+                            event_col: str = 'event',
+                            param_space: Dict[str, Any] = None,
+                            method: str = 'optuna',
+                            n_trials: int = 100,
+                            metric: str = 'c_index',
+                            direction: str = 'maximize',
+                            cv: int = 5,
+                            random_state: int = None,
+                            n_jobs: int = -1) -> Tuple[Dict[str, Any], float]:
+    """
+    Optimize hyperparameters for survival models
+    
+    Parameters:
+    -----
+    model_class: Any
+        Model class to optimize
+    X_train: pd.DataFrame
+        Training feature matrix
+    y_train: pd.DataFrame
+        Training target with time and event columns
+    X_val: pd.DataFrame, optional
+        Validation feature matrix
+    y_val: pd.DataFrame, optional
+        Validation target with time and event columns
+    time_col: str, default 'time'
+        Time column name
+    event_col: str, default 'event'
+        Event column name
+    param_space: Dict[str, Any], optional
+        Dictionary of parameter space
+    method: str, default 'optuna'
+        Optimization method: 'optuna', 'hyperopt', 'grid', 'random'
+    n_trials: int, default 100
+        Number of optimization trials
+    metric: str, default 'c_index'
+        Evaluation metric: 'c_index', 'ibs', etc.
+    direction: str, default 'maximize'
+        Optimization direction: 'maximize' or 'minimize'
+    cv: int, default 5
+        Number of cross-validation folds
+    random_state: int, optional
+        Random seed
+    n_jobs: int, default -1
+        Number of parallel jobs
+        
+    Returns:
+    -----
+    Tuple[Dict[str, Any], float]
+        Best parameters and best score
+    """
+    logger.info(f"Starting hyperparameter optimization with {method} method")
+    
+    # Get default parameter space if not provided
+    if param_space is None:
+        model_type = model_class.__name__.lower()
+        if 'cox' in model_type:
+            param_space = get_coxph_param_space()
+        elif 'rsf' in model_type or 'forest' in model_type:
+            param_space = get_rsf_param_space()
+        elif 'boost' in model_type:
+            param_space = get_boosting_param_space()
+        elif 'deepsurv' in model_type:
+            param_space = get_deepsurv_param_space()
+        else:
+            raise ValueError(f"No default parameter space for model type: {model_type}")
+    
+    # Define objective function
+    def objective(params):
+        # Create and train model
+        model = model_class(**params)
+        
+        if X_val is not None and y_val is not None:
+            # Use separate validation set
+            model.fit(X_train, y_train, time_col=time_col, event_col=event_col)
+            
+            # Evaluate on validation set
+            if metric == 'c_index':
+                risk_scores = model.predict_risk(X_val)
+                score = concordance_index(y_val[time_col], -risk_scores, y_val[event_col])
+            else:
+                raise ValueError(f"Unsupported metric: {metric}")
+        else:
+            # Use cross-validation
+            scores = []
+            
+            # Create cross-validation folds
+            kf = KFold(n_splits=cv, shuffle=True, random_state=random_state)
+            
+            for train_idx, test_idx in kf.split(X_train):
+                # Split data
+                X_cv_train = X_train.iloc[train_idx]
+                y_cv_train = y_train.iloc[train_idx]
+                X_cv_test = X_train.iloc[test_idx]
+                y_cv_test = y_train.iloc[test_idx]
+                
+                # Train model
+                model.fit(X_cv_train, y_cv_train, time_col=time_col, event_col=event_col)
+                
+                # Evaluate model
+                if metric == 'c_index':
+                    risk_scores = model.predict_risk(X_cv_test)
+                    fold_score = concordance_index(y_cv_test[time_col], -risk_scores, y_cv_test[event_col])
+                else:
+                    raise ValueError(f"Unsupported metric: {metric}")
+                
+                scores.append(fold_score)
+            
+            # Average scores
+            score = np.mean(scores)
+        
+        # Return score (direction will be handled by the optimizer)
+        return score if direction == 'maximize' else -score
+
+    # Create optimizer
+    optimizer = create_optimizer(method, model_class.__name__.lower(), param_space)
+    
+    # Optimize
+    best_params = optimizer.optimize(X_train, y_train, time_col, event_col)
+    
+    # Evaluate best model
+    best_score = objective(best_params)
+    
+    return best_params, best_score 

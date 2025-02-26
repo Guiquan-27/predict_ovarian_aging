@@ -1,10 +1,10 @@
-# 基准模型设置
+# Base model settings
 base_models:
   coxph:
     enabled: true
-    regularization: 'l1'  # 正则化类型: 'l1', 'l2', 'elasticnet'
-    alpha: 1.0  # 正则化强度
-    l1_ratio: 0.5  # elasticnet混合参数
+    regularization: 'l1'  # Regularization type: 'l1', 'l2', 'elasticnet'
+    alpha: 1.0  # Regularization strength
+    l1_ratio: 0.5  # Elasticnet mixing parameter
 
   random_survival_forest:
     enabled: true
@@ -21,10 +21,10 @@ base_models:
     dropout_rate: 0.2
     random_state: 42
 
-# 进阶模型设置
+# Advanced model settings
 advanced_models:
   deepsurv:
-    enabled: false  # 默认关闭，仅在样本量足够时启用
+    enabled: false  # Disabled by default, enable only when sample size is sufficient
     hidden_layers: [64, 32]
     activation: 'relu'
     dropout: 0.1
@@ -33,17 +33,17 @@ advanced_models:
     epochs: 100
 
   mtl_cox:
-    enabled: false  # 默认关闭，仅在样本量足够时启用
+    enabled: false  # Disabled by default, enable only when sample size is sufficient
     shared_layers: [64, 32]
     task_specific_layers: [16]
     learning_rate: 0.01
     batch_size: 64
     epochs: 100
 
-# 集成模型设置
+# Ensemble model settings
 ensemble:
   enabled: true
   methods: ['stacking', 'bagging']
-  meta_learner: 'ridge'  # meta-learner类型: 'ridge', 'cox'
+  meta_learner: 'ridge'  # Meta-learner type: 'ridge', 'cox'
   use_dynamic_weights: true
-  weight_update_frequency: 10  # 动态权重更新频率 
+  weight_update_frequency: 10  # Dynamic weight update frequency 

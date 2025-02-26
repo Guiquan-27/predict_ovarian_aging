@@ -169,71 +169,93 @@ def iterative_imputation(df: pd.DataFrame,
     logger.info("迭代插补完成")
     return imputed_df
 
-def impute_with_mice(df: pd.DataFrame, k: int = 5, seed: int = 42) -> List[pd.DataFrame]:
+def mice_imputation(df: pd.DataFrame, 
+                   iterations: int = 5, 
+                   seed: int = 42) -> List[pd.DataFrame]:
     """
-    使用rpy2调用R的miceRanger进行多重插补
-
-    参数:
+    Use Multiple Imputation by Chained Equations (MICE) for imputation
+    
+    Parameters:
     -----
     df: pd.DataFrame
-        含缺失值的数据框
-    k: int, 默认 5
-        生成的插补数据集数量
-    seed: int, 默认 42
-        随机种子
-
-    返回:
+        DataFrame with missing values
+    iterations: int, default 5
+        Number of iterations for MICE
+    seed: int, default 42
+        Random seed
+        
+    Returns:
     -----
     List[pd.DataFrame]
-        包含k个插补后数据框的列表
+        List of imputed DataFrames
     """
-    logger.info(f"使用R的miceRanger包进行多重插补, k={k}")
+    logger.info(f"Using MICE for imputation with {iterations} iterations")
+    
+    # Separate numeric and categorical columns
+    numeric_cols = df.select_dtypes(include=['number']).columns.tolist()
+    categorical_cols = df.select_dtypes(include=['object', 'category']).columns.tolist()
+    
+    # Initialize imputed DataFrames
+    imputed_dfs = []
     
     try:
-        # 导入必要的R包
-        from rpy2 import robjects
-        from rpy2.robjects import pandas2ri
+        # Try to use R's miceRanger if available
+        from rpy2.robjects import pandas2ri, r
         from rpy2.robjects.packages import importr
         
-        # 激活pandas和R的转换
+        # Activate pandas to R conversion
         pandas2ri.activate()
         
-        # 导入R包
+        # Import R packages
         base = importr('base')
-        mice_ranger = importr('miceRanger')
+        miceRanger = importr('miceRanger')
         
-        # 设置随机种子
-        base.set_seed(seed)
-        
-        # 转换Python DataFrame到R
+        # Convert pandas DataFrame to R dataframe
         r_df = pandas2ri.py2rpy(df)
         
-        # 执行mice插补
-        mice_result = mice_ranger.miceRanger(
-            r_df,
-            m=k,
-            returnModels=False,
-            verbose=True
-        )
+        # Run MICE in R
+        r(f'set.seed({seed})')
+        mice_obj = miceRanger.miceRanger(r_df, m=iterations, seed=seed, verbose=True)
         
-        # 从R中提取插补后的数据集
-        imputed_dfs = []
-        for i in range(1, k+1):
-            # 从mice结果中获取第i个插补数据集
-            imputed_r_df = mice_ranger.completeData(mice_result, dataset=i)
-            # 转换回Python DataFrame
-            imputed_df = pandas2ri.rpy2py(imputed_r_df)
-            imputed_dfs.append(imputed_df)
+        # Extract imputed datasets
+        for i in range(1, iterations + 1):
+            imp_df = pandas2ri.rpy2py(miceRanger.completeData(mice_obj, i))
+            imputed_dfs.append(imp_df)
         
-        logger.info(f"成功生成{k}个插补数据集")
-        return imputed_dfs
-        
+        logger.info("MICE imputation completed using R's miceRanger")
+    
     except Exception as e:
-        logger.error(f"R的miceRanger插补失败: {str(e)}")
-        logger.warning("切换到Python的迭代插补方法")
+        logger.warning(f"Failed to use R's miceRanger: {str(e)}. Using scikit-learn IterativeImputer instead.")
         
-        # 如果R调用失败，使用Python的方法生成多个插补数据集
-        return [iterative_imputation(df, random_state=seed+i) for i in range(k)]
+        # Use scikit-learn's IterativeImputer as fallback
+        for i in range(iterations):
+            # Initialize imputer with different random state for each iteration
+            imputer = IterativeImputer(
+                max_iter=10,
+                random_state=seed+i,
+                skip_complete=True
+            )
+            
+            # Create a copy of the dataframe
+            df_copy = df.copy()
+            
+            # Impute numeric columns
+            if numeric_cols:
+                df_copy[numeric_cols] = imputer.fit_transform(df[numeric_cols])
+            
+            # Impute categorical columns
+            if categorical_cols:
+                for col in categorical_cols:
+                    if df[col].isnull().any():
+                        # Use most frequent value for categorical variables
+                        most_frequent = df[col].mode()[0]
+                        df_copy[col] = df_copy[col].fillna(most_frequent)
+            
+            imputed_dfs.append(df_copy)
+        
+        logger.info("MICE imputation completed using scikit-learn IterativeImputer")
+    
+    return imputed_dfs
 
 def combine_imputed_datasets(imputed_dfs: List[pd.DataFrame], 
                             method: str = 'robins_rule') -> pd.DataFrame:
@@ -352,7 +374,7 @@ def parallel_imputation(df: pd.DataFrame,
         
         if method == 'mice' and 'rpy2' in globals():
             # 使用R的miceRanger
-            imputed_dfs = impute_with_mice(df, k=k, seed=seed)
+            imputed_dfs = mice_imputation(df, iterations=k, seed=seed)
         else:
             # 并行生成多个Python迭代插补数据集
             imputed_dfs = Parallel(n_jobs=n_jobs)(

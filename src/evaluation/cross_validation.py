@@ -41,46 +41,48 @@ def stratify_by_time_and_event(time: np.ndarray, event: np.ndarray, n_bins: int 
     np.ndarray
         分层标签
     """
-    # 对时间进行分箱
+    # Create time bins
     time_bins = pd.qcut(time, q=n_bins, labels=False, duplicates='drop')
     
-    # 组合时间分箱和事件状态
+    # Combine time bins and event status
     strata = time_bins * 2 + event
     
     return strata
 
 class SurvivalCV:
-    """生存分析交叉验证类"""
+    """Survival analysis cross-validation class"""
     
     def __init__(self, model_factory: Callable[[], BaseSurvivalModel], 
                  cv_method: str = 'stratified', n_splits: int = 5, n_repeats: int = 1, 
-                 random_state: int = 42, n_jobs: int = -1):
+                 random_state: int = None, metrics: List[str] = None):
         """
-        初始化生存分析交叉验证
+        Initialize survival cross-validation
         
-        参数:
+        Parameters:
         -----
         model_factory: Callable[[], BaseSurvivalModel]
-            模型工厂函数，返回一个新的模型实例
-        cv_method: str, 默认 'stratified'
-            交叉验证方法，可选 'stratified', 'random', 'repeated_stratified', 'repeated_random'
-        n_splits: int, 默认 5
-            折数
-        n_repeats: int, 默认 1
-            重复次数
-        random_state: int, 默认 42
-            随机种子
-        n_jobs: int, 默认 -1
-            并行作业数量，-1表示使用所有可用核心
+            Function to create model instances
+        cv_method: str, default 'stratified'
+            Cross-validation method, can be 'stratified', 'random'
+        n_splits: int, default 5
+            Number of folds
+        n_repeats: int, default 1
+            Number of repetitions
+        random_state: int, optional
+            Random seed
+        metrics: List[str], optional
+            Evaluation metrics to calculate
         """
         self.model_factory = model_factory
         self.cv_method = cv_method
         self.n_splits = n_splits
         self.n_repeats = n_repeats
         self.random_state = random_state
-        self.n_jobs = n_jobs if n_jobs > 0 else multiprocessing.cpu_count()
-        self.results = None
+        self.metrics = metrics or ['c_index']
+        
         self.models = []
+        self.cv_results = {}
+        self.feature_importances = []
     
     def _get_cv_splitter(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str, event_col: str):
         """获取交叉验证分割器"""

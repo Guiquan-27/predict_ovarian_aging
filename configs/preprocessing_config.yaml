@@ -1,8 +1,8 @@
 # 数据加载设置
 data_loading:
-  file_path: '../data/raw/data_clean_surv_predi20250211.txt'
-  time_column: 'time'  # 生存时间列名
-  event_column: 'event'  # 事件状态列名
+  file_path: '../data/raw/data.txt'  # 生存时间列名
+  time_col: 'time'  # 生存时间列名
+  event_col: 'event'  # 事件状态列名
 
 # 缺失值处理设置
 imputation:

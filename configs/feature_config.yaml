@@ -1,22 +1,22 @@
-# 特征选择设置
+# Feature selection settings
 feature_selection:
-  # 单变量特征选择
+  # Univariate feature selection
   univariate:
-    method: 'cox'  # 单变量选择方法: 'cox', 'logrank'
-    pvalue_threshold: 0.05  # p值阈值
-    fdr_correction: true  # 是否进行FDR校正
-    hazard_ratio_filter: true  # 是否基于风险比进行筛选
-    min_hazard_ratio: 0.8  # 最小HR阈值
-    max_hazard_ratio: 1.2  # 最大HR阈值
+    method: 'cox'  # Univariate selection method: 'cox', 'logrank'
+    pvalue_threshold: 0.05  # p-value threshold
+    fdr_correction: true  # Whether to apply FDR correction
+    hazard_ratio_filter: true  # Whether to filter based on hazard ratio
+    min_hazard_ratio: 0.8  # Minimum HR threshold
+    max_hazard_ratio: 1.2  # Maximum HR threshold
 
-  # Bootstrap稳定性评估
+  # Bootstrap stability assessment
   bootstrap:
-    n_iterations: 100  # Bootstrap迭代次数
-    sample_fraction: 0.8  # 每次抽样比例
-    stability_threshold: 0.7  # 特征稳定性阈值
+    n_iterations: 100  # Number of bootstrap iterations
+    sample_fraction: 0.8  # Sampling fraction for each iteration
+    stability_threshold: 0.7  # Feature stability threshold
 
-# 特征分组设置
+# Feature grouping settings
 feature_grouping:
-  clinical_features: []  # 临床特征列表
-  protein_features: []  # 蛋白质特征列表
-  # 留空将通过命名前缀或其他方式自动识别 
+  clinical_features: []  # List of clinical features
+  protein_features: []  # List of protein features
+  # Leave empty to automatically identify by prefixes or other methods 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-特征选择模块
-提供用于生存分析的特征选择方法，包括单变量Cox回归筛选、效应量筛选等
+Feature selection module
+Provides methods for feature selection in survival analysis, including univariate Cox regression, effect size filtering, and Log-rank test.
 """
 
 import pandas as pd
@@ -23,87 +23,84 @@ def univariate_cox_selection(df: pd.DataFrame,
                             alpha: float = 0.05,
                             fdr_correction: bool = True) -> pd.DataFrame:
     """
-    使用单变量Cox回归进行特征筛选
+    Use univariate Cox regression for feature selection
 
-    参数:
+    Parameters:
     -----
     df: pd.DataFrame
-        数据框
+        Dataframe
     time_col: str
-        时间列名
+        Name of time column
     event_col: str
-        事件列名
-    features: List[str], 可选
-        要评估的特征列表，默认为None（使用所有非目标列）
-    alpha: float, 默认 0.05
-        显著性水平
-    fdr_correction: bool, 默认 True
-        是否进行FDR校正
+        Name of event column
+    features: List[str], optional
+        List of features to evaluate, default None (use all non-target columns)
+    alpha: float, default 0.05
+        Significance level
+    fdr_correction: bool, default True
+        Whether to apply FDR correction
 
-    返回:
+    Returns:
     -----
     pd.DataFrame
-        包含Cox回归结果的数据框
+        Dataframe containing Cox regression results
     """
-    logger.info("开始单变量Cox回归特征筛选")
+    logger.info("Starting univariate Cox regression feature selection")
     
-    # 如果未指定特征，使用所有非目标列
+    # If features not specified, use all non-target columns
     if features is None:
         features = [col for col in df.columns if col not in [time_col, event_col]]
     
     results = []
     
-    # 对每个特征进行单变量Cox回归
+    # Perform univariate Cox regression for each feature
     for feature in features:
         try:
-            # 创建包含当前特征和目标变量的数据框
-            temp_df = df[[feature, time_col, event_col]].copy()
+            # Create dataframe for Cox model
+            cph_df = df[[feature, time_col, event_col]].copy()
             
-            # 跳过包含缺失值的特征
-            if temp_df[feature].isnull().any():
-                logger.warning(f"特征 '{feature}' 包含缺失值，已跳过")
-                continue
-            
-            # 拟合Cox模型
+            # Fit Cox model
             cph = CoxPHFitter()
-            cph.fit(temp_df, duration_col=time_col, event_col=event_col)
+            cph.fit(cph_df, duration_col=time_col, event_col=event_col)
             
-            # 提取结果
+            # Extract results
             summary = cph.summary
+            p_value = summary.loc[feature, 'p']
+            hazard_ratio = np.exp(summary.loc[feature, 'coef'])
+            hr_lower = np.exp(summary.loc[feature, 'coef lower 95%'])
+            hr_upper = np.exp(summary.loc[feature, 'coef upper 95%'])
             
-            # 保存结果
             results.append({
                 'feature': feature,
-                'coef': summary.loc[feature, 'coef'],
-                'exp(coef)': summary.loc[feature, 'exp(coef)'],
-                'se(coef)': summary.loc[feature, 'se(coef)'],
-                'z': summary.loc[feature, 'z'],
-                'p': summary.loc[feature, 'p'],
-                'lower 0.95': summary.loc[feature, 'lower 0.95'],
-                'upper 0.95': summary.loc[feature, 'upper 0.95']
+                'hazard_ratio': hazard_ratio,
+                'hr_lower_95': hr_lower,
+                'hr_upper_95': hr_upper,
+                'p_value': p_value,
+                'log_rank': -np.log10(p_value) if p_value > 0 else 0
             })
-            
         except Exception as e:
-            logger.error(f"处理特征 '{feature}' 时出错: {str(e)}")
+            logger.warning(f"Error in Cox regression for feature {feature}: {str(e)}")
     
-    # 创建结果数据框
+    # Create results dataframe
     result_df = pd.DataFrame(results)
     
-    # 应用FDR校正
-    if fdr_correction and not result_df.empty:
+    # Apply FDR correction if requested
+    if fdr_correction and len(result_df) > 0:
         _, corrected_pvals, _, _ = multipletests(
-            result_df['p'].values, 
+            result_df['p_value'].values, 
             alpha=alpha, 
-            method='fdr_bh'  # Benjamini-Hochberg方法
+            method='fdr_bh'
         )
-        result_df['p_adjusted'] = corrected_pvals
+        result_df['p_value_corrected'] = corrected_pvals
+        result_df['significant'] = result_df['p_value_corrected'] < alpha
+    else:
+        result_df['p_value_corrected'] = result_df['p_value']
+        result_df['significant'] = result_df['p_value'] < alpha
     
-    # 按p值排序
-    if not result_df.empty:
-        p_col = 'p_adjusted' if fdr_correction else 'p'
-        result_df = result_df.sort_values(by=p_col)
+    # Sort by p-value
+    result_df = result_df.sort_values('p_value')
     
-    logger.info(f"单变量Cox回归完成，共评估{len(results)}个特征")
+    logger.info(f"Univariate Cox regression completed. {sum(result_df['significant'])} significant features found.")
     return result_df
 
 def filter_by_effect_size(cox_results: pd.DataFrame,
@@ -112,43 +109,43 @@ def filter_by_effect_size(cox_results: pd.DataFrame,
                          p_threshold: float = 0.05,
                          p_col: str = 'p_adjusted') -> pd.DataFrame:
     """
-    基于效应量(风险比)筛选特征
+    Filter features based on effect size (risk ratio)
 
-    参数:
+    Parameters:
     -----
     cox_results: pd.DataFrame
-        单变量Cox回归结果
-    hr_threshold_upper: float, 默认 1.2
-        风险比上限阈值
-    hr_threshold_lower: float, 默认 0.8
-        风险比下限阈值
-    p_threshold: float, 默认 0.05
-        p值阈值
-    p_col: str, 默认 'p_adjusted'
-        使用的p值列名
+        Results from univariate Cox regression
+    hr_threshold_upper: float, default 1.2
+        Upper threshold for risk ratio
+    hr_threshold_lower: float, default 0.8
+        Lower threshold for risk ratio
+    p_threshold: float, default 0.05
+        p-value threshold
+    p_col: str, default 'p_adjusted'
+        Column name for p-values
 
-    返回:
+    Returns:
     -----
     pd.DataFrame
-        筛选后的特征结果
+        Filtered feature results
     """
-    logger.info(f"基于效应量筛选特征，HR阈值: [{hr_threshold_lower}, {hr_threshold_upper}]，p值阈值: {p_threshold}")
+    logger.info(f"Filtering features based on effect size, HR thresholds: [{hr_threshold_lower}, {hr_threshold_upper}], p-value threshold: {p_threshold}")
     
-    # 确保p值列存在
+    # Ensure p-value column exists
     if p_col not in cox_results.columns:
-        p_col = 'p'  # 回退到未校正的p值
-        logger.warning(f"找不到列 '{p_col}'，使用未校正的p值")
+        p_col = 'p'  # Fallback to uncorrected p-values
+        logger.warning(f"Column '{p_col}' not found, using uncorrected p-values")
     
-    # 筛选显著的特征
+    # Filter significant features
     significant = cox_results[cox_results[p_col] < p_threshold].copy()
     
-    # 基于风险比筛选
+    # Filter based on risk ratio
     filtered = significant[
         (significant['exp(coef)'] > hr_threshold_upper) | 
         (significant['exp(coef)'] < hr_threshold_lower)
     ]
     
-    logger.info(f"效应量筛选完成，从{len(significant)}个显著特征中筛选出{len(filtered)}个特征")
+    logger.info(f"Effect size filtering completed. {len(significant)} significant features filtered down to {len(filtered)} features")
     return filtered
 
 def logrank_feature_selection(df: pd.DataFrame,
@@ -158,57 +155,57 @@ def logrank_feature_selection(df: pd.DataFrame,
                              alpha: float = 0.05,
                              fdr_correction: bool = True) -> pd.DataFrame:
     """
-    使用Log-rank检验对分类特征进行筛选
+    Use Log-rank test to filter categorical features
 
-    参数:
+    Parameters:
     -----
     df: pd.DataFrame
-        数据框
+        Dataframe
     time_col: str
-        时间列名
+        Name of time column
     event_col: str
-        事件列名
+        Name of event column
     categorical_features: List[str]
-        分类特征列表
-    alpha: float, 默认 0.05
-        显著性水平
-    fdr_correction: bool, 默认 True
-        是否进行FDR校正
+        List of categorical features
+    alpha: float, default 0.05
+        Significance level
+    fdr_correction: bool, default True
+        Whether to apply FDR correction
 
-    返回:
+    Returns:
     -----
     pd.DataFrame
-        包含Log-rank检验结果的数据框
+        Dataframe containing Log-rank test results
     """
-    logger.info("开始Log-rank特征筛选")
+    logger.info("Starting Log-rank feature selection")
     
     results = []
     
-    # 对每个分类特征进行Log-rank检验
+    # Perform Log-rank test for each categorical feature
     for feature in categorical_features:
         try:
-            # 获取特征的唯一值
+            # Get unique values of the feature
             unique_values = df[feature].unique()
             
-            # 如果唯一值太多，跳过
+            # If there are too many unique values, skip
             if len(unique_values) > 10:
-                logger.warning(f"特征 '{feature}' 的唯一值过多 ({len(unique_values)})，已跳过")
+                logger.warning(f"Feature '{feature}' has too many unique values ({len(unique_values)}) and will be skipped")
                 continue
             
-            # 对每对类别进行比较
+            # Compare each pair of categories
             for i, value1 in enumerate(unique_values):
                 for value2 in unique_values[i+1:]:
-                    # 获取两组数据
+                    # Get two groups of data
                     group1 = df[df[feature] == value1]
                     group2 = df[df[feature] == value2]
                     
-                    # 执行Log-rank检验
+                    # Perform Log-rank test
                     result = logrank_test(
                         group1[time_col], group2[time_col],
                         group1[event_col], group2[event_col]
                     )
                     
-                    # 保存结果
+                    # Save results
                     results.append({
                         'feature': feature,
                         'value1': value1,
@@ -218,49 +215,49 @@ def logrank_feature_selection(df: pd.DataFrame,
                     })
             
         except Exception as e:
-            logger.error(f"处理特征 '{feature}' 时出错: {str(e)}")
+            logger.error(f"Error in Log-rank test for feature {feature}: {str(e)}")
     
-    # 创建结果数据框
+    # Create results dataframe
     result_df = pd.DataFrame(results)
     
-    # 应用FDR校正
+    # Apply FDR correction if requested
     if fdr_correction and not result_df.empty:
         _, corrected_pvals, _, _ = multipletests(
             result_df['p'].values, 
             alpha=alpha, 
-            method='fdr_bh'  # Benjamini-Hochberg方法
+            method='fdr_bh'
         )
         result_df['p_adjusted'] = corrected_pvals
     
-    # 按p值排序
+    # Sort by p-value
     if not result_df.empty:
         p_col = 'p_adjusted' if fdr_correction else 'p'
         result_df = result_df.sort_values(by=p_col)
     
-    logger.info(f"Log-rank检验完成，共评估{len(categorical_features)}个特征")
+    logger.info(f"Log-rank test completed. {len(categorical_features)} features evaluated")
     return result_df
 
 def plot_hazard_ratios(cox_results: pd.DataFrame, 
                       top_n: int = 20, 
                       figsize: Tuple[int, int] = (12, 10)) -> plt.Figure:
     """
-    绘制风险比森林图
+    Plot hazard ratio forest plot
 
-    参数:
+    Parameters:
     -----
     cox_results: pd.DataFrame
-        Cox回归结果
-    top_n: int, 默认 20
-        显示的特征数量
-    figsize: Tuple[int, int], 默认 (12, 10)
-        图形大小
+        Cox regression results
+    top_n: int, default 20
+        Number of features to display
+    figsize: Tuple[int, int], default (12, 10)
+        Figure size
 
-    返回:
+    Returns:
     -----
     plt.Figure
-        matplotlib图形对象
+        matplotlib figure object
     """
-    # 选择前N个特征
+    # Select top N features
     if len(cox_results) > top_n:
         if 'p_adjusted' in cox_results.columns:
             plot_df = cox_results.sort_values('p_adjusted').head(top_n).copy()
@@ -269,39 +266,39 @@ def plot_hazard_ratios(cox_results: pd.DataFrame,
     else:
         plot_df = cox_results.copy()
     
-    # 按风险比排序
+    # Sort by hazard ratio
     plot_df = plot_df.sort_values('exp(coef)')
     
-    # 创建图形
+    # Create figure
     fig, ax = plt.subplots(figsize=figsize)
     
-    # 绘制森林图
+    # Plot forest plot
     y_pos = np.arange(len(plot_df))
     
-    # 绘制风险比点和置信区间
+    # Plot hazard ratio points and confidence intervals
     ax.scatter(plot_df['exp(coef)'], y_pos, marker='o', s=50, color='blue')
     
     for i, (_, row) in enumerate(plot_df.iterrows()):
         ax.plot([row['lower 0.95'], row['upper 0.95']], [i, i], 'b-', alpha=0.6)
     
-    # 添加垂直线表示HR=1
+    # Add vertical line indicating HR=1
     ax.axvline(x=1, color='red', linestyle='--', alpha=0.7)
     
-    # 设置Y轴标签
+    # Set Y-axis labels
     ax.set_yticks(y_pos)
     ax.set_yticklabels(plot_df['feature'])
     
-    # 设置X轴为对数刻度
+    # Set X-axis to logarithmic scale
     ax.set_xscale('log')
     
-    # 添加标题和标签
-    ax.set_title('风险比森林图 (95% 置信区间)', fontsize=14)
-    ax.set_xlabel('风险比 (HR)', fontsize=12)
+    # Add title and labels
+    ax.set_title('Hazard Ratio Forest Plot (95% Confidence Interval)', fontsize=14)
+    ax.set_xlabel('Hazard Ratio (HR)', fontsize=12)
     
-    # 添加网格线
+    # Add grid lines
     ax.grid(True, alpha=0.3)
     
-    # 调整布局
+    # Adjust layout
     plt.tight_layout()
     
     return fig
@@ -310,21 +307,21 @@ def group_features(features: List[str],
                   clinical_prefix: List[str] = None, 
                   protein_prefix: List[str] = None) -> Dict[str, List[str]]:
     """
-    将特征分组为临床特征和蛋白质特征
+    Group features into clinical and protein features
 
-    参数:
+    Parameters:
     -----
     features: List[str]
-        特征列表
-    clinical_prefix: List[str], 可选
-        临床特征前缀列表
-    protein_prefix: List[str], 可选
-        蛋白质特征前缀列表
+        List of features
+    clinical_prefix: List[str], optional
+        List of clinical feature prefixes
+    protein_prefix: List[str], optional
+        List of protein feature prefixes
 
-    返回:
+    Returns:
     -----
     Dict[str, List[str]]
-        分组后的特征字典
+        Dictionary of grouped features
     """
     if clinical_prefix is None:
         clinical_prefix = ['clinical_', 'demo_', 'lab_']

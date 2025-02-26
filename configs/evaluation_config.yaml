@@ -1,40 +1,40 @@
-# 交叉验证设置
+# Cross-validation settings
 cross_validation:
-  method: 'stratified'  # 交叉验证方法: 'stratified', 'random'
-  n_splits: 10  # 折数
-  n_repeats: 5  # 重复次数
+  method: 'stratified'  # Cross-validation method: 'stratified', 'random'
+  n_splits: 10  # Number of folds
+  n_repeats: 5  # Number of repeats
   random_state: 42
 
-# 超参数优化设置
+# Hyperparameter optimization settings
 hyperparameter_tuning:
-  method: 'bayesian'  # 优化方法: 'bayesian', 'grid', 'random'
-  n_trials: 100  # 优化迭代次数
-  n_jobs: -1  # 并行任务数，-1表示使用所有可用CPU
-  metric: 'c_index'  # 优化目标: 'c_index', 'time_auc', 'brier_score'
+  method: 'bayesian'  # Optimization method: 'bayesian', 'grid', 'random'
+  n_trials: 100  # Number of optimization iterations
+  n_jobs: -1  # Number of parallel jobs, -1 means using all available CPUs
+  metric: 'c_index'  # Optimization objective: 'c_index', 'time_auc', 'brier_score'
 
-# 评估指标设置
+# Evaluation metrics settings
 metrics:
-  # 判别能力指标
+  # Discrimination metrics
   discrimination:
     c_index: true
     time_dependent_auc:
       enabled: true
-      times: [3, 5, 10]  # 评估时间点(年)
+      times: [3, 5, 10]  # Evaluation time points (years)
   
-  # 校准性指标
+  # Calibration metrics
   calibration:
     brier_score:
       enabled: true
-      time_points: [3, 5, 10]  # 评估时间点(年)
+      time_points: [3, 5, 10]  # Evaluation time points (years)
     calibration_curve:
       enabled: true
-      time_points: [3, 5, 10]  # 评估时间点(年)
+      time_points: [3, 5, 10]  # Evaluation time points (years)
       n_bins: 10
 
-  # 临床决策价值
+  # Clinical utility
   clinical_utility:
     decision_curve_analysis:
       enabled: true
-      time_points: [3, 5, 10]  # 评估时间点(年)
+      time_points: [3, 5, 10]  # Evaluation time points (years)
       threshold_range: [0.0, 1.0]
       threshold_steps: 100 

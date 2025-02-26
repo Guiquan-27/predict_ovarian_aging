@@ -26,24 +26,24 @@ def load_data(file_path: str) -> pd.DataFrame:
     pd.DataFrame
         加载的数据集
     """
-    logger.info(f"正在加载数据: {file_path}")
+    logger.info(f"Loading data: {file_path}")
     
     file_ext = os.path.splitext(file_path)[1].lower()
     
     try:
         if file_ext in ['.csv', '.txt']:
-            # 自动检测分隔符
+            # Auto-detect separator
             df = pd.read_csv(file_path, sep=None, engine='python')
         elif file_ext in ['.xlsx', '.xls']:
             df = pd.read_excel(file_path)
         else:
-            raise ValueError(f"不支持的文件格式: {file_ext}")
+            raise ValueError(f"Unsupported file format: {file_ext}")
         
-        logger.info(f"数据加载成功，形状: {df.shape}")
+        logger.info(f"Data loaded successfully, shape: {df.shape}")
         return df
     
     except Exception as e:
-        logger.error(f"数据加载失败: {str(e)}")
+        logger.error(f"Data loading failed: {str(e)}")
         raise
 
 def check_data_quality(df: pd.DataFrame) -> Dict[str, Any]:

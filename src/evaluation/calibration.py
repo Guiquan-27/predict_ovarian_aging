@@ -47,17 +47,24 @@ def calculate_calibration_curve(y_true: pd.DataFrame, survival_probs: np.ndarray
     Tuple[np.ndarray, np.ndarray]
         (预测概率, 观察概率)
     """
-    # 创建二分类标签：在time_point之前发生事件为1，否则为0
-    binary_labels = np.zeros(len(y_true))
+    # Create binary outcome: events occurring before time_point are 1, otherwise 0
+    binary_outcomes = np.zeros(len(y_true))
     for i, (t, e) in enumerate(zip(y_true[time_col], y_true[event_col])):
         if e == 1 and t <= time_point:
-            binary_labels[i] = 1
+            binary_outcomes[i] = 1
     
-    # 计算校准曲线
-    # 注意：我们使用1-survival_probs，因为校准曲线期望的是事件发生的概率，而不是生存概率
-    prob_pred, prob_obs = calibration_curve(binary_labels, 1 - survival_probs, n_bins=n_bins, strategy=strategy)
+    # Convert survival probabilities to risk probabilities
+    risk_probs = 1 - survival_probs
     
-    return prob_pred, prob_obs
+    # Calculate calibration curve
+    prob_true, prob_pred = calibration_curve(
+        binary_outcomes, 
+        risk_probs, 
+        n_bins=n_bins, 
+        strategy=strategy
+    )
+    
+    return prob_pred, prob_true
 
 def calculate_calibration_metrics(prob_pred: np.ndarray, prob_obs: np.ndarray) -> Dict[str, float]:
     """
@@ -331,68 +338,75 @@ def plot_calibration_histogram(y_true: pd.DataFrame, survival_probs: np.ndarray,
     
     return fig
 
-def evaluate_calibration(y_train: pd.DataFrame, y_test: pd.DataFrame, model, 
-                        times: List[float], time_col: str = 'time', event_col: str = 'event', 
-                        n_bins: int = 10) -> Dict[str, Any]:
+def evaluate_calibration(y_true: pd.DataFrame, survival_probs: np.ndarray, 
+                       time_points: List[float], time_col: str = 'time', event_col: str = 'event', 
+                       n_bins: int = 10) -> Dict[float, Dict[str, Any]]:
     """
-    评估模型校准性能
+    Evaluate model calibration at multiple time points
     
-    参数:
+    Parameters:
     -----
-    y_train: pd.DataFrame
-        训练集真实值，包含时间和事件列
-    y_test: pd.DataFrame
-        测试集真实值，包含时间和事件列
-    model: BaseSurvivalModel
-        训练好的模型
-    times: List[float]
-        评估时间点
-    time_col: str, 默认 'time'
-        时间列名
-    event_col: str, 默认 'event'
-        事件列名
-    n_bins: int, 默认 10
-        分箱数量
+    y_true: pd.DataFrame
+        True values containing time and event columns
+    survival_probs: np.ndarray
+        Predicted survival probabilities
+    time_points: List[float]
+        Evaluation time points
+    time_col: str, default 'time'
+        Time column name
+    event_col: str, default 'event'
+        Event column name
+    n_bins: int, default 10
+        Number of bins for calibration curve
         
-    返回:
+    Returns:
     -----
-    Dict[str, Any]
-        校准评估结果
+    Dict[float, Dict[str, Any]]
+        Dictionary mapping time points to calibration metrics
     """
-    # 获取特征矩阵
-    X_test = y_test.drop(columns=[time_col, event_col])
+    calibration_results = {}
     
-    # 预测生存概率
-    survival_probs = model.predict(X_test, times)
-    
-    # 初始化结果字典
-    results = {
-        'calibration_metrics': {},
-        'hosmer_lemeshow': {}
-    }
-    
-    # 对每个时间点评估校准性能
-    for i, t in enumerate(times):
-        # 计算校准曲线
-        prob_pred, prob_obs = calculate_calibration_curve(
-            y_test, survival_probs[:, i], t, time_col, event_col, n_bins
+    for t_idx, t in enumerate(time_points):
+        t_survival_probs = survival_probs[:, t_idx]
+        
+        # Calculate calibration curve
+        prob_pred, prob_true = calculate_calibration_curve(
+            y_true, 
+            t_survival_probs, 
+            time_point=t, 
+            time_col=time_col, 
+            event_col=event_col, 
+            n_bins=n_bins
         )
         
-        # 计算校准指标
-        metrics = calculate_calibration_metrics(prob_pred, prob_obs)
-        results['calibration_metrics'][t] = metrics
+        # Calculate calibration metrics
+        # 1. ICI (Integrated Calibration Index)
+        ici = np.mean(np.abs(prob_true - prob_pred))
         
-        # 执行霍斯默-莱梅肖检验
-        try:
-            hl_result = hosmer_lemeshow_test(
-                y_test, survival_probs[:, i], t, time_col, event_col, n_bins
-            )
-            results['hosmer_lemeshow'][t] = hl_result
-        except Exception as e:
-            logger.warning(f"执行霍斯默-莱梅肖检验时出错: {e}")
-            results['hosmer_lemeshow'][t] = None
+        # 2. E50 (Median absolute error)
+        e50 = np.median(np.abs(prob_true - prob_pred))
+        
+        # 3. E90 (90th percentile of absolute error)
+        e90 = np.percentile(np.abs(prob_true - prob_pred), 90)
+        
+        # 4. Calibration slope
+        calib_model = LinearRegression()
+        calib_model.fit(prob_pred.reshape(-1, 1), prob_true)
+        slope = calib_model.coef_[0]
+        intercept = calib_model.intercept_
+        
+        # Store results
+        calibration_results[t] = {
+            'prob_pred': prob_pred,
+            'prob_true': prob_true,
+            'ici': ici,
+            'e50': e50,
+            'e90': e90,
+            'slope': slope,
+            'intercept': intercept
+        }
     
-    return results
+    return calibration_results
 
 def create_calibration_report(calibration_results: Dict[str, Any], times: List[float], 
                              n_bins: int = 10, figsize: Tuple[int, int] = (15, 10)) -> plt.Figure:

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-决策曲线分析模块
-提供用于评估生存分析模型临床决策价值的功能
+Decision curve analysis module
+Provides functionality to evaluate the clinical decision value of survival analysis models
 """
 
 import pandas as pd
@@ -41,24 +41,26 @@ def calculate_net_benefit(y_true: pd.DataFrame, risk_probs: np.ndarray,
     float
         净获益值
     """
-    # 创建二分类标签：在time_point之前发生事件为1，否则为0
+    # Create binary labels: events occurring before time_point are 1, otherwise 0
     binary_labels = np.zeros(len(y_true))
     for i, (t, e) in enumerate(zip(y_true[time_col], y_true[event_col])):
         if e == 1 and t <= time_point:
             binary_labels[i] = 1
     
-    # 根据阈值进行分类
+    # Classify based on threshold
     predictions = (risk_probs >= threshold).astype(int)
     
-    # 计算真阳性和假阳性
+    # Calculate true positives and false positives
     tp = np.sum((predictions == 1) & (binary_labels == 1))
     fp = np.sum((predictions == 1) & (binary_labels == 0))
     
-    # 计算净获益
+    # Calculate net benefit
     n = len(y_true)
-    net_benefit = (tp / n) - (fp / n) * (threshold / (1 - threshold))
+    if n == 0:
+        return 0.0
     
-    return net_benefit
+    # Net benefit formula
+    return (tp/n) - (fp/n) * (threshold/(1-threshold))
 
 def calculate_interventions_avoided(y_true: pd.DataFrame, risk_probs: np.ndarray, 
                                   threshold: float, time_point: float, 

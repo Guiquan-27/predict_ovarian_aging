@@ -24,62 +24,62 @@ logger = logging.getLogger(__name__)
 
 def c_index(y_true: pd.DataFrame, risk_scores: np.ndarray, time_col: str = 'time', event_col: str = 'event') -> float:
     """
-    计算一致性指数(C-index)
+    Calculate concordance index (C-index)
     
-    参数:
+    Parameters:
     -----
     y_true: pd.DataFrame
-        真实值，包含时间和事件列
+        True values containing time and event columns
     risk_scores: np.ndarray
-        预测的风险得分
-    time_col: str, 默认 'time'
-        时间列名
-    event_col: str, 默认 'event'
-        事件列名
+        Predicted risk scores
+    time_col: str, default 'time'
+        Time column name
+    event_col: str, default 'event'
+        Event column name
         
-    返回:
+    Returns:
     -----
     float
-        C-index值
+        C-index value
     """
     return concordance_index(y_true[time_col], -risk_scores, y_true[event_col])
 
 def c_index_ipcw(y_train: pd.DataFrame, y_test: pd.DataFrame, risk_scores: np.ndarray, 
                 time_col: str = 'time', event_col: str = 'event', tau: Optional[float] = None) -> float:
     """
-    计算逆概率加权一致性指数(IPCW C-index)
+    Calculate inverse probability of censoring weighted concordance index (IPCW C-index)
     
-    参数:
+    Parameters:
     -----
     y_train: pd.DataFrame
-        训练集真实值，包含时间和事件列
+        Training set true values containing time and event columns
     y_test: pd.DataFrame
-        测试集真实值，包含时间和事件列
+        Test set true values containing time and event columns
     risk_scores: np.ndarray
-        预测的风险得分
-    time_col: str, 默认 'time'
-        时间列名
-    event_col: str, 默认 'event'
-        事件列名
-    tau: float, 可选
-        截断时间，默认为None(使用最大观察时间)
+        Predicted risk scores
+    time_col: str, default 'time'
+        Time column name
+    event_col: str, default 'event'
+        Event column name
+    tau: float, optional
+        Truncation time, default None (use maximum observation time)
         
-    返回:
+    Returns:
     -----
     float
-        IPCW C-index值
+        IPCW C-index value
     """
-    # 转换为sksurv格式
+    # Convert to sksurv format
     y_train_sksurv = np.array([(e, t) for e, t in zip(y_train[event_col], y_train[time_col])], 
                              dtype=[('event', bool), ('time', float)])
     y_test_sksurv = np.array([(e, t) for e, t in zip(y_test[event_col], y_test[time_col])], 
                             dtype=[('event', bool), ('time', float)])
     
-    # 如果未指定截断时间，使用最大观察时间
+    # If truncation time is not specified, use maximum observation time
     if tau is None:
         tau = y_test[time_col].max()
     
-    # 计算IPCW C-index
+    # Calculate IPCW C-index
     result = concordance_index_ipcw(y_train_sksurv, y_test_sksurv, risk_scores, tau=tau)
     
     return result[0]

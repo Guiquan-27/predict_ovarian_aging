@@ -24,59 +24,44 @@ from .logger import get_logger
 logger = get_logger(name="visualization")
 
 # 设置默认风格
-def set_visualization_style(style: str = "whitegrid", 
-                          context: str = "paper", 
-                          palette: str = "deep",
-                          font_scale: float = 1.2,
-                          rc: Optional[Dict[str, Any]] = None) -> None:
+def set_visualization_style(style: str = 'whitegrid', 
+                          context: str = 'paper', 
+                          font_scale: float = 1.2, 
+                          palette: str = 'deep',
+                          use_mpl_style: bool = True) -> None:
     """
-    设置可视化风格
+    Set visualization style for matplotlib and seaborn
     
-    参数:
+    Parameters:
     -----
-    style: str, 默认 "whitegrid"
-        seaborn风格，可选 "darkgrid", "whitegrid", "dark", "white", "ticks"
-    context: str, 默认 "paper"
-        上下文，可选 "paper", "notebook", "talk", "poster"
-    palette: str, 默认 "deep"
-        调色板
-    font_scale: float, 默认 1.2
-        字体缩放比例
-    rc: Dict[str, Any], 可选
-        matplotlib rc参数
+    style: str, default 'whitegrid'
+        Seaborn style, options: 'darkgrid', 'whitegrid', 'dark', 'white', 'ticks'
+    context: str, default 'paper'
+        Seaborn context, options: 'paper', 'notebook', 'talk', 'poster'
+    font_scale: float, default 1.2
+        Font scale factor
+    palette: str, default 'deep'
+        Color palette name
+    use_mpl_style: bool, default True
+        Whether to set matplotlib style as well
     """
-    # 设置默认rc参数
-    default_rc = {
-        "figure.figsize": (10, 6),
-        "figure.dpi": 100,
-        "savefig.dpi": 300,
-        "savefig.bbox": "tight",
-        "savefig.pad_inches": 0.1,
-        "font.family": "sans-serif",
-        "font.sans-serif": ["Arial", "DejaVu Sans", "Liberation Sans", "Bitstream Vera Sans", "sans-serif"],
-        "axes.titlesize": 14,
-        "axes.labelsize": 12,
-        "xtick.labelsize": 10,
-        "ytick.labelsize": 10,
-        "legend.fontsize": 10,
-        "legend.frameon": True,
-        "legend.framealpha": 0.8,
-        "legend.edgecolor": "lightgray",
-        "grid.linestyle": "--",
-        "grid.alpha": 0.7
-    }
+    # Set seaborn style
+    sns.set_style(style)
+    sns.set_context(context, font_scale=font_scale)
+    sns.set_palette(palette)
     
-    # 合并用户提供的rc参数
-    if rc is not None:
-        default_rc.update(rc)
+    # Set matplotlib style if requested
+    if use_mpl_style:
+        plt.style.use('seaborn')
     
-    # 设置seaborn风格
-    sns.set_theme(style=style, context=context, palette=palette, font_scale=font_scale, rc=default_rc)
-    
-    # 设置matplotlib风格
-    plt.rcParams.update(default_rc)
-    
-    logger.info(f"设置可视化风格: style={style}, context={context}, palette={palette}")
+    # Additional customization
+    plt.rcParams['figure.figsize'] = (10, 6)
+    plt.rcParams['axes.titlesize'] = 14
+    plt.rcParams['axes.labelsize'] = 12
+    plt.rcParams['xtick.labelsize'] = 10
+    plt.rcParams['ytick.labelsize'] = 10
+    plt.rcParams['legend.fontsize'] = 10
+    plt.rcParams['figure.titlesize'] = 16
 
 # 保存图表
 def save_figure(fig: plt.Figure, 
@@ -200,167 +185,87 @@ def create_subplots(n_plots: int,
     return fig, axes
 
 # 绘制生存曲线
-def plot_survival_curves(time_points: List[float], 
-                        survival_probs: List[np.ndarray], 
-                        labels: List[str],
-                        confidence_intervals: Optional[List[Tuple[np.ndarray, np.ndarray]]] = None,
-                        title: str = "生存曲线",
-                        xlabel: str = "时间",
-                        ylabel: str = "生存概率",
-                        figsize: Tuple[float, float] = (10, 6),
-                        colors: Optional[List[str]] = None,
-                        linestyles: Optional[List[str]] = None,
-                        add_censoring: bool = False,
-                        censoring_times: Optional[List[float]] = None,
-                        censoring_events: Optional[List[int]] = None,
-                        risk_table: bool = False) -> plt.Figure:
+def plot_survival_curves(survival_curves: Dict[str, np.ndarray], 
+                        times: np.ndarray,
+                        labels: List[str] = None, 
+                        ci_curves: Dict[str, Tuple[np.ndarray, np.ndarray]] = None,
+                        title: str = 'Survival Curves',
+                        xlabel: str = 'Time',
+                        ylabel: str = 'Survival Probability',
+                        cmap: str = 'viridis',
+                        figsize: Tuple[int, int] = (10, 6)) -> plt.Figure:
     """
-    绘制生存曲线
+    Plot survival curves for multiple groups or models
     
-    参数:
+    Parameters:
     -----
-    time_points: List[float]
-        时间点
-    survival_probs: List[np.ndarray]
-        生存概率列表，每个元素是一个模型的生存概率数组
-    labels: List[str]
-        曲线标签
-    confidence_intervals: List[Tuple[np.ndarray, np.ndarray]], 可选
-        置信区间列表，每个元素是一个元组(下界, 上界)
-    title: str, 默认 "生存曲线"
-        图表标题
-    xlabel: str, 默认 "时间"
-        x轴标签
-    ylabel: str, 默认 "生存概率"
-        y轴标签
-    figsize: Tuple[float, float], 默认 (10, 6)
-        图形大小
-    colors: List[str], 可选
-        曲线颜色列表
-    linestyles: List[str], 可选
-        曲线样式列表
-    add_censoring: bool, 默认 False
-        是否添加删失标记
-    censoring_times: List[float], 可选
-        删失时间列表
-    censoring_events: List[int], 可选
-        删失事件列表
-    risk_table: bool, 默认 False
-        是否添加风险表
+    survival_curves: Dict[str, np.ndarray]
+        Dictionary mapping curve names to survival probabilities
+    times: np.ndarray
+        Time points for survival curves
+    labels: List[str], optional
+        Curve labels for legend
+    ci_curves: Dict[str, Tuple[np.ndarray, np.ndarray]], optional
+        Dictionary mapping curve names to confidence intervals (lower, upper)
+    title: str, default 'Survival Curves'
+        Plot title
+    xlabel: str, default 'Time'
+        X-axis label
+    ylabel: str, default 'Survival Probability'
+        Y-axis label
+    cmap: str, default 'viridis'
+        Colormap name
+    figsize: Tuple[int, int], default (10, 6)
+        Figure size
         
-    返回:
+    Returns:
     -----
     plt.Figure
-        matplotlib图形对象
+        Figure object
     """
-    # 设置默认颜色和线型
-    if colors is None:
-        colors = plt.cm.tab10.colors
-    if linestyles is None:
-        linestyles = ['-', '--', '-.', ':'] * 3
+    # Create figure
+    fig, ax = plt.subplots(figsize=figsize)
     
-    # 创建图形
-    if risk_table:
-        fig = plt.figure(figsize=figsize)
-        gs = GridSpec(2, 1, height_ratios=[4, 1])
-        ax = fig.add_subplot(gs[0])
-        risk_ax = fig.add_subplot(gs[1])
+    # Create colormap
+    n_curves = len(survival_curves)
+    if n_curves <= 10:
+        colors = sns.color_palette(cmap, n_curves)
     else:
-        fig, ax = plt.subplots(figsize=figsize)
+        colors = plt.cm.get_cmap(cmap, n_curves)
     
-    # 绘制生存曲线
-    for i, (surv, label) in enumerate(zip(survival_probs, labels)):
-        color = colors[i % len(colors)]
-        linestyle = linestyles[i % len(linestyles)]
-        
-        # 绘制生存曲线
-        ax.step(time_points, surv, where='post', color=color, linestyle=linestyle, 
-               linewidth=2, label=label)
-        
-        # 绘制置信区间
-        if confidence_intervals is not None and i < len(confidence_intervals):
-            lower, upper = confidence_intervals[i]
-            ax.fill_between(time_points, lower, upper, alpha=0.2, color=color, step='post')
+    # Use provided labels or keys
+    if labels is None:
+        labels = list(survival_curves.keys())
     
-    # 添加删失标记
-    if add_censoring and censoring_times is not None and censoring_events is not None:
-        for i, (times, events) in enumerate(zip(censoring_times, censoring_events)):
-            # 获取删失时间点
-            censor_times = [t for t, e in zip(times, events) if e == 0]
-            
-            # 如果有删失点，绘制标记
-            if censor_times:
-                # 计算每个删失点的生存概率
-                censor_probs = []
-                for t in censor_times:
-                    # 找到最接近的时间点
-                    idx = np.searchsorted(time_points, t)
-                    if idx == len(time_points):
-                        idx = len(time_points) - 1
-                    censor_probs.append(survival_probs[i][idx])
-                
-                # 绘制删失标记
-                ax.scatter(censor_times, censor_probs, marker='|', color=colors[i % len(colors)], 
-                          s=30, linewidth=1.5)
+    # Plot each curve
+    for i, (key, surv) in enumerate(survival_curves.items()):
+        # Plot survival curve
+        ax.plot(times, surv, '-', label=labels[i], color=colors[i])
+        
+        # Plot confidence intervals if provided
+        if ci_curves is not None and key in ci_curves:
+            lower, upper = ci_curves[key]
+            ax.fill_between(times, lower, upper, alpha=0.2, color=colors[i])
     
-    # 添加风险表
-    if risk_table:
-        # 选择时间点
-        if len(time_points) > 10:
-            # 选择均匀分布的10个时间点
-            indices = np.linspace(0, len(time_points) - 1, 10, dtype=int)
-            table_times = [time_points[i] for i in indices]
-        else:
-            table_times = time_points
-        
-        # 创建风险表数据
-        risk_data = []
-        for i, surv in enumerate(survival_probs):
-            # 计算每个时间点的风险人数
-            risk_counts = []
-            for t in table_times:
-                idx = np.searchsorted(time_points, t)
-                if idx == len(time_points):
-                    idx = len(time_points) - 1
-                # 假设初始人数为100
-                risk_count = int(surv[idx] * 100)
-                risk_counts.append(risk_count)
-            risk_data.append(risk_counts)
-        
-        # 绘制风险表
-        risk_ax.set_xlim(ax.get_xlim())
-        risk_ax.set_xticks(table_times)
-        risk_ax.set_xticklabels([f"{t:.1f}" for t in table_times])
-        risk_ax.set_xlabel(xlabel)
-        risk_ax.set_ylabel("风险人数")
-        
-        # 添加网格线
-        risk_ax.grid(True, axis='x', alpha=0.3)
-        
-        # 绘制风险数据
-        for i, (counts, label) in enumerate(zip(risk_data, labels)):
-            color = colors[i % len(colors)]
-            risk_ax.step(table_times, counts, where='post', color=color, alpha=0.7)
-            
-            # 添加数值标签
-            for j, (t, count) in enumerate(zip(table_times, counts)):
-                risk_ax.text(t, count, str(count), color=color, ha='center', va='bottom', fontsize=8)
+    # Add reference line at 0.5
+    ax.axhline(y=0.5, color='gray', linestyle='--', alpha=0.7)
     
-    # 设置坐标轴
+    # Set title and labels
+    ax.set_title(title, fontsize=14)
     ax.set_xlabel(xlabel, fontsize=12)
     ax.set_ylabel(ylabel, fontsize=12)
-    ax.set_title(title, fontsize=14)
     
-    # 设置y轴范围
-    ax.set_ylim([0.0, 1.05])
+    # Set axis limits
+    ax.set_xlim([0, max(times)])
+    ax.set_ylim([0, 1.05])
     
-    # 添加网格线
+    # Add grid
     ax.grid(True, alpha=0.3)
     
-    # 添加图例
+    # Add legend
     ax.legend(loc='best')
     
-    # 调整布局
+    # Adjust layout
     plt.tight_layout()
     
     return fig
@@ -722,7 +627,6 @@ def plot_distribution(data: pd.DataFrame,
                      n_cols: int = 3,
                      bins: int = 30,
                      kde: bool = True) -> plt.Figure:
-# 接上文代码
     """
     绘制特征分布图
     
@@ -829,184 +733,6 @@ def plot_distribution(data: pd.DataFrame,
     
     # 调整布局
     plt.tight_layout(rect=[0, 0, 1, 0.95])
-    
-    return fig
-
-# 绘制生存曲线
-def plot_survival_curves(times: List[float], 
-                        survival_probs: List[np.ndarray], 
-                        labels: List[str],
-                        confidence_intervals: Optional[List[Tuple[np.ndarray, np.ndarray]]] = None,
-                        title: str = "生存曲线",
-                        figsize: Tuple[float, float] = (10, 6),
-                        colors: Optional[List[str]] = None,
-                        at_risk_table: bool = False) -> plt.Figure:
-    """
-    绘制生存曲线
-    
-    参数:
-    -----
-    times: List[float]
-        时间点列表
-    survival_probs: List[np.ndarray]
-        生存概率列表，每个元素是一个模型/组的生存概率数组
-    labels: List[str]
-        曲线标签列表
-    confidence_intervals: List[Tuple[np.ndarray, np.ndarray]], 可选
-        置信区间列表，每个元素是一个元组(下界, 上界)
-    title: str, 默认 "生存曲线"
-        图表标题
-    figsize: Tuple[float, float], 默认 (10, 6)
-        图形大小
-    colors: List[str], 可选
-        曲线颜色列表
-    at_risk_table: bool, 默认 False
-        是否显示风险表
-        
-    返回:
-    -----
-    plt.Figure
-        matplotlib图形对象
-    """
-    # 设置默认颜色
-    if colors is None:
-        colors = plt.cm.tab10.colors
-    
-    # 创建图形
-    if at_risk_table:
-        fig = plt.figure(figsize=figsize)
-        gs = GridSpec(2, 1, height_ratios=[4, 1])
-        ax = fig.add_subplot(gs[0])
-        risk_ax = fig.add_subplot(gs[1])
-    else:
-        fig, ax = plt.subplots(figsize=figsize)
-    
-    # 绘制每条生存曲线
-    for i, (surv, label) in enumerate(zip(survival_probs, labels)):
-        color = colors[i % len(colors)]
-        ax.step(times, surv, where='post', label=label, color=color, linewidth=2)
-        
-        # 绘制置信区间
-        if confidence_intervals is not None and i < len(confidence_intervals):
-            lower, upper = confidence_intervals[i]
-            ax.fill_between(times, lower, upper, alpha=0.2, color=color, step='post')
-    
-    # 设置标题和标签
-    ax.set_title(title, fontsize=14)
-    ax.set_xlabel('时间', fontsize=12)
-    ax.set_ylabel('生存概率', fontsize=12)
-    
-    # 设置y轴范围
-    ax.set_ylim([0.0, 1.05])
-    
-    # 添加网格线
-    ax.grid(True, alpha=0.3)
-    
-    # 添加图例
-    ax.legend(loc='best')
-    
-    # 添加风险表
-    if at_risk_table:
-        # 假设第一条曲线是参考曲线
-        n_samples = len(survival_probs[0])
-        
-        # 选择时间点
-        time_points = np.linspace(min(times), max(times), 5)
-        time_indices = [np.searchsorted(times, t) for t in time_points]
-        
-        # 创建风险表数据
-        risk_data = []
-        for i, surv in enumerate(survival_probs):
-            risk_counts = [int(n_samples * surv[idx]) for idx in time_indices]
-            risk_data.append(risk_counts)
-        
-        # 绘制风险表
-        risk_ax.set_axis_off()
-        risk_table = risk_ax.table(
-            cellText=risk_data,
-            rowLabels=labels,
-            colLabels=[f"t={t:.1f}" for t in time_points],
-            loc='center',
-            cellLoc='center'
-        )
-        risk_table.auto_set_font_size(False)
-        risk_table.set_fontsize(10)
-        risk_table.scale(1, 1.5)
-        
-        # 添加标题
-        risk_ax.set_title('风险表 (样本数)', fontsize=12)
-    
-    # 调整布局
-    plt.tight_layout()
-    
-    return fig
-
-# 绘制ROC曲线
-def plot_roc_curves(fpr_list: List[np.ndarray], 
-                   tpr_list: List[np.ndarray], 
-                   auc_list: List[float],
-                   labels: List[str],
-                   title: str = "ROC曲线",
-                   figsize: Tuple[float, float] = (8, 8),
-                   colors: Optional[List[str]] = None) -> plt.Figure:
-    """
-    绘制ROC曲线
-    
-    参数:
-    -----
-    fpr_list: List[np.ndarray]
-        假阳性率列表
-    tpr_list: List[np.ndarray]
-        真阳性率列表
-    auc_list: List[float]
-        AUC值列表
-    labels: List[str]
-        曲线标签列表
-    title: str, 默认 "ROC曲线"
-        图表标题
-    figsize: Tuple[float, float], 默认 (8, 8)
-        图形大小
-    colors: List[str], 可选
-        曲线颜色列表
-        
-    返回:
-    -----
-    plt.Figure
-        matplotlib图形对象
-    """
-    # 设置默认颜色
-    if colors is None:
-        colors = plt.cm.tab10.colors
-    
-    # 创建图形
-    fig, ax = plt.subplots(figsize=figsize)
-    
-    # 绘制对角线
-    ax.plot([0, 1], [0, 1], 'k--', alpha=0.8, label='随机猜测')
-    
-    # 绘制每条ROC曲线
-    for i, (fpr, tpr, auc, label) in enumerate(zip(fpr_list, tpr_list, auc_list, labels)):
-        color = colors[i % len(colors)]
-        ax.plot(fpr, tpr, color=color, linewidth=2, 
-               label=f'{label} (AUC = {auc:.3f})')
-    
-    # 设置标题和标签
-    ax.set_title(title, fontsize=14)
-    ax.set_xlabel('假阳性率 (FPR)', fontsize=12)
-    ax.set_ylabel('真阳性率 (TPR)', fontsize=12)
-    
-    # 设置轴范围
-    ax.set_xlim([0.0, 1.0])
-    ax.set_ylim([0.0, 1.05])
-    
-    # 添加网格线
-    ax.grid(True, alpha=0.3)
-    
-    # 添加图例
-    ax.legend(loc='lower right')
-    
-    # 调整布局
-    plt.tight_layout()
     
     return fig
 

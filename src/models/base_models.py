@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-基础生存分析模型模块
-提供Cox比例风险模型、随机生存森林等基础生存分析模型
+Base survival analysis model module
+Provide Cox proportional hazard model, random survival forest, etc. base survival analysis models
 """
 
 import pandas as pd
@@ -22,16 +22,16 @@ import os
 logger = logging.getLogger(__name__)
 
 class BaseSurvivalModel:
-    """基础生存分析模型类，提供通用接口"""
+    """Base survival analysis model class with common interface"""
     
     def __init__(self, name: str = "base_model"):
         """
-        初始化基础生存分析模型
+        Initialize base survival model
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "base_model"
-            模型名称
+        name: str, default "base_model"
+            Model name
         """
         self.name = name
         self.model = None
@@ -39,84 +39,84 @@ class BaseSurvivalModel:
     
     def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', **kwargs) -> 'BaseSurvivalModel':
         """
-        训练模型
+        Train model
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
+            Target variable (time and event)
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
         **kwargs:
-            额外的模型参数
+            Additional model parameters
             
-        返回:
+        Returns:
         -----
         self: BaseSurvivalModel
-            训练后的模型实例
+            Trained model instance
         """
-        raise NotImplementedError("子类必须实现fit方法")
+        raise NotImplementedError("Subclass must implement fit method")
     
     def predict(self, X: pd.DataFrame, times: Optional[List[float]] = None) -> np.ndarray:
         """
-        预测生存概率
+        Predict survival probability
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
-        times: List[float], 可选
-            预测时间点，默认为None(使用训练数据中的时间点)
+            Feature matrix
+        times: List[float], optional
+            Prediction time points, default None (use time points from training data)
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的生存概率
+            Predicted survival probability
         """
-        raise NotImplementedError("子类必须实现predict方法")
+        raise NotImplementedError("Subclass must implement predict method")
     
     def predict_risk(self, X: pd.DataFrame) -> np.ndarray:
         """
-        预测风险得分
+        Predict risk score
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的风险得分
+            Predicted risk score
         """
-        raise NotImplementedError("子类必须实现predict_risk方法")
+        raise NotImplementedError("Subclass must implement predict_risk method")
     
     def score(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event') -> float:
         """
-        计算模型的C-index
+        Calculate model C-index
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
+            Target variable (time and event)
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
             
-        返回:
+        Returns:
         -----
         float
-            C-index评分
+            C-index score
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
         risk_scores = self.predict_risk(X)
         c_index = concordance_index(y[time_col], -risk_scores, y[event_col])
@@ -124,53 +124,53 @@ class BaseSurvivalModel:
     
     def save(self, path: str) -> None:
         """
-        保存模型
+        Save model
         
-        参数:
+        Parameters:
         -----
         path: str
-            保存路径
+            Save path
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练，无法保存")
+            raise ValueError("Model not trained, cannot save")
         
         os.makedirs(os.path.dirname(path), exist_ok=True)
         joblib.dump(self, path)
-        logger.info(f"模型已保存至: {path}")
+        logger.info(f"Model saved to: {path}")
     
     @classmethod
     def load(cls, path: str) -> 'BaseSurvivalModel':
         """
-        加载模型
+        Load model
         
-        参数:
+        Parameters:
         -----
         path: str
-            模型文件路径
+            Model file path
             
-        返回:
+        Returns:
         -----
         BaseSurvivalModel
-            加载的模型实例
+            Loaded model instance
         """
         model = joblib.load(path)
-        logger.info(f"从 {path} 加载模型")
+        logger.info(f"Loaded model from {path}")
         return model
 
 
 class CoxPHModel(BaseSurvivalModel):
-    """Cox比例风险模型"""
+    """Cox proportional hazard model"""
     
     def __init__(self, name: str = "cox_ph", **kwargs):
         """
-        初始化Cox比例风险模型
+        Initialize Cox proportional hazard model
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "cox_ph"
-            模型名称
+        name: str, default "cox_ph"
+            Model name
         **kwargs:
-            传递给CoxPHFitter的参数
+            Parameters to pass to CoxPHFitter
         """
         super().__init__(name)
         self.model = CoxPHFitter(**kwargs)
@@ -178,172 +178,172 @@ class CoxPHModel(BaseSurvivalModel):
     
     def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', **kwargs) -> 'CoxPHModel':
         """
-        训练Cox比例风险模型
+        Train Cox proportional hazard model
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
+            Target variable (time and event)
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
         **kwargs:
-            传递给CoxPHFitter.fit的参数
+            Parameters to pass to CoxPHFitter.fit
             
-        返回:
+        Returns:
         -----
         self: CoxPHModel
-            训练后的模型实例
+            Trained model instance
         """
-        logger.info(f"训练Cox比例风险模型: {self.name}")
+        logger.info(f"Training Cox proportional hazard model: {self.name}")
         
-        # 合并特征和目标变量
+        # Merge feature and target variable
         df = pd.concat([X, y], axis=1)
         
-        # 训练模型
+        # Train model
         self.model.fit(df, duration_col=time_col, event_col=event_col, **kwargs)
         self.fitted = True
         
-        # 记录训练结果
-        logger.info(f"模型训练完成，concordance_index: {self.model.concordance_index_}")
+        # Record training results
+        logger.info(f"Model training completed, concordance_index: {self.model.concordance_index_}")
         
         return self
     
     def predict(self, X: pd.DataFrame, times: Optional[List[float]] = None) -> np.ndarray:
         """
-        预测生存概率
+        Predict survival probability
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
-        times: List[float], 可选
-            预测时间点，默认为None(使用训练数据中的时间点)
+            Feature matrix
+        times: List[float], optional
+            Prediction time points, default None (use time points from training data)
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的生存概率
+            Predicted survival probability
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测生存函数
+        # Predict survival function
         survival_func = self.model.predict_survival_function(X)
         
-        # 如果指定了时间点，则在这些时间点上评估生存函数
+        # If specified time points, evaluate survival function at these points
         if times is not None:
             survival_probs = np.zeros((len(X), len(times)))
             for i, t in enumerate(times):
                 survival_probs[:, i] = survival_func.loc[t].values
             return survival_probs
         else:
-            # 否则返回完整的生存函数
+            # Otherwise return full survival function
             return survival_func
     
     def predict_risk(self, X: pd.DataFrame) -> np.ndarray:
         """
-        预测风险得分
+        Predict risk score
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的风险得分(部分风险)
+            Predicted risk score (partial risk)
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测部分风险
+        # Predict partial risk
         return self.model.predict_partial_hazard(X).values
     
     def plot_coefficients(self, top_n: int = 10, figsize: Tuple[int, int] = (10, 8)) -> plt.Figure:
         """
-        绘制模型系数森林图
+        Plot model coefficient forest plot
         
-        参数:
+        Parameters:
         -----
-        top_n: int, 默认 10
-            显示的特征数量
-        figsize: Tuple[int, int], 默认 (10, 8)
-            图形大小
+        top_n: int, default 10
+            Number of features to display
+        figsize: Tuple[int, int], default (10, 8)
+            Figure size
             
-        返回:
+        Returns:
         -----
         plt.Figure
-            matplotlib图形对象
+            matplotlib figure object
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 获取系数摘要
+        # Get coefficient summary
         summary = self.model.summary
         
-        # 选择前N个特征
+        # Select top N features
         if len(summary) > top_n:
-            # 按p值排序
+            # Sort by p-value
             plot_df = summary.sort_values('p').head(top_n).copy()
         else:
             plot_df = summary.copy()
         
-        # 按风险比排序
+        # Sort by risk ratio
         plot_df = plot_df.sort_values('exp(coef)')
         
-        # 创建图形
+        # Create figure
         fig, ax = plt.subplots(figsize=figsize)
         
-        # 绘制森林图
+        # Plot forest plot
         y_pos = np.arange(len(plot_df))
         
-        # 绘制风险比点和置信区间
+        # Plot risk ratio points and confidence intervals
         ax.scatter(plot_df['exp(coef)'], y_pos, marker='o', s=50, color='blue')
         
         for i, (idx, row) in enumerate(plot_df.iterrows()):
             ax.plot([row['lower 0.95'], row['upper 0.95']], [i, i], 'b-', alpha=0.6)
         
-        # 添加垂直线表示HR=1
+        # Add vertical line indicating HR=1
         ax.axvline(x=1, color='red', linestyle='--', alpha=0.7)
         
-        # 设置Y轴标签
+        # Set Y axis labels
         ax.set_yticks(y_pos)
         ax.set_yticklabels(plot_df.index)
         
-        # 设置X轴为对数刻度
+        # Set X axis to logarithmic scale
         ax.set_xscale('log')
         
-        # 添加标题和标签
-        ax.set_title('Cox模型系数 (95% 置信区间)', fontsize=14)
-        ax.set_xlabel('风险比 (HR)', fontsize=12)
+        # Add title and labels
+        ax.set_title('Cox model coefficients (95% confidence interval)', fontsize=14)
+        ax.set_xlabel('Risk ratio (HR)', fontsize=12)
         
-        # 添加网格线
+        # Add grid lines
         ax.grid(True, alpha=0.3)
         
-        # 调整布局
+        # Adjust layout
         plt.tight_layout()
         
         return fig
 
 
 class RandomSurvivalForestModel(BaseSurvivalModel):
-    """随机生存森林模型"""
+    """Random survival forest model"""
     
     def __init__(self, name: str = "rsf", **kwargs):
         """
-        初始化随机生存森林模型
+        Initialize random survival forest model
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "rsf"
-            模型名称
+        name: str, default "rsf"
+            Model name
         **kwargs:
-            传递给RandomSurvivalForest的参数
+            Parameters to pass to RandomSurvivalForest
         """
         super().__init__(name)
         self.model = RandomSurvivalForest(**kwargs)
@@ -352,168 +352,168 @@ class RandomSurvivalForestModel(BaseSurvivalModel):
     
     def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', **kwargs) -> 'RandomSurvivalForestModel':
         """
-        训练随机生存森林模型
+        Train random survival forest model
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
+            Target variable (time and event)
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
         **kwargs:
-            传递给RandomSurvivalForest.fit的参数
+            Parameters to pass to RandomSurvivalForest.fit
             
-        返回:
+        Returns:
         -----
         self: RandomSurvivalForestModel
-            训练后的模型实例
+            Trained model instance
         """
-        logger.info(f"训练随机生存森林模型: {self.name}")
+        logger.info(f"Training random survival forest model: {self.name}")
         
-        # 转换为scikit-survival所需的格式
+        # Convert to scikit-survival required format
         structured_y = Surv.from_dataframe(event_col, time_col, y)
         
-        # 训练模型
+        # Train model
         self.model.fit(X, structured_y, **kwargs)
         self.fitted = True
         self.event_times_ = self.model.event_times_
         
-        # 记录训练结果
-        logger.info(f"模型训练完成，特征数量: {X.shape[1]}")
+        # Record training results
+        logger.info(f"Model training completed, feature count: {X.shape[1]}")
         
         return self
     
     def predict(self, X: pd.DataFrame, times: Optional[List[float]] = None) -> np.ndarray:
         """
-        预测生存概率
+        Predict survival probability
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
-        times: List[float], 可选
-            预测时间点，默认为None(使用训练数据中的时间点)
+            Feature matrix
+        times: List[float], optional
+            Prediction time points, default None (use time points from training data)
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的生存概率
+            Predicted survival probability
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测生存函数
+        # Predict survival function
         survival_funcs = self.model.predict_survival_function(X)
         
-        # 如果指定了时间点，则在这些时间点上评估生存函数
+        # If specified time points, evaluate survival function at these points
         if times is not None:
             survival_probs = np.zeros((len(X), len(times)))
             for i, surv_func in enumerate(survival_funcs):
                 for j, t in enumerate(times):
-                    # 找到最接近的时间点
+                    # Find closest time point
                     idx = np.searchsorted(self.event_times_, t)
                     if idx == len(self.event_times_):
                         idx = len(self.event_times_) - 1
                     survival_probs[i, j] = surv_func[idx]
             return survival_probs
         else:
-            # 否则返回完整的生存函数
+            # Otherwise return full survival function
             return np.array([sf.y for sf in survival_funcs])
     
     def predict_risk(self, X: pd.DataFrame) -> np.ndarray:
         """
-        预测风险得分
+        Predict risk score
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的风险得分
+            Predicted risk score
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测风险得分
+        # Predict risk score
         return self.model.predict(X)
     
     def plot_feature_importance(self, top_n: int = 10, figsize: Tuple[int, int] = (10, 8)) -> plt.Figure:
         """
-        绘制特征重要性条形图
+        Plot feature importance bar plot
         
-        参数:
+        Parameters:
         -----
-        top_n: int, 默认 10
-            显示的特征数量
-        figsize: Tuple[int, int], 默认 (10, 8)
-            图形大小
+        top_n: int, default 10
+            Number of features to display
+        figsize: Tuple[int, int], default (10, 8)
+            Figure size
             
-        返回:
+        Returns:
         -----
         plt.Figure
-            matplotlib图形对象
+            matplotlib figure object
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 获取特征重要性
+        # Get feature importance
         importances = self.model.feature_importances_
         feature_names = self.model.feature_names_in_
         
-        # 创建特征重要性DataFrame
+        # Create feature importance DataFrame
         importance_df = pd.DataFrame({
             'feature': feature_names,
             'importance': importances
         }).sort_values('importance', ascending=False)
         
-        # 选择前N个特征
+        # Select top N features
         if len(importance_df) > top_n:
             plot_df = importance_df.head(top_n).copy()
         else:
             plot_df = importance_df.copy()
         
-        # 反转顺序，使最重要的特征在顶部
+        # Reverse order so most important features are at the top
         plot_df = plot_df.iloc[::-1]
         
-        # 创建图形
+        # Create figure
         fig, ax = plt.subplots(figsize=figsize)
         
-        # 绘制条形图
+        # Plot bar plot
         ax.barh(plot_df['feature'], plot_df['importance'], color='skyblue', edgecolor='black')
         
-        # 添加标题和标签
-        ax.set_title('随机生存森林特征重要性', fontsize=14)
-        ax.set_xlabel('重要性', fontsize=12)
+        # Add title and labels
+        ax.set_title('Random survival forest feature importance', fontsize=14)
+        ax.set_xlabel('Importance', fontsize=12)
         
-        # 添加网格线
+        # Add grid lines
         ax.grid(True, axis='x', alpha=0.3)
         
-        # 调整布局
+        # Adjust layout
         plt.tight_layout()
         
         return fig
 
 
 class CoxnetModel(BaseSurvivalModel):
-    """带弹性网正则化的Cox模型"""
+    """Cox model with elastic net regularization"""
     
     def __init__(self, name: str = "coxnet", **kwargs):
         """
-        初始化带弹性网正则化的Cox模型
+        Initialize Cox model with elastic net regularization
         
-        参数:
+        Parameters:
         -----
-        name: str, 默认 "coxnet"
-            模型名称
+        name: str, default "coxnet"
+            Model name
         **kwargs:
-            传递给CoxnetSurvivalAnalysis的参数
+            Parameters to pass to CoxnetSurvivalAnalysis
         """
         super().__init__(name)
         self.model = CoxnetSurvivalAnalysis(**kwargs)
@@ -522,149 +522,149 @@ class CoxnetModel(BaseSurvivalModel):
     
     def fit(self, X: pd.DataFrame, y: pd.DataFrame, time_col: str = 'time', event_col: str = 'event', **kwargs) -> 'CoxnetModel':
         """
-        训练带弹性网正则化的Cox模型
+        Train Cox model with elastic net regularization
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
         y: pd.DataFrame
-            目标变量(时间和事件)
-        time_col: str, 默认 'time'
-            时间列名
-        event_col: str, 默认 'event'
-            事件列名
+            Target variable (time and event)
+        time_col: str, default 'time'
+            Time column name
+        event_col: str, default 'event'
+            Event column name
         **kwargs:
-            传递给CoxnetSurvivalAnalysis.fit的参数
+            Parameters to pass to CoxnetSurvivalAnalysis.fit
             
-        返回:
+        Returns:
         -----
         self: CoxnetModel
-            训练后的模型实例
+            Trained model instance
         """
-        logger.info(f"训练带弹性网正则化的Cox模型: {self.name}")
+        logger.info(f"Training Cox model with elastic net regularization: {self.name}")
         
-        # 转换为scikit-survival所需的格式
+        # Convert to scikit-survival required format
         structured_y = Surv.from_dataframe(event_col, time_col, y)
         
-        # 训练模型
+        # Train model
         self.model.fit(X, structured_y, **kwargs)
         self.fitted = True
         
-        # 记录训练结果
-        logger.info(f"模型训练完成，非零系数数量: {np.sum(self.model.coef_ != 0)}")
+        # Record training results
+        logger.info(f"Model training completed, non-zero coefficient count: {np.sum(self.model.coef_ != 0)}")
         
         return self
     
     def predict(self, X: pd.DataFrame, times: Optional[List[float]] = None) -> np.ndarray:
         """
-        预测生存概率
+        Predict survival probability
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
-        times: List[float], 可选
-            预测时间点，默认为None(使用训练数据中的时间点)
+            Feature matrix
+        times: List[float], optional
+            Prediction time points, default None (use time points from training data)
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的生存概率
+            Predicted survival probability
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测生存函数
+        # Predict survival function
         survival_funcs = self.model.predict_survival_function(X)
         
-        # 如果指定了时间点，则在这些时间点上评估生存函数
+        # If specified time points, evaluate survival function at these points
         if times is not None:
             survival_probs = np.zeros((len(X), len(times)))
             for i, surv_func in enumerate(survival_funcs):
                 for j, t in enumerate(times):
-                    # 找到最接近的时间点
+                    # Find closest time point
                     idx = np.searchsorted(surv_func.x, t)
                     if idx == len(surv_func.x):
                         idx = len(surv_func.x) - 1
                     survival_probs[i, j] = surv_func.y[idx]
             return survival_probs
         else:
-            # 否则返回完整的生存函数
+            # Otherwise return full survival function
             return np.array([sf.y for sf in survival_funcs])
     
     def predict_risk(self, X: pd.DataFrame) -> np.ndarray:
         """
-        预测风险得分
+        Predict risk score
         
-        参数:
+        Parameters:
         -----
         X: pd.DataFrame
-            特征矩阵
+            Feature matrix
             
-        返回:
+        Returns:
         -----
         np.ndarray
-            预测的风险得分
+            Predicted risk score
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 预测风险得分
+        # Predict risk score
         return self.model.predict(X)
     
     def plot_coefficients(self, figsize: Tuple[int, int] = (10, 8)) -> plt.Figure:
         """
-        绘制模型系数条形图
+        Plot model coefficient bar plot
         
-        参数:
+        Parameters:
         -----
-        figsize: Tuple[int, int], 默认 (10, 8)
-            图形大小
+        figsize: Tuple[int, int], default (10, 8)
+            Figure size
             
-        返回:
+        Returns:
         -----
         plt.Figure
-            matplotlib图形对象
+            matplotlib figure object
         """
         if not self.fitted:
-            raise ValueError("模型尚未训练")
+            raise ValueError("Model not trained")
         
-        # 获取非零系数
+        # Get non-zero coefficients
         coef = self.model.coef_
         feature_names = self.model.feature_names_in_
         
-        # 创建系数DataFrame
+        # Create coefficient DataFrame
         coef_df = pd.DataFrame({
             'feature': feature_names,
             'coefficient': coef.flatten()
         })
         
-        # 筛选非零系数
+        # Filter non-zero coefficients
         nonzero_coef = coef_df[coef_df['coefficient'] != 0].copy()
         
-        # 按系数绝对值排序
+        # Sort by absolute coefficient value
         nonzero_coef['abs_coef'] = nonzero_coef['coefficient'].abs()
         nonzero_coef = nonzero_coef.sort_values('abs_coef', ascending=False)
         
-        # 创建图形
+        # Create figure
         fig, ax = plt.subplots(figsize=figsize)
         
-        # 绘制条形图
+        # Plot bar plot
         bars = ax.barh(nonzero_coef['feature'], nonzero_coef['coefficient'], 
                       color=np.where(nonzero_coef['coefficient'] > 0, 'skyblue', 'salmon'))
         
-        # 添加标题和标签
-        ax.set_title('Coxnet模型非零系数', fontsize=14)
-        ax.set_xlabel('系数值', fontsize=12)
+        # Add title and labels
+        ax.set_title('Coxnet model non-zero coefficients', fontsize=14)
+        ax.set_xlabel('Coefficient value', fontsize=12)
         
-        # 添加垂直线表示零点
+        # Add vertical line indicating zero point
         ax.axvline(x=0, color='black', linestyle='--', alpha=0.7)
         
-        # 添加网格线
+        # Add grid lines
         ax.grid(True, axis='x', alpha=0.3)
         
-        # 调整布局
+        # Adjust layout
         plt.tight_layout()
         
         return fig
@@ -672,19 +672,19 @@ class CoxnetModel(BaseSurvivalModel):
 
 def create_model(model_type: str, **kwargs) -> BaseSurvivalModel:
     """
-    创建指定类型的生存分析模型
+    Create specified type of survival analysis model
     
-    参数:
+    Parameters:
     -----
     model_type: str
-        模型类型，可选 'cox', 'rsf', 'coxnet'
+        Model type, optional 'cox', 'rsf', 'coxnet'
     **kwargs:
-        传递给模型构造函数的参数
+        Parameters to pass to model constructor
         
-    返回:
+    Returns:
     -----
     BaseSurvivalModel
-        创建的模型实例
+        Created model instance
     """
     model_type = model_type.lower()
     
@@ -695,4 +695,4 @@ def create_model(model_type: str, **kwargs) -> BaseSurvivalModel:
     elif model_type == 'coxnet':
         return CoxnetModel(**kwargs)
     else:
-        raise ValueError(f"不支持的模型类型: {model_type}") 
+        raise ValueError(f"Unsupported model type: {model_type}") 

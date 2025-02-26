@@ -1,79 +1,79 @@
-# 生存分析模型开发框架
+# Survival Analysis Model Development Framework
 
-这是一个基于Python的生存分析模型开发框架，用于构建和评估生存预测模型。该框架支持多种生存分析方法，包括Cox比例风险模型、随机生存森林、深度学习生存模型等，并提供完整的数据预处理、特征工程、模型训练、评估和解释工具。
+This is a Python-based survival analysis model development framework for building and evaluating survival prediction models. The framework supports various survival analysis methods, including Cox proportional hazards model, random survival forest, deep learning survival models, and provides comprehensive tools for data preprocessing, feature engineering, model training, evaluation, and interpretation.
 
-## 功能特点
+## Features
 
--   **数据预处理**：
-    -   缺失值多重插补（MICE方法，实现Rubin's规则，生成k=5套插补后数据）
-    -   异常值检测（Z-score方法）与处理（1%-99%截断法）
-    -   特征标准化与编码（连续变量Z-score标准化，分类变量独热/目标/有序编码）
-    -   数据质量检查与报告
+-   **Data Preprocessing**:
+    -   Multiple imputation for missing values (MICE method, implementing Rubin's rules, generating k=5 imputed datasets)
+    -   Outlier detection (Z-score method) and handling (1%-99% truncation)
+    -   Feature standardization and encoding (Z-score for continuous variables, one-hot/target/ordinal encoding for categorical variables)
+    -   Data quality checking and reporting
 
--   **特征工程**：
-    -   单变量Cox回归筛选 + FDR校正（Benjamini-Hochberg方法）
-    -   效应量过滤（保留HR>1.2或<0.8的特征）
-    -   Bootstrap特征稳定性评估
-    -   特征分组（临床组和蛋白质组）
+-   **Feature Engineering**:
+    -   Univariate Cox regression selection + FDR correction (Benjamini-Hochberg method)
+    -   Effect size filtering (keeping features with HR>1.2 or <0.8)
+    -   Bootstrap feature stability assessment
+    -   Feature grouping (clinical and protein groups)
 
--   **模型开发**：
-    -   **基准模型**：
-        -   CoxPH：基线参考模型
-        -   RSF（Random Survival Forest）：捕捉非线性关系
-        -   CoxBoost：处理高维数据
-    -   **进阶模型**：
-        -   DeepSurv：深度学习生存模型
-        -   MTL-Cox：多任务学习模型 (需要安装 TensorFlow)
-    -   **集成策略**：
-        -   **多层级集成方案**：
-            1.  **第一层**：基线模型、进阶模型，每个模型使用不同特征子集训练多个版本
-            2.  **第二层**：使用Stacking方法，以第一层模型预测作为特征，采用简单但稳健的meta-learner
-            3.  **第三层**：基于模型表现动态调整权重，使用Bayesian Model Averaging整合预测结果
-        -   **集成优化策略**：
-            -   使用交叉验证评估每个基模型的稳定性
-            -   采用SHAP值分析模型贡献度
-            -   动态剔除表现不稳定的模型
-            -   根据预测置信度自适应调整权重
+-   **Model Development**:
+    -   **Base Models**:
+        -   CoxPH: Baseline reference model
+        -   RSF (Random Survival Forest): Capturing non-linear relationships
+        -   CoxBoost: Handling high-dimensional data
+    -   **Advanced Models**:
+        -   DeepSurv: Deep learning survival model
+        -   MTL-Cox: Multi-task learning model (requires TensorFlow)
+    -   **Ensemble Strategies**:
+        -   **Multi-level Ensemble Approach**:
+            1.  **First Level**: Baseline models and advanced models, each trained on different feature subsets
+            2.  **Second Level**: Using Stacking method with predictions from the first level as features and a simple but robust meta-learner
+            3.  **Third Level**: Dynamic weight adjustment based on model performance using Bayesian Model Averaging
+        -   **Ensemble Optimization Strategies**:
+            -   Cross-validation for evaluating base model stability
+            -   SHAP value analysis for model contribution assessment
+            -   Dynamic elimination of unstable models
+            -   Adaptive weight adjustment based on prediction confidence
 
--   **模型训练与验证**：
-    -   **重复分层交叉验证**：
-        -   采用10折分层交叉验证，确保每折中事件比例一致
-        -   重复5次以降低随机性影响，特别重要在小样本情况下
-    -   **贝叶斯超参数优化**：
-        -   使用`hyperopt`库实现
-        -   目标最大化C-index
-    -   **评估指标**：
-        -   **主要指标**：C-index（判别能力）、Time-dependent AUC（3年/5年/10年时间窗）
-        -   **校准性**：分段Brier Score及校准曲线（0-3年、3-5年、5-10年）
-        -   **临床决策效用**：决策曲线分析（DCA）评估不同风险分层对干预决策的临床价值
+-   **Model Training and Validation**:
+    -   **Repeated Stratified Cross-Validation**:
+        -   10-fold stratified cross-validation ensuring consistent event ratios in each fold
+        -   Repeated 5 times to reduce randomness, especially important for small samples
+    -   **Bayesian Hyperparameter Optimization**:
+        -   Using `hyperopt` library
+        -   Maximizing C-index
+    -   **Evaluation Metrics**:
+        -   **Primary Metrics**: C-index (discrimination), Time-dependent AUC (3/5/10-year time windows)
+        -   **Calibration**: Segmented Brier Score and calibration curves (0-3, 3-5, 5-10 years)
+        -   **Clinical Decision Utility**: Decision Curve Analysis (DCA) to evaluate clinical value of risk stratification
 
--   **模型解释**：
-    -   **全局模型解释**：
-        -   SHAP值计算与可视化
-        -   Bootstrap稳定性评估
-        -   特征交互分析（部分依赖图、SHAP交互值、生物学通路关联分析）
-    -   **个体化风险预测**：
-        -   生成个体5年/10年风险预测
-        -   展示预测的不确定性范围
-        -   标注影响个体风险的主要因素
+-   **Model Interpretation**:
+    -   **Global Model Interpretation**:
+        -   SHAP value calculation and visualization
+        -   Bootstrap stability assessment
+        -   Feature interaction analysis (PDP, SHAP interaction values, biological pathway correlation analysis)
+    -   **Individualized Risk Prediction**:
+        -   Generate 5-year/10-year risk prediction for individuals
+        -   Display uncertainty range of predictions
+        -   Highlight key factors affecting individual risk
 
-## 安装方法
+## Installation
 
-### 必要环境
+### Requirements
 
 -   Python 3.8+
--   系统依赖：gcc, g++（用于编译某些依赖包）
+-   System dependencies: gcc, g++ (for compiling certain dependency packages)
 
-### 使用pip安装
+### Installation with pip
 
-1.  **克隆仓库**：
+1.  **Clone the repository**:
 
     ```bash
     git clone https://github.com/yourusername/survival_model.git
     cd survival_model
     ```
 
-2.  **创建虚拟环境 (可选，强烈建议)**：
+2.  **Create a virtual environment (optional but recommended)**:
 
     ```bash
     python3 -m venv .venv
@@ -81,36 +81,36 @@
     .venv\Scripts\activate    # Windows
     ```
 
-3.  **安装依赖**：
+3.  **Install dependencies**:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **安装开发模式**：
+4.  **Install in development mode**:
 
     ```bash
     pip install -e .
     ```
 
-### 可选组件
+### Optional Components
 
--   **GPU支持 (深度学习)**：
+-   **GPU support (for deep learning)**:
 
     ```bash
-    pip install tensorflow-gpu  # 替代tensorflow
+    pip install tensorflow-gpu  # Replace tensorflow
     ```
-    或者
+    or
     ```bash
-    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 # 根据您的CUDA版本选择
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 # Choose based on your CUDA version
     ```
 
--   **R语言支持 (多重插补)**：
+-   **R language support (for multiple imputation)**:
 
     ```bash
-    # 安装rpy2
+    # Install rpy2
     pip install rpy2
 
-    # 在R中安装miceRanger包
+    # Install miceRanger package in R
     R -e "install.packages('miceRanger', repos='https://cran.r-project.org')"
     ```

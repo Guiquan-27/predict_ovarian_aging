@@ -1,4 +1,4 @@
-"""数据预处理模块，包括数据加载、缺失值处理、异常值处理和特征编码。"""
+"""Data preprocessing module, including data loading, missing value handling, outlier processing, and feature encoding."""
 
 from .data_loader import load_data, check_data_quality, summarize_data
 from .imputation import impute_with_mice, combine_imputed_datasets
