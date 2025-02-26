@@ -1,0 +1,34 @@
+# 数据加载设置
+data_loading:
+  file_path: '../data/raw/data_clean_surv_predi20250211.txt'
+  time_column: 'time'  # 生存时间列名
+  event_column: 'event'  # 事件状态列名
+
+# 缺失值处理设置
+imputation:
+  method: 'mice'  # 多重插补方法
+  iterations: 5  # 插补次数k=5
+  random_seed: 42
+
+# 异常值处理设置
+outlier_handling:
+  detection_method: 'zscore'  # 异常值检测方法: 'zscore', 'iqr'
+  zscore_threshold: 3.0  # Z-score阈值
+  treatment_method: 'winsorize'  # 异常值处理方法: 'winsorize', 'remove'
+  lower_percentile: 0.01  # 下截断百分位数
+  upper_percentile: 0.99  # 上截断百分位数
+
+# 特征预处理设置
+feature_preprocessing:
+  continuous_features: []  # 连续变量列表，留空则自动识别
+  categorical_features: []  # 分类变量列表，留空则自动识别
+  
+  # 连续变量标准化
+  continuous_scaling:
+    method: 'zscore'  # 标准化方法: 'zscore', 'minmax', 'robust'
+  
+  # 分类变量编码
+  categorical_encoding:
+    method: 'onehot'  # 编码方法: 'onehot', 'target', 'ordinal'
+    ordinal_features: {}  # 有序特征的顺序映射，如 {'stage': ['I', 'II', 'III', 'IV']}
+    max_categories: 10  # 超过此基数的分类变量使用target编码 

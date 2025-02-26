@@ -1,0 +1,53 @@
+# 基础科学计算
+numpy>=1.20.0
+scipy>=1.6.0
+pandas>=1.2.0
+
+# 数据处理
+scikit-learn>=1.0.0
+category_encoders>=2.3.0
+imbalanced-learn>=0.8.0
+
+# 生存分析
+lifelines>=0.26.0
+scikit-survival>=0.17.0
+pysurvival>=0.1.2
+
+# 机器学习框架
+xgboost>=1.5.0
+lightgbm>=3.3.0
+
+# 深度学习
+tensorflow>=2.6.0
+torch>=1.10.0
+torchtuples>=0.2.0  # 用于DeepSurv模型
+
+# 特征选择与特征重要性
+statsmodels>=0.13.0
+boruta>=0.3.0
+
+# 模型解释
+shap>=0.40.0
+lime>=0.2.0
+
+# 可视化
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.3.0
+
+# R语言集成
+rpy2>=3.4.0
+
+# 工具
+tqdm>=4.62.0
+joblib>=1.1.0
+pyyaml>=6.0.0
+optuna>=2.10.0
+hyperopt>=0.2.5
+
+# 测试
+pytest>=6.2.5
+
+# Jupyter
+notebook>=6.4.0
+jupyter>=1.0.0 
