@@ -3,7 +3,7 @@ feature_selection:
   # Univariate feature selection
   univariate:
     method: 'cox'  # Univariate selection method: 'cox', 'logrank'
-    pvalue_threshold: 0.05  # p-value threshold
+    pvalue_threshold: 0.1  # p-value threshold
     fdr_correction: true  # Whether to apply FDR correction
     hazard_ratio_filter: true  # Whether to filter based on hazard ratio
     min_hazard_ratio: 0.8  # Minimum HR threshold
