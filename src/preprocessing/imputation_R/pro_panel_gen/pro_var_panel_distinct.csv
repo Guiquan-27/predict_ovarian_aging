@@ -1,0 +1,2924 @@
+Variable,Protein,Protein_meaning,Protein_panel
+a1bg,A1BG,Alpha-1B-glycoprotein,Inflammation_II
+aamdc,AAMDC,Mth938 domain-containing protein,Cardiometabolic_II
+aarsd1,AARSD1,Alanyl-tRNA editing protein Aarsd1,Oncology
+abca2,ABCA2,ATP-binding cassette sub-family A member 2,Cardiometabolic_II
+abhd14b,ABHD14B,Protein ABHD14B,Neurology
+abl1,ABL1,Tyrosine-protein kinase ABL1,Oncology
+abo,ABO,Histo-blood group ABO system transferase,Inflammation_II
+abraxas2,ABRAXAS2,BRISC complex subunit Abraxas 2,Cardiometabolic_II
+acaa1,ACAA1,"3-ketoacyl-CoA thiolase, peroxisomal",Oncology
+acadm,ACADM,"Medium-chain specific acyl-CoA dehydrogenase, mitochondrial",Oncology_II
+acadsb,ACADSB,"Short/branched chain specific acyl-CoA dehydrogenase, mitochondrial",Cardiometabolic_II
+acan,ACAN,Aggrecan core protein,Cardiometabolic
+ace,ACE,Angiotensin-converting enzyme,Inflammation_II
+ace2,ACE2,Angiotensin-converting enzyme 2,Cardiometabolic
+ache,ACHE,Acetylcholinesterase,Inflammation_II
+acot13,ACOT13,Acyl-coenzyme A thioesterase 13,Oncology_II
+acox1,ACOX1,Peroxisomal acyl-coenzyme A oxidase 1,Cardiometabolic
+acp1,ACP1,Low molecular weight phosphotyrosine protein phosphatase,Inflammation_II
+acp5,ACP5,Tartrate-resistant acid phosphatase type 5,Cardiometabolic
+acp6,ACP6,Lysophosphatidic acid phosphatase type 6,Oncology
+acrbp,ACRBP,Acrosin-binding protein,Oncology_II
+acrv1,ACRV1,Acrosomal protein SP-10,Inflammation_II
+acsl1,ACSL1,Long-chain-fatty-acid--CoA ligase 1,Cardiometabolic_II
+acta2,ACTA2,"Actin, aortic smooth muscle",Cardiometabolic
+actn2,ACTN2,Alpha-actinin-2,Cardiometabolic_II
+actn4,ACTN4,Alpha-actinin-4,Inflammation
+acvrl1,ACVRL1,Serine/threonine-protein kinase receptor R3,Neurology
+acy1,ACY1,Aminoacylase-1,Cardiometabolic
+acy3,ACY3,N-acyl-aromatic-L-amino acid amidohydrolase,Cardiometabolic_II
+acyp1,ACYP1,Acylphosphatase-1,Inflammation_II
+ada,ADA,Adenosine deaminase,Inflammation
+ada2,ADA2,Adenosine deaminase 2,Cardiometabolic
+adam12,ADAM12,Disintegrin and metalloproteinase domain-containing protein 12,Inflammation_II
+adam15,ADAM15,Disintegrin and metalloproteinase domain-containing protein 15,Cardiometabolic
+adam22,ADAM22,Disintegrin and metalloproteinase domain-containing protein 22,Neurology
+adam23,ADAM23,Disintegrin and metalloproteinase domain-containing protein 23,Inflammation
+adam8,ADAM8,Disintegrin and metalloproteinase domain-containing protein 8,Neurology
+adam9,ADAM9,Disintegrin and metalloproteinase domain-containing protein 9,Oncology_II
+adamts1,ADAMTS1,A disintegrin and metalloproteinase with thrombospondin motifs 1,Inflammation_II
+adamts13,ADAMTS13,A disintegrin and metalloproteinase with thrombospondin motifs 13,Cardiometabolic
+adamts15,ADAMTS15,A disintegrin and metalloproteinase with thrombospondin motifs 15,Oncology
+adamts16,ADAMTS16,A disintegrin and metalloproteinase with thrombospondin motifs 16,Cardiometabolic
+adamts4,ADAMTS4,A disintegrin and metalloproteinase with thrombospondin motifs 4,Inflammation_II
+adamts8,ADAMTS8,A disintegrin and metalloproteinase with thrombospondin motifs 8,Oncology
+adamtsl2,ADAMTSL2,ADAMTS-like protein 2,Cardiometabolic_II
+adamtsl4,ADAMTSL4,ADAMTS-like protein 4,Cardiometabolic_II
+adamtsl5,ADAMTSL5,ADAMTS-like protein 5,Cardiometabolic_II
+adcyap1r1,ADCYAP1R1,Pituitary adenylate cyclase-activating polypeptide type I receptor,Oncology
+add1,ADD1,Alpha-adducin,Inflammation_II
+adgrb3,ADGRB3,Adhesion G protein-coupled receptor B3,Neurology
+adgrd1,ADGRD1,Adhesion G-protein coupled receptor D1,Inflammation_II
+adgre1,ADGRE1,Adhesion G protein-coupled receptor E1,Oncology_II
+adgre2,ADGRE2,Adhesion G protein-coupled receptor E2,Inflammation
+adgre5,ADGRE5,Adhesion G protein-coupled receptor E5,Cardiometabolic
+adgrf5,ADGRF5,Adhesion G protein-coupled receptor F5,Cardiometabolic_II
+adgrg1,ADGRG1,Adhesion G-protein coupled receptor G1,Oncology
+adgrg2,ADGRG2,Adhesion G-protein coupled receptor G2,Cardiometabolic
+adgrv1,ADGRV1,Adhesion G-protein coupled receptor V1,Neurology_II
+adh1b,ADH1B,All-trans-retinol dehydrogenase,Inflammation_II
+adh4,ADH4,All-trans-retinol dehydrogenase [NAD(+)] ADH4,Cardiometabolic
+adipoq,ADIPOQ,Adiponectin,Inflammation_II
+adm,ADM,Pro-adrenomedullin,Oncology
+adra2a,ADRA2A,Alpha-2A adrenergic receptor,Cardiometabolic_II
+afap1,AFAP1,Actin filament-associated protein 1,Inflammation_II
+afm,AFM,Afamin,Inflammation_II
+afp,AFP,Alpha-fetoprotein,Neurology
+agbl2,AGBL2,Cytosolic carboxypeptidase 2,Neurology_II
+ager,AGER,Advanced glycosylation end product-specific receptor,Inflammation
+agr2,AGR2,Anterior gradient protein 2 homolog,Neurology
+agr3,AGR3,Anterior gradient protein 3,Oncology
+agrn,AGRN,Agrin,Inflammation
+agrp,AGRP,Agouti-related protein,Inflammation
+agt,AGT,Angiotensinogen,Inflammation_II
+agxt,AGXT,Serine--pyruvate aminotransferase,Cardiometabolic
+ahcy,AHCY,Adenosylhomocysteinase,Cardiometabolic
+ahnak,AHNAK,Neuroblast differentiation-associated protein AHNAK,Cardiometabolic_II
+ahnak2,AHNAK2,Protein AHNAK2,Cardiometabolic_II
+ahsa1,AHSA1,Activator of 90 kDa heat shock protein ATPase homolog 1,Oncology_II
+ahsg,AHSG,Alpha-2-HS-glycoprotein,Inflammation_II
+ahsp,AHSP,Alpha-hemoglobin-stabilizing protein,Neurology
+aida,AIDA,"Axin interactor, dorsalization-associated protein",Neurology_II
+aif1,AIF1,Allograft inflammatory factor 1,Oncology
+aif1l,AIF1L,Allograft inflammatory factor 1-like,Cardiometabolic_II
+aifm1,AIFM1,"Apoptosis-inducing factor 1, mitochondrial",Oncology
+ak1,AK1,Adenylate kinase isoenzyme 1,Cardiometabolic
+ak2,AK2,"Adenylate kinase 2, mitochondrial",Neurology_II
+akap12,AKAP12,A-kinase anchor protein 12,Inflammation_II
+akr1b1,AKR1B1,Aldo-keto reductase family 1 member B1,Oncology
+akr1b10,AKR1B10,Aldo-keto reductase family 1 member B10,Neurology_II
+akr1c4,AKR1C4,Aldo-keto reductase family 1 member C4,Cardiometabolic
+akr7l,AKR7L,Aflatoxin B1 aldehyde reductase member 4,Inflammation_II
+akt1s1,AKT1S1,Proline-rich AKT1 substrate 1,Neurology
+akt2,AKT2,RAC-beta serine/threonine-protein kinase,Neurology_II
+akt3,AKT3,RAC-gamma serine/threonine-protein kinase,Oncology
+alcam,ALCAM,CD166 antigen,Cardiometabolic
+aldh1a1,ALDH1A1,Retinal dehydrogenase 1,Neurology
+aldh2,ALDH2,"Aldehyde dehydrogenase, mitochondrial",Oncology_II
+aldh3a1,ALDH3A1,"Aldehyde dehydrogenase, dimeric NADP-preferring",Inflammation
+aldh5a1,ALDH5A1,"Succinate-semialdehyde dehydrogenase, mitochondrial",Neurology_II
+alms1,ALMS1,Alstrom syndrome protein 1,Oncology_II
+alpi,ALPI,Intestinal-type alkaline phosphatase,Inflammation_II
+alpp,ALPP,"Alkaline phosphatase, placental type",Oncology
+ambn,AMBN,Ameloblastin,Inflammation
+ambp,AMBP,Protein AMBP,Oncology
+amdhd2,AMDHD2,N-acetylglucosamine-6-phosphate deacetylase,Cardiometabolic_II
+amfr,AMFR,E3 ubiquitin-protein ligase AMFR,Neurology
+amigo1,AMIGO1,Amphoterin-induced protein 1,Neurology_II
+amigo2,AMIGO2,Amphoterin-induced protein 2,Oncology
+amn,AMN,Protein amnionless,Inflammation
+amot,AMOT,Angiomotin,Inflammation_II
+amotl2,AMOTL2,Angiomotin-like protein 2,Oncology_II
+ampd3,AMPD3,AMP deaminase 3,Neurology_II
+amy1a_amy1b_amy1c,AMY1A_AMY1B_AMY1C,Alpha-amylase 1A_Alpha-amylase 1B_Alpha-amylase 1C,Inflammation_II
+amy2a,AMY2A,Pancreatic alpha-amylase,Cardiometabolic
+amy2b,AMY2B,Alpha-amylase 2B,Cardiometabolic
+ang,ANG,Angiogenin,Cardiometabolic
+angpt1,ANGPT1,Angiopoietin-1,Inflammation
+angpt2,ANGPT2,Angiopoietin-2,Oncology
+angptl1,ANGPTL1,Angiopoietin-related protein 1,Cardiometabolic
+angptl2,ANGPTL2,Angiopoietin-related protein 2,Inflammation
+angptl3,ANGPTL3,Angiopoietin-related protein 3,Cardiometabolic
+angptl4,ANGPTL4,Angiopoietin-related protein 4,Inflammation
+angptl7,ANGPTL7,Angiopoietin-related protein 7,Oncology
+ank2,ANK2,Ankyrin-2,Cardiometabolic_II
+ankmy2,ANKMY2,Ankyrin repeat and MYND domain-containing protein 2,Inflammation_II
+ankra2,ANKRA2,Ankyrin repeat family A protein 2,Oncology_II
+ankrd54,ANKRD54,Ankyrin repeat domain-containing protein 54,Oncology
+anp32c,ANP32C,Acidic leucine-rich nuclear phosphoprotein 32 family member C,Cardiometabolic_II
+anpep,ANPEP,Aminopeptidase N,Cardiometabolic
+anxa1,ANXA1,Annexin A1,Inflammation_II
+anxa10,ANXA10,Annexin A10,Neurology
+anxa11,ANXA11,Annexin A11,Inflammation
+anxa2,ANXA2,Annexin A2,Cardiometabolic_II
+anxa3,ANXA3,Annexin A3,Neurology
+anxa4,ANXA4,Annexin A4,Cardiometabolic
+anxa5,ANXA5,Annexin A5,Neurology
+aoc1,AOC1,Amiloride-sensitive amine oxidase [copper-containing],Inflammation
+aoc3,AOC3,Membrane primary amine oxidase,Cardiometabolic
+ap1g2,AP1G2,AP-1 complex subunit gamma-like 2,Oncology_II
+ap2b1,AP2B1,AP-2 complex subunit beta,Neurology_II
+ap3b1,AP3B1,AP-3 complex subunit beta-1,Oncology_II
+ap3s2,AP3S2,AP-3 complex subunit sigma-2,Neurology_II
+apbb1ip,APBB1IP,Amyloid beta A4 precursor protein-binding family B member 1-interacting protein,Oncology
+apcs,APCS,Serum amyloid P-component,Inflammation_II
+apex1,APEX1,DNA-(apurinic or apyrimidinic site) endonuclease,Oncology
+aplp1,APLP1,Amyloid-like protein 1,Cardiometabolic
+apoa1,APOA1,Apolipoprotein A-I,Inflammation_II
+apoa2,APOA2,Apolipoprotein A-II,Inflammation_II
+apoa4,APOA4,Apolipoprotein A-IV,Inflammation_II
+apob,APOB,Apolipoprotein B-100,Inflammation_II
+apobr,APOBR,Apolipoprotein B receptor,Cardiometabolic_II
+apoc1,APOC1,Apolipoprotein C-I,Inflammation_II
+apod,APOD,Apolipoprotein D,Inflammation_II
+apoe,APOE,Apolipoprotein E,Inflammation_II
+apof,APOF,Apolipoprotein F,Inflammation_II
+apoh,APOH,Beta-2-glycoprotein 1,Neurology
+apol1,APOL1,Apolipoprotein L1,Inflammation_II
+apom,APOM,Apolipoprotein M,Cardiometabolic
+app,APP,Amyloid-beta precursor protein,Neurology
+appl2,APPL2,DCC-interacting protein 13-beta,Inflammation_II
+aprt,APRT,Adenine phosphoribosyltransferase,Neurology
+araf,ARAF,Serine/threonine-protein kinase A-Raf,Oncology_II
+areg,AREG,Amphiregulin,Oncology
+arf6,ARF6,ADP-ribosylation factor 6,Oncology_II
+arfip1,ARFIP1,Arfaptin-1,Neurology_II
+arg1,ARG1,Arginase-1,Oncology
+arg2,ARG2,"Arginase-2, mitochondrial",Oncology_II
+arhgap1,ARHGAP1,Rho GTPase-activating protein 1,Oncology
+arhgap25,ARHGAP25,Rho GTPase-activating protein 25,Oncology
+arhgap30,ARHGAP30,Rho GTPase-activating protein 30,Oncology_II
+arhgap45,ARHGAP45,Rho GTPase-activating protein 45,Inflammation_II
+arhgap5,ARHGAP5,Rho GTPase-activating protein 5,Oncology_II
+arhgef1,ARHGEF1,Rho guanine nucleotide exchange factor 1,Neurology_II
+arhgef10,ARHGEF10,Rho guanine nucleotide exchange factor 10,Neurology_II
+arhgef12,ARHGEF12,Rho guanine nucleotide exchange factor 12,Inflammation
+arhgef5,ARHGEF5,Rho guanine nucleotide exchange factor 5,Neurology_II
+arid3a,ARID3A,AT-rich interactive domain-containing protein 3A,Neurology_II
+arid4b,ARID4B,AT-rich interactive domain-containing protein 4B,Neurology
+arl13b,ARL13B,ADP-ribosylation factor-like protein 13B,Cardiometabolic_II
+arl2bp,ARL2BP,ADP-ribosylation factor-like protein 2-binding protein,Cardiometabolic_II
+armcx2,ARMCX2,Armadillo repeat-containing X-linked protein 2,Neurology_II
+arnt,ARNT,Aryl hydrocarbon receptor nuclear translocator,Inflammation
+arntl,ARNTL,Aryl hydrocarbon receptor nuclear translocator-like protein 1,Cardiometabolic_II
+arsa,ARSA,Arylsulfatase A,Neurology
+arsb,ARSB,Arylsulfatase B,Oncology
+art3,ART3,Ecto-ADP-ribosyltransferase 3,Cardiometabolic
+art5,ART5,Ecto-ADP-ribosyltransferase 5,Neurology_II
+artn,ARTN,Artemin,Inflammation
+asah1,ASAH1,Acid ceramidase,Cardiometabolic_II
+asah2,ASAH2,Neutral ceramidase,Neurology
+asgr1,ASGR1,Asialoglycoprotein receptor 1,Neurology
+asgr2,ASGR2,Asialoglycoprotein receptor 2,Inflammation_II
+aspn,ASPN,Asporin,Cardiometabolic_II
+aspscr1,ASPSCR1,Tether containing UBX domain for GLUT4,Neurology_II
+asrgl1,ASRGL1,Isoaspartyl peptidase/L-asparaginase,Cardiometabolic_II
+ass1,ASS1,Argininosuccinate synthase,Cardiometabolic_II
+atf2,ATF2,Cyclic AMP-dependent transcription factor ATF-2,Neurology
+atf4,ATF4,Cyclic AMP-dependent transcription factor ATF-4,Oncology_II
+atg16l1,ATG16L1,Autophagy-related protein 16-1,Oncology_II
+atg4a,ATG4A,Cysteine protease ATG4A,Oncology
+atox1,ATOX1,Copper transport protein ATOX1,Oncology
+atp1b1,ATP1B1,Sodium/potassium-transporting ATPase subunit beta-1,Cardiometabolic_II
+atp1b2,ATP1B2,Sodium/potassium-transporting ATPase subunit beta-2,Cardiometabolic_II
+atp1b3,ATP1B3,Sodium/potassium-transporting ATPase subunit beta-3,Cardiometabolic_II
+atp1b4,ATP1B4,Protein ATP1B4,Oncology_II
+atp2b4,ATP2B4,Plasma membrane calcium-transporting ATPase 4,Cardiometabolic_II
+atp5f1d,ATP5F1D,"ATP synthase subunit delta, mitochondrial",Cardiometabolic_II
+atp5if1,ATP5IF1,"ATPase inhibitor, mitochondrial",Inflammation
+atp5po,ATP5PO,"ATP synthase subunit O, mitochondrial",Neurology
+atp6ap2,ATP6AP2,Renin receptor,Oncology
+atp6v1d,ATP6V1D,V-type proton ATPase subunit D,Oncology
+atp6v1f,ATP6V1F,V-type proton ATPase subunit F,Neurology
+atp6v1g1,ATP6V1G1,V-type proton ATPase subunit G 1,Cardiometabolic_II
+atp6v1g2,ATP6V1G2,V-type proton ATPase subunit G 2,Cardiometabolic_II
+atraid,ATRAID,All-trans retinoic acid-induced differentiation factor,Oncology_II
+atrn,ATRN,"Attractin, Isoform 2",Inflammation_II
+atxn10,ATXN10,Ataxin-10,Neurology
+atxn2,ATXN2,Ataxin-2,Neurology_II
+atxn2l,ATXN2L,Ataxin-2-like protein,Neurology_II
+atxn3,ATXN3,Ataxin-3,Neurology_II
+axin1,AXIN1,Axin-1,Inflammation
+axl,AXL,Tyrosine-protein kinase receptor UFO,Cardiometabolic
+azi2,AZI2,5-azacytidine-induced protein 2,Neurology_II
+azu1,AZU1,Azurocidin,Cardiometabolic
+b2m,B2M,Beta-2-microglobulin,Inflammation_II
+b3gat3,B3GAT3,Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransferase 3,Cardiometabolic_II
+b3gnt7,B3GNT7,"UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 7",Cardiometabolic_II
+b4galt1,B4GALT1,"Beta-1,4-galactosyltransferase 1",Inflammation
+b4gat1,B4GAT1,"Beta-1,4-glucuronyltransferase 1",Neurology
+babam1,BABAM1,BRISC and BRCA1-A complex member 1,Inflammation_II
+bach1,BACH1,Transcription regulator protein BACH1,Inflammation
+bag3,BAG3,BAG family molecular chaperone regulator 3,Neurology
+bag4,BAG4,BAG family molecular chaperone regulator 4,Inflammation_II
+bag6,BAG6,Large proline-rich protein BAG6,Cardiometabolic
+baiap2,BAIAP2,Brain-specific angiogenesis inhibitor 1-associated protein 2,Oncology
+bambi,BAMBI,BMP and activin membrane-bound inhibitor homolog,Oncology
+bank1,BANK1,B-cell scaffold protein with ankyrin repeats,Inflammation
+bap18,BAP18,Chromatin complexes subunit BAP18,Neurology_II
+batf,BATF,Basic leucine zipper transcriptional factor ATF-like,Neurology_II
+bax,BAX,Apoptosis regulator BAX,Neurology
+bcam,BCAM,Basal cell adhesion molecule,Neurology
+bcan,BCAN,Brevican core protein,Neurology
+bcat1,BCAT1,"Branched-chain-amino-acid aminotransferase, cytosolic",Cardiometabolic_II
+bcat2,BCAT2,"Branched-chain-amino-acid aminotransferase, mitochondrial",Neurology_II
+bche,BCHE,Cholinesterase,Inflammation_II
+bcl2,BCL2,Apoptosis regulator Bcl-2,Oncology_II
+bcl2l1,BCL2L1,Bcl-2-like protein 1,Neurology_II
+bcl2l11,BCL2L11,"Bcl-2-like protein 11, Isoform BimL",Inflammation
+bcl2l15,BCL2L15,Bcl-2-like protein 15,Inflammation_II
+bcl7a,BCL7A,B-cell CLL/lymphoma 7 protein family member A,Oncology_II
+bcl7b,BCL7B,B-cell CLL/lymphoma 7 protein family member B,Oncology_II
+bcr,BCR,Breakpoint cluster region protein,Inflammation
+bdnf,BDNF,Brain-derived neurotrophic factor,Cardiometabolic_II
+becn1,BECN1,Beclin-1,Cardiometabolic_II
+bex3,BEX3,Protein BEX3,Oncology_II
+bglap,BGLAP,Osteocalcin,Cardiometabolic_II
+bgn,BGN,Biglycan,Oncology
+bhlhe40,BHLHE40,Class E basic helix-loop-helix protein 40,Neurology_II
+bhmt2,BHMT2,S-methylmethionine--homocysteine S-methyltransferase BHMT2,Cardiometabolic_II
+bid,BID,BH3-interacting domain death agonist,Inflammation
+bin2,BIN2,Bridging integrator 2,Neurology
+birc2,BIRC2,Baculoviral IAP repeat-containing protein 2,Oncology
+blmh,BLMH,Bleomycin hydrolase,Cardiometabolic
+blnk,BLNK,B-cell linker protein,Inflammation_II
+bloc1s2,BLOC1S2,Biogenesis of lysosome-related organelles complex 1 subunit 2,Neurology_II
+bloc1s3,BLOC1S3,Biogenesis of lysosome-related organelles complex 1 subunit 3,Neurology_II
+blvrb,BLVRB,Flavin reductase,Neurology
+bmp10,BMP10,Bone morphogenetic protein 10,Inflammation_II
+bmp4,BMP4,Bone morphogenetic protein 4,Neurology
+bmp6,BMP6,Bone morphogenetic protein 6,Cardiometabolic
+bmper,BMPER,BMP-binding endothelial regulator protein,Inflammation_II
+bnip2,BNIP2,BCL2/adenovirus E1B 19 kDa protein-interacting protein 2,Cardiometabolic_II
+bnip3l,BNIP3L,BCL2/adenovirus E1B 19 kDa protein-interacting protein 3-like,Inflammation_II
+boc,BOC,Brother of CDO,Cardiometabolic
+bola1,BOLA1,BolA-like protein 1,Neurology_II
+bola2_bola2b,BOLA2_BOLA2B,BolA-like protein 2,Cardiometabolic_II
+bpifa2,BPIFA2,BPI fold-containing family A member 2,Cardiometabolic_II
+bpifb1,BPIFB1,BPI fold-containing family B member 1,Cardiometabolic
+bpifb2,BPIFB2,BPI fold-containing family B member 2,Cardiometabolic_II
+brap,BRAP,BRCA1-associated protein,Oncology_II
+brd1,BRD1,Bromodomain-containing protein 1,Oncology_II
+brd2,BRD2,Bromodomain-containing protein 2,Neurology_II
+brd3,BRD3,Bromodomain-containing protein 3,Cardiometabolic_II
+brdt,BRDT,Bromodomain testis-specific protein,Cardiometabolic_II
+brk1,BRK1,Protein BRICK1,Neurology
+brme1,BRME1,Break repair meiotic recombinase recruitment factor 1,Neurology_II
+brsk2,BRSK2,Serine/threonine-protein kinase BRSK2,Neurology_II
+bsg,BSG,Basigin,Inflammation
+bsnd,BSND,Barttin,Oncology_II
+bst1,BST1,ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2,Neurology
+bst2,BST2,Bone marrow stromal antigen 2,Neurology
+btc,BTC,Probetacellulin,Oncology
+btd,BTD,Biotinidase,Inflammation_II
+btla,BTLA,B- and T-lymphocyte attenuator,Oncology_II
+btn1a1,BTN1A1,Butyrophilin subfamily 1 member A1,Oncology_II
+btn2a1,BTN2A1,Butyrophilin subfamily 2 member A1,Inflammation
+btn3a2,BTN3A2,Butyrophilin subfamily 3 member A2,Inflammation
+btnl10,BTNL10,Butyrophilin-like protein 10,Oncology_II
+c19orf12,C19orf12,Protein C19orf12,Neurology
+c1galt1c1,C1GALT1C1,C1GALT1-specific chaperone 1,Cardiometabolic_II
+c1qa,C1QA,Complement C1q subcomponent subunit A,Inflammation
+c1qbp,C1QBP,"Complement component 1 Q subcomponent-binding protein, mitochondrial",Neurology_II
+c1ql2,C1QL2,Complement C1q-like protein 2,Inflammation_II
+c1qtnf1,C1QTNF1,Complement C1q tumor necrosis factor-related protein 1,Cardiometabolic
+c1qtnf5,C1QTNF5,Complement C1q tumor necrosis factor-related protein 5,Inflammation_II
+c1qtnf6,C1QTNF6,Complement C1q tumor necrosis factor-related protein 6,Neurology_II
+c1qtnf9,C1QTNF9,Complement C1q and tumor necrosis factor-related protein 9A,Inflammation_II
+c1r,C1R,Complement C1r subcomponent,Inflammation_II
+c1rl,C1RL,Complement C1r subcomponent-like protein,Inflammation_II
+c1s,C1S,Complement C1s subcomponent,Inflammation_II
+c2,C2,Complement C2,Cardiometabolic
+c2cd2l,C2CD2L,Phospholipid transfer protein C2CD2L,Neurology
+c2orf69,C2orf69,UPF0565 protein C2orf69,Neurology_II
+c3,C3,Complement C3,Inflammation_II
+c4bpb,C4BPB,C4b-binding protein beta chain,Oncology
+c5,C5,Complement C5,Inflammation_II
+c7,C7,Complement component C7,Inflammation_II
+c7orf50,C7orf50,Uncharacterized protein C7orf50,Neurology_II
+c8b,C8B,Complement component C8 beta chain,Inflammation_II
+c9,C9,Complement component C9,Inflammation_II
+c9orf40,C9orf40,Uncharacterized protein C9orf40,Oncology_II
+ca1,CA1,Carbonic anhydrase 1,Cardiometabolic
+ca11,CA11,Carbonic anhydrase-related protein 11,Oncology
+ca12,CA12,Carbonic anhydrase 12,Oncology
+ca13,CA13,Carbonic anhydrase 13,Cardiometabolic
+ca14,CA14,Carbonic anhydrase 14,Oncology
+ca2,CA2,Carbonic anhydrase 2,Neurology
+ca3,CA3,Carbonic anhydrase 3,Cardiometabolic
+ca4,CA4,Carbonic anhydrase 4,Cardiometabolic
+ca5a,CA5A,"Carbonic anhydrase 5A, mitochondrial",Cardiometabolic
+ca6,CA6,Carbonic anhydrase 6,Neurology
+ca7,CA7,Carbonic anhydrase 7,Oncology_II
+ca8,CA8,Carbonic anhydrase-related protein,Inflammation_II
+ca9,CA9,Carbonic anhydrase 9,Oncology
+cabp2,CABP2,Calcium-binding protein 2,Neurology_II
+cacna1c,CACNA1C,Voltage-dependent L-type calcium channel subunit alpha-1C,Neurology_II
+cacna1h,CACNA1H,Voltage-dependent T-type calcium channel subunit alpha-1H,Cardiometabolic_II
+cacnb1,CACNB1,Voltage-dependent L-type calcium channel subunit beta-1,Neurology_II
+cacnb3,CACNB3,Voltage-dependent L-type calcium channel subunit beta-3,Neurology_II
+cacybp,CACYBP,Calcyclin-binding protein,Inflammation_II
+cadps,CADPS,Calcium-dependent secretion activator 1,Neurology_II
+calb1,CALB1,Calbindin,Oncology
+calb2,CALB2,Calretinin,Neurology
+calca,CALCA,Calcitonin,Neurology
+calcb,CALCB,Calcitonin gene-related peptide 2,Neurology_II
+calcoco1,CALCOCO1,Calcium-binding and coiled-coil domain-containing protein 1,Oncology
+calcoco2,CALCOCO2,Calcium-binding and coiled-coil domain-containing protein 2,Cardiometabolic_II
+caly,CALY,Neuron-specific vesicular protein calcyon,Cardiometabolic_II
+camkk1,CAMKK1,Calcium/calmodulin-dependent protein kinase kinase 1,Oncology
+camlg,CAMLG,Guided entry of tail-anchored proteins factor CAMLG,Neurology_II
+camsap1,CAMSAP1,Calmodulin-regulated spectrin-associated protein 1,Neurology_II
+cant1,CANT1,Soluble calcium-activated nucleotidase 1,Cardiometabolic
+capg,CAPG,Macrophage-capping protein,Oncology
+capn3,CAPN3,Calpain-3,Oncology_II
+caps,CAPS,Calcyphosin,Neurology_II
+carhsp1,CARHSP1,Calcium-regulated heat-stable protein 1,Neurology
+casc3,CASC3,Protein CASC3,Neurology_II
+casp1,CASP1,Caspase-1,Neurology
+casp10,CASP10,Caspase-10,Neurology
+casp2,CASP2,Caspase-2,Inflammation
+casp3,CASP3,Caspase-3,Cardiometabolic
+casp4,CASP4,Caspase-4,Oncology_II
+casp7,CASP7,Caspase-7,Neurology_II
+casp8,CASP8,Caspase-8,Oncology
+casp9,CASP9,Caspase-9,Inflammation_II
+casq2,CASQ2,Calsequestrin-2,Cardiometabolic_II
+cat,CAT,Catalase,Inflammation_II
+cblif,CBLIF,Cobalamin binding intrinsic factor,Cardiometabolic
+cbln1,CBLN1,Cerebellin-1,Neurology_II
+cbln4,CBLN4,Cerebellin-4,Oncology
+cbs,CBS,Cystathionine beta-synthase,Cardiometabolic_II
+cbx2,CBX2,Chromobox protein homolog 2,Cardiometabolic_II
+cc2d1a,CC2D1A,Coiled-coil and C2 domain-containing protein 1A,Neurology
+ccar2,CCAR2,Cell cycle and apoptosis regulator protein 2,Neurology_II
+ccdc134,CCDC134,Coiled-coil domain-containing protein 134,Oncology_II
+ccdc28a,CCDC28A,Coiled-coil domain-containing protein 28A,Neurology_II
+ccdc50,CCDC50,Coiled-coil domain-containing protein 50,Neurology_II
+ccdc80,CCDC80,Coiled-coil domain-containing protein 80,Cardiometabolic
+ccer2,CCER2,Coiled-coil domain-containing glutamate-rich protein 2,Cardiometabolic_II
+ccl11,CCL11,Eotaxin,Inflammation
+ccl13,CCL13,C-C motif chemokine 13,Inflammation
+ccl14,CCL14,C-C motif chemokine 14,Cardiometabolic
+ccl15,CCL15,C-C motif chemokine 15,Cardiometabolic
+ccl16,CCL16,C-C motif chemokine 16,Cardiometabolic
+ccl17,CCL17,C-C motif chemokine 17,Inflammation
+ccl18,CCL18,C-C motif chemokine 18,Cardiometabolic
+ccl19,CCL19,C-C motif chemokine 19,Neurology
+ccl2,CCL2,C-C motif chemokine 2,Neurology
+ccl20,CCL20,C-C motif chemokine 20,Inflammation
+ccl21,CCL21,C-C motif chemokine 21,Inflammation
+ccl22,CCL22,C-C motif chemokine 22,Inflammation
+ccl23,CCL23,C-C motif chemokine 23,Inflammation
+ccl24,CCL24,C-C motif chemokine 24,Inflammation
+ccl25,CCL25,C-C motif chemokine 25,Inflammation
+ccl26,CCL26,C-C motif chemokine 26,Inflammation
+ccl27,CCL27,C-C motif chemokine 27,Cardiometabolic
+ccl28,CCL28,C-C motif chemokine 28,Inflammation
+ccl3,CCL3,C-C motif chemokine 3,Inflammation
+ccl4,CCL4,C-C motif chemokine 4,Inflammation
+ccl5,CCL5,C-C motif chemokine 5,Cardiometabolic
+ccl7,CCL7,C-C motif chemokine 7,Inflammation
+ccl8,CCL8,C-C motif chemokine 8,Oncology
+ccn1,CCN1,CCN family member 1,Oncology
+ccn2,CCN2,CCN family member 2,Inflammation
+ccn3,CCN3,CCN family member 3,Cardiometabolic
+ccn4,CCN4,CCN family member 4,Oncology
+ccn5,CCN5,CCN family member 5,Neurology
+ccnd2,CCND2,G1/S-specific cyclin-D2,Oncology_II
+ccne1,CCNE1,G1/S-specific cyclin-E1,Inflammation_II
+ccs,CCS,Copper chaperone for superoxide dismutase,Neurology
+cct5,CCT5,T-complex protein 1 subunit epsilon,Oncology
+cd101,CD101,Immunoglobulin superfamily member 2,Oncology_II
+cd109,CD109,CD109 antigen,Neurology
+cd14,CD14,Monocyte differentiation antigen CD14,Cardiometabolic
+cd160,CD160,CD160 antigen,Inflammation
+cd163,CD163,Scavenger receptor cysteine-rich type 1 protein M130,Cardiometabolic
+cd164,CD164,Sialomucin core protein 24,Neurology
+cd164l2,CD164L2,CD164 sialomucin-like 2 protein,Neurology_II
+cd177,CD177,CD177 antigen,Neurology
+cd1c,CD1C,T-cell surface glycoprotein CD1c,Oncology
+cd2,CD2,T-cell surface antigen CD2,Cardiometabolic_II
+cd200,CD200,OX-2 membrane glycoprotein,Inflammation
+cd200r1,CD200R1,Cell surface glycoprotein CD200 receptor 1,Inflammation
+cd207,CD207,C-type lectin domain family 4 member K,Oncology
+cd209,CD209,CD209 antigen,Cardiometabolic
+cd22,CD22,B-cell receptor CD22,Inflammation
+cd226,CD226,CD226 antigen,Inflammation_II
+cd244,CD244,Natural killer cell receptor 2B4,Inflammation
+cd248,CD248,Endosialin,Cardiometabolic_II
+cd27,CD27,CD27 antigen,Oncology
+cd274,CD274,Programmed cell death 1 ligand 1,Neurology
+cd276,CD276,CD276 antigen,Inflammation
+cd28,CD28,T-cell-specific surface glycoprotein CD28,Oncology
+cd2ap,CD2AP,CD2-associated protein,Cardiometabolic
+cd300a,CD300A,CMRF35-like molecule 8,Inflammation_II
+cd300c,CD300C,CMRF35-like molecule 6,Neurology
+cd300e,CD300E,CMRF35-like molecule 2,Oncology
+cd300lf,CD300LF,CMRF35-like molecule 1,Oncology
+cd300lg,CD300LG,CMRF35-like molecule 9,Neurology
+cd302,CD302,CD302 antigen,Oncology
+cd33,CD33,Myeloid cell surface antigen CD33,Oncology
+cd34,CD34,Hematopoietic progenitor cell antigen CD34,Neurology
+cd36,CD36,Platelet glycoprotein 4,Inflammation_II
+cd38,CD38,ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1,Oncology
+cd3d,CD3D,T-cell surface glycoprotein CD3 delta chain,Neurology_II
+cd3e,CD3E,T-cell surface glycoprotein CD3 epsilon chain,Oncology_II
+cd3g,CD3G,T-cell surface glycoprotein CD3 gamma chain,Inflammation_II
+cd4,CD4,T-cell surface glycoprotein CD4,Inflammation
+cd40,CD40,Tumor necrosis factor receptor superfamily member 5,Inflammation
+cd40lg,CD40LG,CD40 ligand,Inflammation
+cd46,CD46,Membrane cofactor protein,Cardiometabolic
+cd48,CD48,CD48 antigen,Inflammation
+cd5,CD5,T-cell surface glycoprotein CD5,Oncology
+cd55,CD55,Complement decay-accelerating factor,Cardiometabolic
+cd58,CD58,Lymphocyte function-associated antigen 3,Inflammation
+cd59,CD59,CD59 glycoprotein,Cardiometabolic
+cd5l,CD5L,CD5 antigen-like,Inflammation_II
+cd6,CD6,T-cell differentiation antigen CD6,Inflammation
+cd63,CD63,CD63 antigen,Neurology
+cd69,CD69,Early activation antigen CD69,Cardiometabolic
+cd7,CD7,T-cell antigen CD7,Inflammation_II
+cd70,CD70,CD70 antigen,Inflammation
+cd72,CD72,B-cell differentiation antigen CD72,Inflammation_II
+cd74,CD74,HLA class II histocompatibility antigen gamma chain,Neurology
+cd79b,CD79B,B-cell antigen receptor complex-associated protein beta chain,Inflammation
+cd80,CD80,T-lymphocyte activation antigen CD80,Cardiometabolic_II
+cd82,CD82,CD82 antigen,Oncology_II
+cd83,CD83,CD83 antigen,Inflammation
+cd84,CD84,SLAM family member 5,Inflammation
+cd86,CD86,T-lymphocyte activation antigen CD86,Oncology_II
+cd8a,CD8A,T-cell surface glycoprotein CD8 alpha chain,Neurology
+cd93,CD93,Complement component C1q receptor,Cardiometabolic
+cd99,CD99,CD99 antigen,Neurology
+cd99l2,CD99L2,CD99 antigen-like protein 2,Neurology
+cda,CDA,Cytidine deaminase,Cardiometabolic_II
+cdan1,CDAN1,Codanin-1,Neurology_II
+cdc123,CDC123,Cell division cycle protein 123 homolog,Oncology_II
+cdc25a,CDC25A,M-phase inducer phosphatase 1,Oncology_II
+cdc26,CDC26,Anaphase-promoting complex subunit CDC26,Oncology_II
+cdc27,CDC27,Cell division cycle protein 27 homolog,Oncology
+cdc37,CDC37,Hsp90 co-chaperone Cdc37,Oncology
+cdc42bpb,CDC42BPB,Serine/threonine-protein kinase MRCK beta,Oncology_II
+cdcp1,CDCP1,CUB domain-containing protein 1,Neurology
+cdh1,CDH1,Cadherin-1,Cardiometabolic
+cdh15,CDH15,Cadherin-15,Neurology
+cdh17,CDH17,Cadherin-17,Cardiometabolic
+cdh2,CDH2,Cadherin-2,Cardiometabolic
+cdh22,CDH22,Cadherin-22,Oncology_II
+cdh23,CDH23,Cadherin-23,Neurology_II
+cdh3,CDH3,Cadherin-3,Neurology
+cdh4,CDH4,Cadherin-4,Neurology_II
+cdh5,CDH5,Cadherin-5,Cardiometabolic
+cdh6,CDH6,Cadherin-6,Cardiometabolic
+cdhr1,CDHR1,Cadherin-related family member 1,Neurology
+cdhr2,CDHR2,Cadherin-related family member 2,Oncology
+cdhr5,CDHR5,Cadherin-related family member 5,Cardiometabolic
+cdk1,CDK1,Cyclin-dependent kinase 1,Oncology_II
+cdk5rap3,CDK5RAP3,CDK5 regulatory subunit-associated protein 3,Neurology_II
+cdkl5,CDKL5,Cyclin-dependent kinase-like 5,Neurology_II
+cdkn1a,CDKN1A,Cyclin-dependent kinase inhibitor 1,Oncology
+cdkn2d,CDKN2D,Cyclin-dependent kinase 4 inhibitor D,Oncology
+cdnf,CDNF,Cerebral dopamine neurotrophic factor,Oncology
+cdon,CDON,Cell adhesion molecule-related/down-regulated by oncogenes,Inflammation
+cdsn,CDSN,Corneodesmosin,Inflammation
+ceacam1,CEACAM1,Carcinoembryonic antigen-related cell adhesion molecule 1,Oncology
+ceacam16,CEACAM16,Carcinoembryonic antigen-related cell adhesion molecule 16,Oncology_II
+ceacam18,CEACAM18,Carcinoembryonic antigen-related cell adhesion molecule 18,Oncology_II
+ceacam19,CEACAM19,Carcinoembryonic antigen-related cell adhesion molecule 19,Oncology_II
+ceacam20,CEACAM20,Carcinoembryonic antigen-related cell adhesion molecule 20,Oncology_II
+ceacam21,CEACAM21,Carcinoembryonic antigen-related cell adhesion molecule 21,Inflammation
+ceacam3,CEACAM3,Carcinoembryonic antigen-related cell adhesion molecule 3,Oncology
+ceacam5,CEACAM5,Carcinoembryonic antigen-related cell adhesion molecule 5,Oncology
+ceacam6,CEACAM6,Carcinoembryonic antigen-related cell adhesion molecule 6,Cardiometabolic_II
+ceacam8,CEACAM8,Carcinoembryonic antigen-related cell adhesion molecule 8,Cardiometabolic
+cebpa,CEBPA,CCAAT/enhancer-binding protein alpha,Inflammation_II
+cebpb,CEBPB,CCAAT/enhancer-binding protein beta,Cardiometabolic
+cela2a,CELA2A,Chymotrypsin-like elastase family member 2A,Cardiometabolic_II
+cela3a,CELA3A,Chymotrypsin-like elastase family member 3A,Cardiometabolic
+celsr2,CELSR2,Cadherin EGF LAG seven-pass G-type receptor 2,Inflammation_II
+cemip2,CEMIP2,Cell surface hyaluronidase,Inflammation_II
+cend1,CEND1,Cell cycle exit and neuronal differentiation protein 1,Neurology_II
+cenpf,CENPF,Centromere protein F,Oncology_II
+cenpj,CENPJ,Centromere protein J,Oncology_II
+cep112,CEP112,Centrosomal protein of 112 kDa,Cardiometabolic_II
+cep152,CEP152,Centrosomal protein of 152 kDa,Oncology_II
+cep164,CEP164,Centrosomal protein of 164 kDa,Inflammation
+cep170,CEP170,Centrosomal protein of 170 kDa,Cardiometabolic_II
+cep20,CEP20,Centrosomal protein 20,Oncology
+cep290,CEP290,Centrosomal protein of 290 kDa,Oncology_II
+cep350,CEP350,Centrosome-associated protein 350,Oncology_II
+cep43,CEP43,Centrosomal protein 43,Cardiometabolic
+cep85,CEP85,Centrosomal protein of 85 kDa,Oncology
+cert,CERT,Ceramide transfer protein,Neurology
+ces1,CES1,Liver carboxylesterase 1,Cardiometabolic
+ces2,CES2,Cocaine esterase,Oncology
+ces3,CES3,Carboxylesterase 3,Oncology
+cetn2,CETN2,Centrin-2,Neurology
+cetn3,CETN3,Centrin-3,Oncology_II
+cfb,CFB,Complement factor B,Inflammation_II
+cfc1,CFC1,Cryptic protein,Oncology
+cfd,CFD,Complement factor D,Inflammation_II
+cfh,CFH,Complement factor H,Inflammation_II
+cfhr2,CFHR2,Complement factor H-related protein 2,Inflammation_II
+cfhr4,CFHR4,Complement factor H-related protein 4,Inflammation_II
+cfhr5,CFHR5,Complement factor H-related protein 5,Inflammation_II
+cfi,CFI,Complement factor I,Inflammation_II
+cfp,CFP,Properdin,Inflammation_II
+cga,CGA,Glycoprotein hormones alpha chain,Neurology
+cgb3_cgb5_cgb8,CGB3_CGB5_CGB8,Choriogonadotropin subunit beta 3,Inflammation_II
+cgn,CGN,Cingulin,Neurology_II
+cgref1,CGREF1,Cell growth regulator with EF hand domain protein 1,Cardiometabolic
+chac2,CHAC2,Glutathione-specific gamma-glutamylcyclotransferase 2,Oncology
+chad,CHAD,Chondroadherin,Inflammation_II
+chchd10,CHCHD10,"Coiled-coil-helix-coiled-coil-helix domain-containing protein 10, mitochondrial",Neurology_II
+chchd6,CHCHD6,MICOS complex subunit MIC25,Oncology_II
+chek2,CHEK2,Serine/threonine-protein kinase Chk2,Cardiometabolic
+chga,CHGA,Chromogranin-A,Cardiometabolic_II
+chgb,CHGB,Secretogranin-1,Neurology
+chi3l1,CHI3L1,Chitinase-3-like protein 1,Cardiometabolic
+chit1,CHIT1,Chitotriosidase-1,Cardiometabolic
+chl1,CHL1,Neural cell adhesion molecule L1-like protein,Cardiometabolic
+chm,CHM,Rab proteins geranylgeranyltransferase component A 1,Neurology_II
+chmp1a,CHMP1A,Charged multivesicular body protein 1a,Neurology
+chmp6,CHMP6,Charged multivesicular body protein 6,Cardiometabolic_II
+chp1,CHP1,Calcineurin B homologous protein 1,Neurology_II
+chrdl1,CHRDL1,Chordin-like protein 1,Inflammation
+chrdl2,CHRDL2,Chordin-like protein 2,Cardiometabolic
+chrm1,CHRM1,Muscarinic acetylcholine receptor M1,Neurology_II
+ciapin1,CIAPIN1,Anamorsin,Oncology
+cilp,CILP,Cartilage intermediate layer protein 1,Cardiometabolic_II
+cinp,CINP,Cyclin-dependent kinase 2-interacting protein,Oncology_II
+cirbp,CIRBP,Cold-inducible RNA-binding protein,Oncology_II
+cit,CIT,Citron Rho-interacting kinase,Neurology_II
+ckap4,CKAP4,Cytoskeleton-associated protein 4,Inflammation
+ckb,CKB,Creatine kinase B-type,Cardiometabolic_II
+ckmt1a_ckmt1b,CKMT1A_CKMT1B,"Creatine kinase U-type, mitochondrial",Inflammation
+clasp1,CLASP1,CLIP-associating protein 1,Oncology_II
+clc,CLC,Galectin-10,Cardiometabolic
+clec10a,CLEC10A,C-type lectin domain family 10 member A,Neurology
+clec11a,CLEC11A,C-type lectin domain family 11 member A,Neurology
+clec12a,CLEC12A,C-type lectin domain family 12 member A,Inflammation_II
+clec14a,CLEC14A,C-type lectin domain family 14 member A,Neurology
+clec1a,CLEC1A,C-type lectin domain family 1 member A,Cardiometabolic
+clec1b,CLEC1B,C-type lectin domain family 1 member B,Neurology
+clec2l,CLEC2L,C-type lectin domain family 2 member L,Neurology_II
+clec3b,CLEC3B,Tetranectin,Inflammation_II
+clec4a,CLEC4A,C-type lectin domain family 4 member A,Inflammation
+clec4c,CLEC4C,C-type lectin domain family 4 member C,Inflammation
+clec4d,CLEC4D,C-type lectin domain family 4 member D,Inflammation
+clec4g,CLEC4G,C-type lectin domain family 4 member G,Inflammation
+clec4m,CLEC4M,C-type lectin domain family 4 member M,Cardiometabolic_II
+clec5a,CLEC5A,C-type lectin domain family 5 member A,Cardiometabolic
+clec6a,CLEC6A,C-type lectin domain family 6 member A,Oncology
+clec7a,CLEC7A,C-type lectin domain family 7 member A,Inflammation
+clgn,CLGN,Calmegin,Neurology_II
+clic5,CLIC5,Chloride intracellular channel protein 5,Neurology_II
+clint1,CLINT1,Clathrin interactor 1,Oncology_II
+clip2,CLIP2,CAP-Gly domain-containing linker protein 2,Inflammation
+clmp,CLMP,CXADR-like membrane protein,Oncology
+clns1a,CLNS1A,Methylosome subunit pICln,Neurology_II
+clpp,CLPP,"ATP-dependent Clp protease proteolytic subunit, mitochondrial",Neurology
+clps,CLPS,Colipase,Neurology
+clspn,CLSPN,Claspin,Neurology
+clstn1,CLSTN1,Calsyntenin-1,Neurology
+clstn2,CLSTN2,Calsyntenin-2,Inflammation
+clstn3,CLSTN3,Calsyntenin-3,Neurology_II
+clta,CLTA,Clathrin light chain A,Cardiometabolic
+clu,CLU,Clusterin,Inflammation_II
+clul1,CLUL1,Clusterin-like protein 1,Cardiometabolic
+cmc1,CMC1,COX assembly mitochondrial protein homolog,Cardiometabolic_II
+cmip,CMIP,C-Maf-inducing protein,Oncology_II
+cndp1,CNDP1,Beta-Ala-His dipeptidase,Cardiometabolic
+cngb3,CNGB3,Cyclic nucleotide-gated cation channel beta-3,Neurology_II
+cnp,CNP,"2',3'-cyclic-nucleotide 3'-phosphodiesterase",Cardiometabolic_II
+cnpy2,CNPY2,Protein canopy homolog 2,Cardiometabolic
+cnpy4,CNPY4,Protein canopy homolog 4,Oncology
+cnst,CNST,Consortin,Cardiometabolic
+cntf,CNTF,Ciliary neurotrophic factor,Neurology_II
+cntn1,CNTN1,Contactin-1,Cardiometabolic
+cntn2,CNTN2,Contactin-2,Oncology
+cntn3,CNTN3,Contactin-3,Neurology
+cntn4,CNTN4,Contactin-4,Neurology
+cntn5,CNTN5,Contactin-5,Neurology
+cntnap2,CNTNAP2,Contactin-associated protein-like 2,Inflammation
+cntnap4,CNTNAP4,Contactin-associated protein-like 4,Neurology_II
+coch,COCH,Cochlin,Cardiometabolic_II
+col15a1,COL15A1,Collagen alpha-1(XV) chain,Cardiometabolic_II
+col18a1,COL18A1,Collagen alpha-1(XVIII) chain,Cardiometabolic
+col1a1,COL1A1,Collagen alpha-1(I) chain,Cardiometabolic
+col24a1,COL24A1,Collagen alpha-1(XXIV) chain,Oncology_II
+col28a1,COL28A1,Collagen alpha-1(XXVIII) chain,Neurology_II
+col2a1,COL2A1,Collagen alpha-1(II) chain,Cardiometabolic_II
+col3a1,COL3A1,Collagen alpha-1(III) chain,Cardiometabolic_II
+col4a1,COL4A1,Collagen alpha-1(IV) chain,Cardiometabolic
+col4a4,COL4A4,Collagen alpha-4(IV) chain,Oncology_II
+col5a1,COL5A1,Collagen alpha-1(V) chain,Inflammation_II
+col6a3,COL6A3,Collagen alpha-3(VI) chain,Cardiometabolic
+col9a1,COL9A1,Collagen alpha-1(IX) chain,Inflammation
+col9a2,COL9A2,Collagen alpha-2(IX) chain,Oncology_II
+colec12,COLEC12,Collectin-12,Inflammation
+commd1,COMMD1,COMM domain-containing protein 1,Cardiometabolic_II
+commd9,COMMD9,COMM domain-containing protein 9,Oncology_II
+comp,COMP,Cartilage oligomeric matrix protein,Cardiometabolic
+comt,COMT,Catechol O-methyltransferase,Cardiometabolic
+copb2,COPB2,Coatomer subunit beta',Cardiometabolic_II
+cope,COPE,Coatomer subunit epsilon,Neurology
+coq7,COQ7,"5-demethoxyubiquinone hydroxylase, mitochondrial",Cardiometabolic_II
+coro1a,CORO1A,Coronin-1A,Cardiometabolic
+coro6,CORO6,Coronin-6,Neurology_II
+cox5b,COX5B,"Cytochrome c oxidase subunit 5B, mitochondrial",Oncology
+cox6b1,COX6B1,Cytochrome c oxidase subunit 6B1,Cardiometabolic_II
+cpa1,CPA1,Carboxypeptidase A1,Cardiometabolic
+cpa2,CPA2,Carboxypeptidase A2,Neurology
+cpa4,CPA4,Carboxypeptidase A4,Inflammation_II
+cpb1,CPB1,Carboxypeptidase B,Cardiometabolic
+cpb2,CPB2,Carboxypeptidase B2,Inflammation_II
+cpe,CPE,Carboxypeptidase E,Oncology
+cplx2,CPLX2,Complexin-2,Oncology_II
+cpm,CPM,Carboxypeptidase M,Neurology
+cpox,CPOX,"Oxygen-dependent coproporphyrinogen-III oxidase, mitochondrial",Inflammation_II
+cpped1,CPPED1,Serine/threonine-protein phosphatase CPPED1,Neurology
+cpq,CPQ,Carboxypeptidase Q,Cardiometabolic_II
+cptp,CPTP,Ceramide-1-phosphate transfer protein,Cardiometabolic_II
+cpvl,CPVL,Probable serine carboxypeptidase CPVL,Oncology
+cpxm1,CPXM1,Probable carboxypeptidase X1,Oncology
+cpxm2,CPXM2,Inactive carboxypeptidase-like protein X2,Cardiometabolic_II
+cr1,CR1,Complement receptor type 1,Inflammation_II
+cr2,CR2,Complement receptor type 2,Cardiometabolic
+cracr2a,CRACR2A,EF-hand calcium-binding domain-containing protein 4B,Oncology
+cradd,CRADD,Death domain-containing protein CRADD,Neurology
+creb3,CREB3,Cyclic AMP-responsive element-binding protein 3,Oncology_II
+crebzf,CREBZF,CREB/ATF bZIP transcription factor,Oncology_II
+creg1,CREG1,Protein CREG1,Oncology
+creld1,CRELD1,Protein disulfide isomerase CRELD1,Inflammation_II
+creld2,CRELD2,Protein disulfide isomerase CRELD2,Inflammation
+crh,CRH,Corticoliberin,Oncology
+crhbp,CRHBP,Corticotropin-releasing factor-binding protein,Inflammation
+crhr1,CRHR1,Corticotropin-releasing factor receptor 1,Cardiometabolic
+crim1,CRIM1,Cysteine-rich motor neuron 1 protein,Inflammation
+crip2,CRIP2,Cysteine-rich protein 2,Neurology
+crisp2,CRISP2,Cysteine-rich secretory protein 2,Oncology
+crisp3,CRISP3,Cysteine-rich secretory protein 3,Inflammation_II
+crkl,CRKL,Crk-like protein,Inflammation
+crlf1,CRLF1,Cytokine receptor-like factor 1,Inflammation
+crnn,CRNN,Cornulin,Oncology
+crtac1,CRTAC1,Cartilage acidic protein 1,Cardiometabolic
+crtam,CRTAM,Cytotoxic and regulatory T-cell molecule,Neurology
+crtap,CRTAP,Cartilage-associated protein,Neurology_II
+crx,CRX,Cone-rod homeobox protein,Cardiometabolic
+crybb1,CRYBB1,Beta-crystallin B1,Cardiometabolic_II
+crybb2,CRYBB2,Beta-crystallin B2,Neurology_II
+crygd,CRYGD,Gamma-crystallin D,Neurology_II
+crym,CRYM,Ketimine reductase mu-crystallin,Neurology_II
+cryzl1,CRYZL1,Quinone oxidoreductase-like protein 1,Cardiometabolic_II
+csde1,CSDE1,Cold shock domain-containing protein E1,Cardiometabolic_II
+csf1,CSF1,Macrophage colony-stimulating factor 1,Inflammation
+csf1r,CSF1R,Macrophage colony-stimulating factor 1 receptor,Inflammation_II
+csf2,CSF2,Granulocyte-macrophage colony-stimulating factor,Cardiometabolic_II
+csf2ra,CSF2RA,Granulocyte-macrophage colony-stimulating factor receptor subunit alpha,Neurology
+csf2rb,CSF2RB,Cytokine receptor common subunit beta,Inflammation_II
+csf3,CSF3,Granulocyte colony-stimulating factor,Inflammation
+csf3r,CSF3R,Granulocyte colony-stimulating factor receptor,Inflammation_II
+csh1,CSH1,Chorionic somatomammotropin hormone 1,Inflammation_II
+csnk1d,CSNK1D,Casein kinase I isoform delta,Inflammation_II
+csnk2a1,CSNK2A1,Casein kinase II subunit alpha,Neurology_II
+cspg4,CSPG4,Chondroitin sulfate proteoglycan 4,Cardiometabolic_II
+cspg5,CSPG5,Chondroitin sulfate proteoglycan 5,Neurology_II
+csrp3,CSRP3,Cysteine and glycine-rich protein 3,Cardiometabolic_II
+cst1,CST1,Cystatin-SN,Inflammation_II
+cst3,CST3,Cystatin-C,Cardiometabolic
+cst5,CST5,Cystatin-D,Neurology
+cst6,CST6,Cystatin-M,Cardiometabolic
+cst7,CST7,Cystatin-F,Inflammation
+cstb,CSTB,Cystatin-B,Cardiometabolic
+ctag1a_ctag1b,CTAG1A_CTAG1B,Cancer/testis antigen 1,Oncology_II
+ctbs,CTBS,Di-N-acetylchitobiase,Inflammation_II
+ctf1,CTF1,Cardiotrophin-1,Cardiometabolic
+cthrc1,CTHRC1,Collagen triple helix repeat-containing protein 1,Cardiometabolic_II
+ctla4,CTLA4,Cytotoxic T-lymphocyte protein 4,Cardiometabolic_II
+ctnna1,CTNNA1,Catenin alpha-1,Neurology_II
+ctrb1,CTRB1,Chymotrypsinogen B,Neurology
+ctrc,CTRC,Chymotrypsin-C,Inflammation
+ctrl,CTRL,Chymotrypsin-like protease CTRL-1,Neurology_II
+ctsb,CTSB,Cathepsin B,Cardiometabolic
+ctsc,CTSC,Dipeptidyl peptidase 1,Inflammation
+ctsd,CTSD,Cathepsin D,Cardiometabolic
+ctse,CTSE,Cathepsin E,Inflammation_II
+ctsf,CTSF,Cathepsin F,Oncology
+ctsh,CTSH,Pro-cathepsin H,Cardiometabolic
+ctsl,CTSL,Cathepsin L1,Cardiometabolic
+ctso,CTSO,Cathepsin O,Inflammation
+ctss,CTSS,Cathepsin S,Neurology
+ctsv,CTSV,Cathepsin L2,Oncology
+ctsz,CTSZ,Cathepsin Z,Cardiometabolic
+cuzd1,CUZD1,CUB and zona pellucida-like domain-containing protein 1,Neurology_II
+cwc15,CWC15,Spliceosome-associated protein CWC15 homolog,Oncology_II
+cx3cl1,CX3CL1,Fractalkine,Neurology
+cxadr,CXADR,Coxsackievirus and adenovirus receptor,Inflammation
+cxcl1,CXCL1,Growth-regulated alpha protein,Inflammation
+cxcl10,CXCL10,C-X-C motif chemokine 10,Inflammation
+cxcl11,CXCL11,C-X-C motif chemokine 11,Neurology
+cxcl12,CXCL12,Stromal cell-derived factor 1,Inflammation
+cxcl13,CXCL13,C-X-C motif chemokine 13,Neurology
+cxcl14,CXCL14,C-X-C motif chemokine 14,Inflammation
+cxcl16,CXCL16,C-X-C motif chemokine 16,Cardiometabolic
+cxcl17,CXCL17,C-X-C motif chemokine 17,Inflammation
+cxcl3,CXCL3,C-X-C motif chemokine 3,Inflammation
+cxcl5,CXCL5,C-X-C motif chemokine 5,Cardiometabolic
+cxcl6,CXCL6,C-X-C motif chemokine 6,Inflammation
+cxcl8,CXCL8,Interleukin-8,Oncology
+cxcl9,CXCL9,C-X-C motif chemokine 9,Inflammation
+cyb5a,CYB5A,Cytochrome b5,Oncology_II
+cyb5r2,CYB5R2,NADH-cytochrome b5 reductase 2,Oncology_II
+cyp24a1,CYP24A1,"1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial",Cardiometabolic_II
+cyth3,CYTH3,Cytohesin-3,Oncology_II
+cytl1,CYTL1,Cytokine-like protein 1,Cardiometabolic_II
+daam1,DAAM1,Disheveled-associated activator of morphogenesis 1,Inflammation_II
+dab2,DAB2,Disabled homolog 2,Oncology
+dag1,DAG1,Dystroglycan,Inflammation
+dand5,DAND5,DAN domain family member 5,Inflammation_II
+dapk2,DAPK2,Death-associated protein kinase 2,Inflammation_II
+dapp1,DAPP1,Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3-phosphoinositide,Inflammation
+dars1,DARS1,"Aspartate--tRNA ligase, cytoplasmic",Neurology
+dbh,DBH,Dopamine beta-hydroxylase,Inflammation_II
+dbi,DBI,Acyl-CoA-binding protein,Neurology
+dbn1,DBN1,Drebrin,Inflammation_II
+dbnl,DBNL,Drebrin-like protein,Inflammation
+dcbld2,DCBLD2,"Discoidin, CUB and LCCL domain-containing protein 2",Oncology
+dcc,DCC,Netrin receptor DCC,Neurology_II
+dcdc2c,DCDC2C,Doublecortin domain-containing protein 2C,Oncology_II
+dclre1c,DCLRE1C,Protein artemis,Oncology_II
+dcn,DCN,Decorin,Cardiometabolic
+dctd,DCTD,Deoxycytidylate deaminase,Inflammation_II
+dctn1,DCTN1,Dynactin subunit 1,Oncology
+dctn2,DCTN2,Dynactin subunit 2,Oncology
+dctn6,DCTN6,Dynactin subunit 6,Neurology
+dctpp1,DCTPP1,dCTP pyrophosphatase 1,Cardiometabolic
+dcun1d1,DCUN1D1,DCN1-like protein 1,Neurology_II
+dcun1d2,DCUN1D2,DCN1-like protein 2,Oncology_II
+dcxr,DCXR,L-xylulose reductase,Oncology
+dda1,DDA1,DET1- and DDB1-associated protein 1,Cardiometabolic_II
+ddah1,DDAH1,"N(G),N(G)-dimethylarginine dimethylaminohydrolase 1",Oncology
+ddc,DDC,Aromatic-L-amino-acid decarboxylase,Cardiometabolic
+ddhd2,DDHD2,Phospholipase DDHD2,Neurology_II
+ddi2,DDI2,Protein DDI1 homolog 2,Inflammation_II
+ddr1,DDR1,Epithelial discoidin domain-containing receptor 1,Neurology
+ddt,DDT,D-dopachrome decarboxylase,Cardiometabolic_II
+ddx1,DDX1,ATP-dependent RNA helicase DDX1,Oncology_II
+ddx25,DDX25,ATP-dependent RNA helicase DDX25,Neurology_II
+ddx39a,DDX39A,ATP-dependent RNA helicase DDX39A,Inflammation_II
+ddx4,DDX4,Probable ATP-dependent RNA helicase DDX4,Inflammation_II
+ddx53,DDX53,Probable ATP-dependent RNA helicase DDX53,Neurology_II
+ddx58,DDX58,Antiviral innate immune response receptor RIG-I,Oncology
+decr1,DECR1,"2,4-dienoyl-CoA reductase, mitochondrial",Inflammation
+defa1_defa1b,DEFA1_DEFA1B,Neutrophil defensin 1,Cardiometabolic
+defb103a_defb103b,DEFB103A_DEFB103B,Beta-defensin 103,Inflammation_II
+defb104a_defb104b,DEFB104A_DEFB104B,Beta-defensin 104,Neurology_II
+defb116,DEFB116,Beta-defensin 116,Neurology_II
+defb118,DEFB118,Beta-defensin 118,Neurology_II
+defb4a_defb4b,DEFB4A_DEFB4B,Beta-defensin 4A,Oncology
+dennd2b,DENND2B,DENN domain-containing protein 2B,Cardiometabolic_II
+denr,DENR,Density-regulated protein,Inflammation_II
+dffa,DFFA,DNA fragmentation factor subunit alpha,Inflammation
+dgcr6,DGCR6,Protein DGCR6,Neurology_II
+dgka,DGKA,Diacylglycerol kinase alpha,Inflammation_II
+dgkz,DGKZ,Diacylglycerol kinase zeta,Inflammation
+dhodh,DHODH,Dihydroorotate dehydrogenase,Cardiometabolic_II
+dhps,DHPS,Deoxyhypusine synthase,Oncology_II
+dhrs4l2,DHRS4L2,Dehydrogenase/reductase SDR family member 4-like 2,Neurology_II
+diablo,DIABLO,"Diablo homolog, mitochondrial",Cardiometabolic
+dipk1c,DIPK1C,Divergent protein kinase domain 1C,Neurology_II
+dipk2b,DIPK2B,Divergent protein kinase domain 2B,Inflammation_II
+dkk1,DKK1,Dickkopf-related protein 1,Neurology
+dkk3,DKK3,Dickkopf-related protein 3,Cardiometabolic
+dkk4,DKK4,Dickkopf-related protein 4,Neurology
+dkkl1,DKKL1,Dickkopf-like protein 1,Oncology
+dlg4,DLG4,Disks large homolog 4,Neurology_II
+dlgap5,DLGAP5,Disks large-associated protein 5,Neurology_II
+dlk1,DLK1,Protein delta homolog 1,Cardiometabolic
+dll1,DLL1,Delta-like protein 1,Oncology
+dll4,DLL4,Delta-like protein 4,Cardiometabolic_II
+dmd,DMD,Dystrophin,Cardiometabolic_II
+dmp1,DMP1,Dentin matrix acidic phosphoprotein 1,Cardiometabolic_II
+dnaja1,DNAJA1,DnaJ homolog subfamily A member 1,Oncology_II
+dnaja2,DNAJA2,DnaJ homolog subfamily A member 2,Inflammation
+dnaja4,DNAJA4,DnaJ homolog subfamily A member 4,Neurology_II
+dnajb1,DNAJB1,DnaJ homolog subfamily B member 1,Oncology
+dnajb14,DNAJB14,DnaJ homolog subfamily B member 14,Oncology_II
+dnajb2,DNAJB2,DnaJ homolog subfamily B member 2,Inflammation_II
+dnajb6,DNAJB6,DnaJ homolog subfamily B member 6,Inflammation_II
+dnajb8,DNAJB8,DnaJ homolog subfamily B member 8,Cardiometabolic
+dnajc21,DNAJC21,DnaJ homolog subfamily C member 21,Neurology_II
+dnajc6,DNAJC6,Putative tyrosine-protein phosphatase auxilin,Cardiometabolic_II
+dnajc9,DNAJC9,DnaJ homolog subfamily C member 9,Oncology_II
+dner,DNER,Delta and Notch-like epidermal growth factor-related receptor,Inflammation
+dnlz,DNLZ,DNL-type zinc finger protein,Neurology_II
+dnm1,DNM1,Dynamin-1,Oncology_II
+dnm3,DNM3,Dynamin-3,Neurology_II
+dnmbp,DNMBP,Dynamin-binding protein,Neurology
+dnpep,DNPEP,Aspartyl aminopeptidase,Neurology_II
+dnph1,DNPH1,2'-deoxynucleoside 5'-phosphate N-hydrolase 1,Inflammation
+doc2b,DOC2B,Double C2-like domain-containing protein beta,Neurology_II
+dock9,DOCK9,Dedicator of cytokinesis protein 9,Neurology_II
+dok1,DOK1,Docking protein 1,Neurology_II
+dok2,DOK2,Docking protein 2,Cardiometabolic
+dpep1,DPEP1,Dipeptidase 1,Neurology
+dpep2,DPEP2,Dipeptidase 2,Oncology
+dpp10,DPP10,Inactive dipeptidyl peptidase 10,Inflammation
+dpp4,DPP4,Dipeptidyl peptidase 4,Cardiometabolic
+dpp6,DPP6,Dipeptidyl aminopeptidase-like protein 6,Oncology
+dpp7,DPP7,Dipeptidyl peptidase 2,Cardiometabolic
+dpt,DPT,Dermatopontin,Cardiometabolic
+dpy30,DPY30,Protein dpy-30 homolog,Oncology
+draxin,DRAXIN,Draxin,Neurology
+drg2,DRG2,Developmentally-regulated GTP-binding protein 2,Oncology
+dsc2,DSC2,Desmocollin-2,Neurology
+dscam,DSCAM,Down syndrome cell adhesion molecule,Neurology_II
+dsg2,DSG2,Desmoglein-2,Neurology
+dsg3,DSG3,Desmoglein-3,Oncology
+dsg4,DSG4,Desmoglein-4,Oncology
+dtd1,DTD1,D-aminoacyl-tRNA deacylase 1,Inflammation_II
+dtnb,DTNB,Dystrobrevin beta,Oncology_II
+dtx2,DTX2,Probable E3 ubiquitin-protein ligase DTX2,Neurology_II
+dtx3,DTX3,Probable E3 ubiquitin-protein ligase DTX3,Oncology
+dtymk,DTYMK,Thymidylate kinase,Cardiometabolic_II
+duox2,DUOX2,Dual oxidase 2,Cardiometabolic
+dusp13,DUSP13,Dual specificity protein phosphatase 13 isoform A,Oncology_II
+dusp29,DUSP29,Dual specificity phosphatase 29,Neurology_II
+dusp3,DUSP3,Dual specificity protein phosphatase 3,Neurology
+dut,DUT,"Deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondrial",Oncology_II
+dxo,DXO,Decapping and exoribonuclease protein,Neurology_II
+dync1h1,DYNC1H1,Cytoplasmic dynein 1 heavy chain 1,Oncology_II
+dynlt1,DYNLT1,Dynein light chain Tctex-type 1,Neurology_II
+dynlt3,DYNLT3,Dynein light chain Tctex-type 3,Oncology_II
+ebag9,EBAG9,Receptor-binding cancer antigen expressed on SiSo cells,Neurology
+ebi3_il27,EBI3_IL27,Interleukin-27,Oncology
+ece1,ECE1,Endothelin-converting enzyme 1,Neurology
+echdc3,ECHDC3,"Enoyl-CoA hydratase domain-containing protein 3, mitochondrial",Cardiometabolic_II
+echs1,ECHS1,"Enoyl-CoA hydratase, mitochondrial",Cardiometabolic_II
+eci2,ECI2,Enoyl-CoA delta isomerase 2,Cardiometabolic_II
+ecm1,ECM1,Extracellular matrix protein 1,Inflammation_II
+ecscr,ECSCR,Endothelial cell-specific chemotaxis regulator,Neurology_II
+eda2r,EDA2R,Tumor necrosis factor receptor superfamily member 27,Oncology
+edar,EDAR,Tumor necrosis factor receptor superfamily member EDAR,Inflammation
+eddm3b,EDDM3B,Epididymal secretory protein E3-beta,Oncology_II
+edem2,EDEM2,ER degradation-enhancing alpha-mannosidase-like protein 2,Cardiometabolic_II
+edf1,EDF1,Endothelial differentiation-related factor 1,Neurology_II
+edil3,EDIL3,EGF-like repeat and discoidin I-like domain-containing protein 3,Cardiometabolic
+edn1,EDN1,Endothelin-1,Cardiometabolic_II
+ednrb,EDNRB,Endothelin receptor type B,Inflammation_II
+eef1d,EEF1D,Elongation factor 1-delta,Cardiometabolic_II
+efcab14,EFCAB14,EF-hand calcium-binding domain-containing protein 14,Oncology_II
+efcab2,EFCAB2,Dynein regulatory complex protein 8,Oncology_II
+efemp1,EFEMP1,EGF-containing fibulin-like extracellular matrix protein 1,Cardiometabolic
+efhd1,EFHD1,EF-hand domain-containing protein D1,Neurology_II
+efna1,EFNA1,Ephrin-A1,Neurology
+efna4,EFNA4,Ephrin-A4,Neurology
+efnb2,EFNB2,Ephrin-B2,Neurology_II
+egf,EGF,Pro-epidermal growth factor,Inflammation
+egfl7,EGFL7,Epidermal growth factor-like protein 7,Oncology
+egflam,EGFLAM,Pikachurin,Oncology_II
+egfr,EGFR,Epidermal growth factor receptor,Cardiometabolic
+egln1,EGLN1,Egl nine homolog 1,Inflammation
+ehbp1,EHBP1,EH domain-binding protein 1,Cardiometabolic_II
+ehd3,EHD3,EH domain-containing protein 3,Cardiometabolic_II
+eif1ax,EIF1AX,"Eukaryotic translation initiation factor 1A, X-chromosomal",Neurology_II
+eif2ak2,EIF2AK2,"Interferon-induced, double-stranded RNA-activated protein kinase",Oncology_II
+eif2ak3,EIF2AK3,Eukaryotic translation initiation factor 2-alpha kinase 3,Cardiometabolic_II
+eif2s2,EIF2S2,Eukaryotic translation initiation factor 2 subunit 2,Cardiometabolic_II
+eif4b,EIF4B,Eukaryotic translation initiation factor 4B,Neurology
+eif4e,EIF4E,Eukaryotic translation initiation factor 4E,Inflammation_II
+eif4ebp1,EIF4EBP1,Eukaryotic translation initiation factor 4E-binding protein 1,Cardiometabolic
+eif4g1,EIF4G1,Eukaryotic translation initiation factor 4 gamma 1,Inflammation
+eif4g3,EIF4G3,Eukaryotic translation initiation factor 4 gamma 3,Neurology_II
+eif5,EIF5,Eukaryotic translation initiation factor 5,Cardiometabolic_II
+eif5a,EIF5A,Eukaryotic translation initiation factor 5A-1,Inflammation
+elac1,ELAC1,Zinc phosphodiesterase ELAC protein 1,Neurology_II
+elavl4,ELAVL4,ELAV-like protein 4,Neurology_II
+eln,ELN,Elastin,Cardiometabolic_II
+eloa,ELOA,Elongin-A,Oncology
+elob,ELOB,Elongin-B,Cardiometabolic_II
+enah,ENAH,Protein enabled homolog,Inflammation
+endou,ENDOU,Poly(U)-specific endoribonuclease,Oncology_II
+eng,ENG,Endoglin,Cardiometabolic
+eno1,ENO1,Alpha-enolase,Neurology
+eno2,ENO2,Gamma-enolase,Neurology
+eno3,ENO3,Beta-enolase,Cardiometabolic_II
+enoph1,ENOPH1,Enolase-phosphatase E1,Oncology_II
+enox2,ENOX2,Ecto-NOX disulfide-thiol exchanger 2,Cardiometabolic_II
+enpep,ENPEP,Glutamyl aminopeptidase,Cardiometabolic_II
+enpp2,ENPP2,Ectonucleotide pyrophosphatase/phosphodiesterase family member 2,Cardiometabolic
+enpp5,ENPP5,Ectonucleotide pyrophosphatase/phosphodiesterase family member 5,Inflammation
+enpp6,ENPP6,Glycerophosphocholine cholinephosphodiesterase ENPP6,Cardiometabolic_II
+enpp7,ENPP7,Ectonucleotide pyrophosphatase/phosphodiesterase family member 7,Inflammation
+ensa,ENSA,Alpha-endosulfine,Oncology_II
+entpd2,ENTPD2,Ectonucleoside triphosphate diphosphohydrolase 2,Oncology
+entpd5,ENTPD5,Ectonucleoside triphosphate diphosphohydrolase 5,Cardiometabolic
+entpd6,ENTPD6,Ectonucleoside triphosphate diphosphohydrolase 6,Cardiometabolic
+entr1,ENTR1,Endosome-associated-trafficking regulator 1,Cardiometabolic_II
+ep300,EP300,Histone acetyltransferase p300,Inflammation_II
+epb41l5,EPB41L5,Band 4.1-like protein 5,Neurology_II
+epcam,EPCAM,Epithelial cell adhesion molecule,Inflammation
+epgn,EPGN,Epigen,Oncology_II
+epha1,EPHA1,Ephrin type-A receptor 1,Inflammation
+epha10,EPHA10,Ephrin type-A receptor 10,Neurology
+epha2,EPHA2,Ephrin type-A receptor 2,Oncology
+epha4,EPHA4,Ephrin type-A receptor 4,Inflammation_II
+ephb4,EPHB4,Ephrin type-B receptor 4,Cardiometabolic
+ephb6,EPHB6,Ephrin type-B receptor 6,Neurology
+ephx2,EPHX2,Bifunctional epoxide hydrolase 2,Cardiometabolic
+epn1,EPN1,Epsin-1,Oncology_II
+epo,EPO,Erythropoietin,Inflammation
+eppk1,EPPK1,Epiplakin,Cardiometabolic_II
+eps8l2,EPS8L2,Epidermal growth factor receptor kinase substrate 8-like protein 2,Oncology
+erbb2,ERBB2,Receptor tyrosine-protein kinase erbB-2,Oncology
+erbb3,ERBB3,Receptor tyrosine-protein kinase erbB-3,Inflammation
+erbb4,ERBB4,Receptor tyrosine-protein kinase erbB-4,Oncology
+erbin,ERBIN,Erbin,Oncology
+erc2,ERC2,ERC protein 2,Neurology_II
+ercc1,ERCC1,DNA excision repair protein ERCC-1,Oncology_II
+ereg,EREG,Proepiregulin,Neurology
+eri1,ERI1,3'-5' exoribonuclease 1,Oncology_II
+ermap,ERMAP,Erythroid membrane-associated protein,Inflammation_II
+ern1,ERN1,Serine/threonine-protein kinase/endoribonuclease IRE1,Oncology_II
+erp29,ERP29,Endoplasmic reticulum resident protein 29,Inflammation_II
+erp44,ERP44,Endoplasmic reticulum resident protein 44,Oncology
+ervv_1,ERVV-1,Endogenous retrovirus group V member 1 Env polyprotein,Cardiometabolic_II
+esam,ESAM,Endothelial cell-selective adhesion molecule,Cardiometabolic
+esm1,ESM1,Endothelial cell-specific molecule 1,Inflammation
+espl1,ESPL1,Separin,Oncology_II
+esr1,ESR1,Estrogen receptor,Inflammation_II
+esyt2,ESYT2,Extended synaptotagmin-2,Neurology_II
+evi2b,EVI2B,Protein EVI2B,Oncology_II
+evi5,EVI5,Ecotropic viral integration site 5 protein homolog,Inflammation_II
+evpl,EVPL,Envoplakin,Oncology_II
+exosc10,EXOSC10,Exosome component 10,Cardiometabolic_II
+extl1,EXTL1,Exostosin-like 1,Cardiometabolic_II
+ezr,EZR,Ezrin,Neurology
+f10,F10,Coagulation factor X,Inflammation_II
+f11,F11,Coagulation factor XI,Inflammation_II
+f11r,F11R,Junctional adhesion molecule A,Neurology
+f12,F12,Coagulation factor XII,Inflammation_II
+f13b,F13B,Coagulation factor XIII B chain,Inflammation_II
+f2,F2,Prothrombin,Inflammation_II
+f2r,F2R,Proteinase-activated receptor 1,Inflammation
+f3,F3,Tissue factor,Oncology
+f7,F7,Coagulation factor VII,Cardiometabolic
+f9,F9,Coagulation factor IX,Cardiometabolic
+fabp1,FABP1,"Fatty acid-binding protein, liver",Inflammation
+fabp2,FABP2,"Fatty acid-binding protein, intestinal",Cardiometabolic
+fabp3,FABP3,"Fatty acid-binding protein, heart",Cardiometabolic_II
+fabp4,FABP4,"Fatty acid-binding protein, adipocyte",Cardiometabolic
+fabp5,FABP5,Fatty acid-binding protein 5,Neurology
+fabp6,FABP6,Gastrotropin,Cardiometabolic
+fabp9,FABP9,Fatty acid-binding protein 9,Inflammation
+fadd,FADD,FAS-associated death domain protein,Cardiometabolic
+fam13a,FAM13A,Protein FAM13A,Oncology_II
+fam171a2,FAM171A2,Protein FAM171A2,Neurology_II
+fam171b,FAM171B,Protein FAM171B,Oncology_II
+fam172a,FAM172A,Cotranscriptional regulator FAM172A,Cardiometabolic_II
+fam20a,FAM20A,Pseudokinase FAM20A,Cardiometabolic_II
+fam3b,FAM3B,Protein FAM3B,Oncology
+fam3c,FAM3C,Protein FAM3C,Cardiometabolic
+fam3d,FAM3D,Protein FAM3D,Oncology_II
+fap,FAP,Prolyl endopeptidase FAP,Cardiometabolic
+farsa,FARSA,Phenylalanine--tRNA ligase alpha subunit,Neurology_II
+fas,FAS,Tumor necrosis factor receptor superfamily member 6,Cardiometabolic
+faslg,FASLG,Tumor necrosis factor ligand superfamily member 6,Inflammation
+fbln2,FBLN2,Fibulin-2,Cardiometabolic_II
+fbn2,FBN2,Fibrillin-2,Neurology_II
+fbp1,FBP1,"Fructose-1,6-bisphosphatase 1",Cardiometabolic
+fcamr,FCAMR,High affinity immunoglobulin alpha and immunoglobulin mu Fc receptor,Cardiometabolic_II
+fcar,FCAR,Immunoglobulin alpha Fc receptor,Inflammation
+fcer1a,FCER1A,High affinity immunoglobulin epsilon receptor subunit alpha,Neurology_II
+fcer2,FCER2,Low affinity immunoglobulin epsilon Fc receptor,Neurology
+fcgr2a,FCGR2A,Low affinity immunoglobulin gamma Fc region receptor II-a,Cardiometabolic
+fcgr2b,FCGR2B,Low affinity immunoglobulin gamma Fc region receptor II-b,Oncology
+fcgr3b,FCGR3B,Low affinity immunoglobulin gamma Fc region receptor III-B,Cardiometabolic
+fcn1,FCN1,Ficolin-1,Inflammation_II
+fcn2,FCN2,Ficolin-2,Cardiometabolic
+fcrl1,FCRL1,Fc receptor-like protein 1,Cardiometabolic
+fcrl2,FCRL2,Fc receptor-like protein 2,Inflammation
+fcrl3,FCRL3,Fc receptor-like protein 3,Inflammation
+fcrl5,FCRL5,Fc receptor-like protein 5,Neurology
+fcrl6,FCRL6,Fc receptor-like protein 6,Inflammation
+fcrlb,FCRLB,Fc receptor-like B,Oncology
+fdx1,FDX1,"Adrenodoxin, mitochondrial",Cardiometabolic_II
+fdx2,FDX2,"Ferredoxin-2, mitochondrial",Cardiometabolic_II
+fen1,FEN1,Flap endonuclease 1,Oncology
+fes,FES,Tyrosine-protein kinase Fes/Fps,Oncology
+fetub,FETUB,Fetuin-B,Cardiometabolic
+fga,FGA,Fibrinogen alpha chain,Inflammation_II
+fgd3,FGD3,"FYVE, RhoGEF and PH domain-containing protein 3",Neurology_II
+fgf12,FGF12,Fibroblast growth factor 12,Inflammation_II
+fgf16,FGF16,Fibroblast growth factor 16,Inflammation_II
+fgf19,FGF19,Fibroblast growth factor 19,Inflammation
+fgf2,FGF2,Fibroblast growth factor 2,Inflammation
+fgf20,FGF20,Fibroblast growth factor 20,Inflammation_II
+fgf21,FGF21,Fibroblast growth factor 21,Oncology
+fgf23,FGF23,Fibroblast growth factor 23,Oncology
+fgf3,FGF3,Fibroblast growth factor 3,Inflammation_II
+fgf5,FGF5,Fibroblast growth factor 5,Inflammation
+fgf6,FGF6,Fibroblast growth factor 6,Inflammation_II
+fgf7,FGF7,Fibroblast growth factor 7,Oncology_II
+fgf9,FGF9,Fibroblast growth factor 9,Oncology_II
+fgfbp1,FGFBP1,Fibroblast growth factor-binding protein 1,Oncology
+fgfbp2,FGFBP2,Fibroblast growth factor-binding protein 2,Cardiometabolic_II
+fgfbp3,FGFBP3,Fibroblast growth factor-binding protein 3,Neurology_II
+fgfr2,FGFR2,Fibroblast growth factor receptor 2,Oncology
+fgfr4,FGFR4,Fibroblast growth factor receptor 4,Inflammation_II
+fgl1,FGL1,Fibrinogen-like protein 1,Inflammation_II
+fgr,FGR,Tyrosine-protein kinase Fgr,Neurology
+fh,FH,"Fumarate hydratase, mitochondrial",Neurology_II
+fhip2a,FHIP2A,FHF complex subunit HOOK interacting protein 2A,Cardiometabolic_II
+fhit,FHIT,Bis(5'-adenosyl)-triphosphatase,Neurology
+fis1,FIS1,Mitochondrial fission 1 protein,Inflammation
+fkbp14,FKBP14,Peptidyl-prolyl cis-trans isomerase FKBP14,Neurology_II
+fkbp1b,FKBP1B,Peptidyl-prolyl cis-trans isomerase FKBP1B,Inflammation
+fkbp4,FKBP4,Peptidyl-prolyl cis-trans isomerase FKBP4,Neurology
+fkbp5,FKBP5,Peptidyl-prolyl cis-trans isomerase FKBP5,Neurology
+fkbp7,FKBP7,Peptidyl-prolyl cis-trans isomerase FKBP7,Neurology
+fkbpl,FKBPL,FK506-binding protein-like,Oncology_II
+fli1,FLI1,Friend leukemia integration 1 transcription factor,Oncology
+flrt2,FLRT2,Leucine-rich repeat transmembrane protein FLRT2,Neurology
+flt1,FLT1,Vascular endothelial growth factor receptor 1,Oncology
+flt3,FLT3,Receptor-type tyrosine-protein kinase FLT3,Oncology
+flt3lg,FLT3LG,Fms-related tyrosine kinase 3 ligand,Inflammation
+flt4,FLT4,Vascular endothelial growth factor receptor 3,Oncology
+fmnl1,FMNL1,Formin-like protein 1,Neurology
+fmr1,FMR1,Synaptic functional regulator FMR1,Oncology
+fn1,FN1,Fibronectin,Inflammation_II
+fndc1,FNDC1,Fibronectin type III domain-containing protein 1,Neurology_II
+fnta,FNTA,Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha,Oncology_II
+folh1,FOLH1,Glutamate carboxypeptidase 2,Inflammation_II
+folr1,FOLR1,Folate receptor alpha,Oncology
+folr2,FOLR2,Folate receptor beta,Neurology
+folr3,FOLR3,Folate receptor gamma,Oncology
+fos,FOS,Proto-oncogene c-Fos,Oncology_II
+fosb,FOSB,Protein fosB,Neurology
+foxj3,FOXJ3,Forkhead box protein J3,Inflammation_II
+foxo1,FOXO1,Forkhead box protein O1,Inflammation
+foxo3,FOXO3,Forkhead box protein O3,Oncology
+frmd4b,FRMD4B,FERM domain-containing protein 4B,Cardiometabolic_II
+frmd7,FRMD7,FERM domain-containing protein 7,Neurology_II
+frzb,FRZB,Secreted frizzled-related protein 3,Neurology
+fshb,FSHB,Follitropin subunit beta,Cardiometabolic_II
+fst,FST,Follistatin,Inflammation
+fstl1,FSTL1,Follistatin-related protein 1,Cardiometabolic_II
+fstl3,FSTL3,Follistatin-related protein 3,Inflammation
+ftcd,FTCD,Formimidoyltransferase-cyclodeaminase,Neurology_II
+fuca1,FUCA1,Tissue alpha-L-fucosidase,Cardiometabolic
+fuom,FUOM,Fucose mutarotase,Inflammation_II
+furin,FURIN,Furin,Oncology
+fus,FUS,RNA-binding protein FUS,Oncology
+fut1,FUT1,"Galactoside alpha-(1,2)-fucosyltransferase 1",Oncology_II
+fut3_fut5,FUT3_FUT5,3-galactosyl-N-acetylglucosaminide 4-alpha-L-fucosyltransferase FUT3_4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase FUT5,Neurology
+fut8,FUT8,"Alpha-(1,6)-fucosyltransferase",Neurology
+fxn,FXN,"Frataxin, mitochondrial",Oncology
+fxyd5,FXYD5,FXYD domain-containing ion transport regulator 5,Inflammation
+fyb1,FYB1,FYN-binding protein 1,Neurology
+fzd10,FZD10,Frizzled-10,Neurology_II
+fzd8,FZD8,Frizzled-8,Neurology_II
+gabarap,GABARAP,Gamma-aminobutyric acid receptor-associated protein,Oncology_II
+gabarapl1,GABARAPL1,Gamma-aminobutyric acid receptor-associated protein-like 1,Oncology_II
+gabra4,GABRA4,Gamma-aminobutyric acid receptor subunit alpha-4,Neurology_II
+gad1,GAD1,Glutamate decarboxylase 1,Oncology_II
+gad2,GAD2,Glutamate decarboxylase 2,Inflammation_II
+gadd45b,GADD45B,Growth arrest and DNA damage-inducible protein GADD45 beta,Oncology_II
+gadd45gip1,GADD45GIP1,Growth arrest and DNA damage-inducible proteins-interacting protein 1,Cardiometabolic_II
+gage2a,GAGE2A,G antigen 2A,Oncology_II
+gal,GAL,Galanin peptides,Inflammation
+galnt10,GALNT10,Polypeptide N-acetylgalactosaminyltransferase 10,Oncology
+galnt2,GALNT2,Polypeptide N-acetylgalactosaminyltransferase 2,Oncology
+galnt3,GALNT3,Polypeptide N-acetylgalactosaminyltransferase 3,Inflammation
+galnt5,GALNT5,Polypeptide N-acetylgalactosaminyltransferase 5,Cardiometabolic_II
+galnt7,GALNT7,N-acetylgalactosaminyltransferase 7,Oncology
+gamt,GAMT,Guanidinoacetate N-methyltransferase,Cardiometabolic_II
+gapdh,GAPDH,Glyceraldehyde-3-phosphate dehydrogenase,Inflammation_II
+gart,GART,Trifunctional purine biosynthetic protein adenosine-3,Neurology_II
+gas2,GAS2,Growth arrest-specific protein 2,Oncology_II
+gas6,GAS6,Growth arrest-specific protein 6,Cardiometabolic
+gask1a,GASK1A,Golgi-associated kinase 1A,Cardiometabolic_II
+gast,GAST,Gastrin,Neurology_II
+gata3,GATA3,Trans-acting T-cell-specific transcription factor GATA-3,Oncology_II
+gatd3,GATD3,"Glutamine amidotransferase-like class 1 domain-containing protein 3B, mitochondrial",Cardiometabolic_II
+gba,GBA,Lysosomal acid glucosylceramidase,Neurology_II
+gbp1,GBP1,Guanylate-binding protein 1,Neurology_II
+gbp2,GBP2,Guanylate-binding protein 2,Inflammation
+gbp4,GBP4,Guanylate-binding protein 4,Neurology
+gbp6,GBP6,Guanylate-binding protein 6,Cardiometabolic_II
+gc,GC,Vitamin D-binding protein,Inflammation_II
+gcc1,GCC1,GRIP and coiled-coil domain-containing protein 1,Neurology_II
+gcg,GCG,Pro-glucagon,Oncology
+gchfr,GCHFR,GTP cyclohydrolase 1 feedback regulatory protein,Inflammation_II
+gclm,GCLM,Glutamate--cysteine ligase regulatory subunit,Cardiometabolic_II
+gcnt1,GCNT1,"Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acetylglucosaminyltransferase",Oncology
+gdf15,GDF15,Growth/differentiation factor 15,Cardiometabolic
+gdf2,GDF2,Growth/differentiation factor 2,Cardiometabolic
+gdnf,GDNF,Glial cell line-derived neurotrophic factor,Neurology
+get3,GET3,ATPase GET3,Cardiometabolic_II
+gfap,GFAP,Glial fibrillary acidic protein,Oncology
+gfer,GFER,FAD-linked sulfhydryl oxidase ALR,Oncology
+gfod2,GFOD2,Glucose-fructose oxidoreductase domain-containing protein 2,Oncology
+gfra1,GFRA1,GDNF family receptor alpha-1,Oncology
+gfra2,GFRA2,GDNF family receptor alpha-2,Oncology
+gfra3,GFRA3,GDNF family receptor alpha-3,Neurology
+gfral,GFRAL,GDNF family receptor alpha-like,Neurology_II
+gga1,GGA1,ADP-ribosylation factor-binding protein GGA1,Neurology
+ggact,GGACT,Gamma-glutamylaminecyclotransferase,Cardiometabolic_II
+ggct,GGCT,Gamma-glutamylcyclotransferase,Cardiometabolic_II
+ggh,GGH,Gamma-glutamyl hydrolase,Cardiometabolic
+ggt1,GGT1,Glutathione hydrolase 1 proenzyme,Neurology
+ggt5,GGT5,Glutathione hydrolase 5 proenzyme,Neurology
+gh1,GH1,Somatotropin,Cardiometabolic
+gh2,GH2,Growth hormone variant,Oncology
+ghr,GHR,Growth hormone receptor,Inflammation_II
+ghrhr,GHRHR,Growth hormone-releasing hormone receptor,Neurology
+ghrl,GHRL,Appetite-regulating hormone,Cardiometabolic
+gid8,GID8,Glucose-induced degradation protein 8 homolog,Neurology_II
+gigyf2,GIGYF2,GRB10-interacting GYF protein 2,Neurology_II
+gimap7,GIMAP7,GTPase IMAP family member 7,Inflammation_II
+gimap8,GIMAP8,GTPase IMAP family member 8,Oncology_II
+gip,GIP,Gastric inhibitory polypeptide,Cardiometabolic_II
+gipc2,GIPC2,PDZ domain-containing protein GIPC2,Neurology_II
+gipc3,GIPC3,PDZ domain-containing protein GIPC3,Oncology_II
+gipr,GIPR,Gastric inhibitory polypeptide receptor,Inflammation_II
+git1,GIT1,ARF GTPase-activating protein GIT1,Inflammation_II
+gja8,GJA8,Gap junction alpha-8 protein,Oncology_II
+gkn1,GKN1,Gastrokine-1,Neurology
+gla,GLA,Alpha-galactosidase A,Inflammation_II
+glb1,GLB1,Beta-galactosidase,Neurology
+gli2,GLI2,Zinc finger protein GLI2,Inflammation_II
+glipr1,GLIPR1,Glioma pathogenesis-related protein 1,Oncology_II
+glo1,GLO1,Lactoylglutathione lyase,Cardiometabolic
+glod4,GLOD4,Glyoxalase domain-containing protein 4,Inflammation
+glp1r,GLP1R,Glucagon-like peptide 1 receptor,Neurology_II
+glrx,GLRX,Glutaredoxin-1,Cardiometabolic
+glrx5,GLRX5,"Glutaredoxin-related protein 5, mitochondrial",Inflammation_II
+glt8d2,GLT8D2,Glycosyltransferase 8 domain-containing protein 2,Neurology
+glyr1,GLYR1,Putative oxidoreductase GLYR1,Oncology_II
+gm2a,GM2A,Ganglioside GM2 activator,Cardiometabolic_II
+gmfg,GMFG,Glia maturation factor gamma,Cardiometabolic_II
+gmpr,GMPR,GMP reductase 1,Inflammation
+gmpr2,GMPR2,GMP reductase 2,Inflammation_II
+gnas,GNAS,Neuroendocrine secretory protein 55,Neurology_II
+gne,GNE,Bifunctional UDP-N-acetylglucosamine 2-epimerase/N-acetylmannosamine kinase,Oncology
+gngt1,GNGT1,Guanine nucleotide-binding protein G(T) subunit gamma-T1,Neurology_II
+gnly,GNLY,Granulysin,Neurology
+gnpda1,GNPDA1,Glucosamine-6-phosphate isomerase 1,Cardiometabolic_II
+gnpda2,GNPDA2,Glucosamine-6-phosphate isomerase 2,Inflammation_II
+golga3,GOLGA3,Golgin subfamily A member 3,Neurology_II
+golm2,GOLM2,Protein GOLM2,Neurology
+gopc,GOPC,Golgi-associated PDZ and coiled-coil motif-containing protein,Inflammation
+gorasp2,GORASP2,Golgi reassembly-stacking protein 2,Oncology_II
+got1,GOT1,"Aspartate aminotransferase, cytoplasmic",Cardiometabolic_II
+gp1ba,GP1BA,Platelet glycoprotein Ib alpha chain,Cardiometabolic
+gp1bb,GP1BB,Platelet glycoprotein Ib beta chain,Cardiometabolic_II
+gp2,GP2,Pancreatic secretory granule membrane major glycoprotein GP2,Cardiometabolic
+gp5,GP5,Platelet glycoprotein V,Inflammation_II
+gp6,GP6,Platelet glycoprotein VI,Neurology
+gpa33,GPA33,Cell surface A33 antigen,Oncology
+gpc1,GPC1,Glypican-1,Oncology
+gpc5,GPC5,Glypican-5,Neurology
+gpd1,GPD1,Glycerol-3-phosphate dehydrogenase,Oncology_II
+gpha2,GPHA2,Glycoprotein hormone alpha-2,Oncology_II
+gpi,GPI,Glucose-6-phosphate isomerase,Inflammation_II
+gpihbp1,GPIHBP1,Glycosylphosphatidylinositol-anchored high density lipoprotein-binding protein 1,Oncology_II
+gpkow,GPKOW,G-patch domain and KOW motifs-containing protein,Neurology
+gpnmb,GPNMB,Transmembrane glycoprotein NMB,Cardiometabolic
+gpr101,GPR101,Probable G-protein coupled receptor 101,Neurology_II
+gpr158,GPR158,Probable G-protein coupled receptor 158,Neurology_II
+gpr15l,GPR15L,Protein GPR15L,Oncology_II
+gpr37,GPR37,Prosaposin receptor GPR37,Cardiometabolic
+gprc5c,GPRC5C,G-protein coupled receptor family C group 5 member C,Oncology_II
+grap2,GRAP2,GRB2-related adapter protein 2,Cardiometabolic
+grhpr,GRHPR,Glyoxylate reductase/hydroxypyruvate reductase,Cardiometabolic_II
+grik2,GRIK2,"Glutamate receptor ionotropic, kainate 2",Neurology_II
+grin2b,GRIN2B,"Glutamate receptor ionotropic, NMDA 2B",Neurology_II
+grk5,GRK5,G protein-coupled receptor kinase 5,Cardiometabolic
+grn,GRN,Progranulin,Neurology
+grp,GRP,Gastrin-releasing peptide,Cardiometabolic_II
+grpel1,GRPEL1,"GrpE protein homolog 1, mitochondrial",Oncology
+grsf1,GRSF1,G-rich sequence factor 1,Oncology_II
+gsap,GSAP,Gamma-secretase-activating protein,Oncology
+gsn,GSN,Gelsolin,Inflammation_II
+gsr,GSR,"Glutathione reductase, mitochondrial",Inflammation_II
+gsta1,GSTA1,Glutathione S-transferase A1,Cardiometabolic
+gsta3,GSTA3,Glutathione S-transferase A3,Oncology
+gstm4,GSTM4,Glutathione S-transferase Mu 4,Cardiometabolic_II
+gstp1,GSTP1,Glutathione S-transferase P,Neurology
+gstt2b,GSTT2B,Glutathione S-transferase theta-2B,Neurology_II
+gtf2ird1,GTF2IRD1,General transcription factor II-I repeat domain-containing protein 1,Oncology_II
+gtpbp2,GTPBP2,GTP-binding protein 2,Neurology_II
+guca2a,GUCA2A,Guanylin,Neurology
+gucy2c,GUCY2C,Heat-stable enterotoxin receptor,Oncology_II
+guk1,GUK1,Guanylate kinase,Cardiometabolic_II
+gusb,GUSB,Beta-glucuronidase,Cardiometabolic
+gys1,GYS1,"Glycogen [starch] synthase, muscle",Cardiometabolic
+gzma,GZMA,Granzyme A,Inflammation
+gzmb,GZMB,Granzyme B,Inflammation
+gzmh,GZMH,Granzyme H,Cardiometabolic
+h2ap,H2AP,Huntingtin-interacting protein M,Oncology_II
+hadh,HADH,"Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial",Cardiometabolic_II
+hagh,HAGH,"Hydroxyacylglutathione hydrolase, mitochondrial",Oncology
+hao1,HAO1,Hydroxyacid oxidase 1,Oncology
+hars1,HARS1,"Histidine--tRNA ligase, cytoplasmic",Neurology
+havcr1,HAVCR1,Hepatitis A virus cellular receptor 1,Oncology
+havcr2,HAVCR2,Hepatitis A virus cellular receptor 2,Neurology
+hbegf,HBEGF,Proheparin-binding EGF-like growth factor,Oncology
+hbq1,HBQ1,Hemoglobin subunit theta-1,Oncology
+hbz,HBZ,Hemoglobin subunit zeta,Cardiometabolic_II
+hcg22,HCG22,Protein PBMUCL2,Cardiometabolic_II
+hcls1,HCLS1,Hematopoietic lineage cell-specific protein,Inflammation
+hdac8,HDAC8,Histone deacetylase 8,Inflammation_II
+hdac9,HDAC9,Histone deacetylase 9,Neurology_II
+hddc2,HDDC2,5'-deoxynucleotidase HDDC2,Oncology_II
+hdgf,HDGF,Hepatoma-derived growth factor,Oncology
+hdgfl2,HDGFL2,Hepatoma-derived growth factor-related protein 2,Neurology_II
+hebp1,HEBP1,Heme-binding protein 1,Cardiometabolic
+heg1,HEG1,Protein HEG homolog 1,Inflammation_II
+hepacam2,HEPACAM2,HEPACAM family member 2,Neurology_II
+heph,HEPH,Hephaestin,Cardiometabolic_II
+hexim1,HEXIM1,Protein HEXIM1,Inflammation
+hgf,HGF,Hepatocyte growth factor,Inflammation
+hgfac,HGFAC,Hepatocyte growth factor activator,Inflammation_II
+hgs,HGS,Hepatocyte growth factor-regulated tyrosine kinase substrate,Oncology
+hhex,HHEX,Hematopoietically-expressed homeobox protein HHEX,Neurology_II
+hif1a,HIF1A,Hypoxia-inducible factor 1-alpha,Inflammation_II
+hip1,HIP1,Huntingtin-interacting protein 1,Cardiometabolic_II
+hip1r,HIP1R,Huntingtin-interacting protein 1-related protein,Neurology_II
+hjv,HJV,Hemojuvelin,Neurology_II
+hk2,HK2,Hexokinase-2,Cardiometabolic
+hla_a,HLA-A,"HLA class I histocompatibility antigen, A alpha chain",Neurology_II
+hla_dra,HLA-DRA,"HLA class II histocompatibility antigen, DR alpha chain",Inflammation
+hla_e,HLA-E,"HLA class I histocompatibility antigen, alpha chain E",Inflammation
+hmbs,HMBS,Porphobilinogen deaminase,Oncology
+hmcn2,HMCN2,Hemicentin-2,Inflammation_II
+hmgcl,HMGCL,"Hydroxymethylglutaryl-CoA lyase, mitochondrial",Cardiometabolic_II
+hmgcs1,HMGCS1,"Hydroxymethylglutaryl-CoA synthase, cytoplasmic",Cardiometabolic_II
+hmmr,HMMR,Hyaluronan mediated motility receptor,Oncology_II
+hmox1,HMOX1,Heme oxygenase 1,Cardiometabolic
+hmox2,HMOX2,Heme oxygenase 2,Neurology
+hnf1a,HNF1A,Hepatocyte nuclear factor 1-alpha,Neurology_II
+hnmt,HNMT,Histamine N-methyltransferase,Neurology
+hnrnpk,HNRNPK,Heterogeneous nuclear ribonucleoprotein K,Cardiometabolic
+hnrnpul1,HNRNPUL1,Heterogeneous nuclear ribonucleoprotein U-like protein 1,Neurology_II
+hpcal1,HPCAL1,Hippocalcin-like protein 1,Inflammation
+hpgds,HPGDS,Hematopoietic prostaglandin D synthase,Oncology
+hpse,HPSE,Heparanase,Cardiometabolic_II
+hras,HRAS,GTPase Hras,Oncology_II
+hrc,HRC,Sarcoplasmic reticulum histidine-rich calcium-binding protein,Cardiometabolic_II
+hrg,HRG,Histidine-rich glycoprotein,Inflammation_II
+hs1bp3,HS1BP3,HCLS1-binding protein 3,Cardiometabolic_II
+hs3st3b1,HS3ST3B1,Heparan sulfate glucosamine 3-O-sulfotransferase 3B1,Oncology
+hs6st1,HS6ST1,Heparan-sulfate 6-O-sulfotransferase 1,Oncology
+hs6st2,HS6ST2,Heparan-sulfate 6-O-sulfotransferase 2,Inflammation_II
+hsbp1,HSBP1,Heat shock factor-binding protein 1,Cardiometabolic_II
+hsd11b1,HSD11B1,Corticosteroid 11-beta-dehydrogenase isozyme 1,Inflammation
+hsd17b14,HSD17B14,17-beta-hydroxysteroid dehydrogenase 14,Neurology_II
+hsd17b3,HSD17B3,Testosterone 17-beta-dehydrogenase 3,Cardiometabolic_II
+hsdl2,HSDL2,Hydroxysteroid dehydrogenase-like protein 2,Cardiometabolic_II
+hsp90b1,HSP90B1,Endoplasmin,Neurology
+hspa1a,HSPA1A,Heat shock 70 kDa protein 1A,Inflammation
+hspa2,HSPA2,Heat shock-related 70 kDa protein 2,Oncology_II
+hspb1,HSPB1,Heat shock protein beta-1,Cardiometabolic
+hspb6,HSPB6,Heat shock protein beta-6,Oncology
+hspg2,HSPG2,Basement membrane-specific heparan sulfate proteoglycan core protein,Cardiometabolic
+htr1a,HTR1A,5-hydroxytryptamine receptor 1A,Neurology_II
+htr1b,HTR1B,5-hydroxytryptamine receptor 1B,Neurology_II
+htra2,HTRA2,"Serine protease HTRA2, mitochondrial",Oncology
+hyal1,HYAL1,Hyaluronidase-1,Cardiometabolic
+hyou1,HYOU1,Hypoxia up-regulated protein 1,Cardiometabolic
+ica1,ICA1,Islet cell autoantigen 1,Inflammation
+icam1,ICAM1,Intercellular adhesion molecule 1,Cardiometabolic
+icam2,ICAM2,Intercellular adhesion molecule 2,Cardiometabolic
+icam3,ICAM3,Intercellular adhesion molecule 3,Cardiometabolic
+icam4,ICAM4,Intercellular adhesion molecule 4,Inflammation
+icam5,ICAM5,Intercellular adhesion molecule 5,Cardiometabolic
+icoslg,ICOSLG,ICOS ligand,Oncology
+id4,ID4,DNA-binding protein inhibitor ID-4,Oncology_II
+idi2,IDI2,Isopentenyl-diphosphate delta-isomerase 2,Neurology
+ido1,IDO1,"Indoleamine 2,3-dioxygenase 1",Cardiometabolic_II
+ids,IDS,Iduronate 2-sulfatase,Inflammation
+idua,IDUA,Alpha-L-iduronidase,Oncology
+ifi30,IFI30,Gamma-interferon-inducible lysosomal thiol reductase,Oncology_II
+ifit1,IFIT1,Interferon-induced protein with tetratricopeptide repeats 1,Oncology_II
+ifit3,IFIT3,Interferon-induced protein with tetratricopeptide repeats 3,Oncology_II
+ifnar1,IFNAR1,Interferon alpha/beta receptor 1,Oncology_II
+ifng,IFNG,Interferon gamma,Inflammation
+ifngr1,IFNGR1,Interferon gamma receptor 1,Inflammation
+ifngr2,IFNGR2,Interferon gamma receptor 2,Neurology
+ifnl1,IFNL1,Interferon lambda-1,Neurology
+ifnl2,IFNL2,Interferon lambda-2,Neurology_II
+ifnlr1,IFNLR1,Interferon lambda receptor 1,Inflammation
+ifnw1,IFNW1,Interferon omega-1,Cardiometabolic_II
+ift20,IFT20,Intraflagellar transport protein 20 homolog,Neurology_II
+igbp1,IGBP1,Immunoglobulin-binding protein 1,Neurology_II
+igdcc3,IGDCC3,Immunoglobulin superfamily DCC subclass member 3,Neurology_II
+igdcc4,IGDCC4,Immunoglobulin superfamily DCC subclass member 4,Cardiometabolic_II
+igf1r,IGF1R,Insulin-like growth factor 1 receptor,Oncology
+igf2bp3,IGF2BP3,Insulin-like growth factor 2 mRNA-binding protein 3,Cardiometabolic_II
+igf2r,IGF2R,Cation-independent mannose-6-phosphate receptor,Neurology
+igfbp1,IGFBP1,Insulin-like growth factor-binding protein 1,Cardiometabolic
+igfbp2,IGFBP2,Insulin-like growth factor-binding protein 2,Cardiometabolic
+igfbp3,IGFBP3,Insulin-like growth factor-binding protein 3,Cardiometabolic
+igfbp4,IGFBP4,Insulin-like growth factor-binding protein 4,Neurology
+igfbp6,IGFBP6,Insulin-like growth factor-binding protein 6,Cardiometabolic
+igfbp7,IGFBP7,Insulin-like growth factor-binding protein 7,Cardiometabolic
+igfbpl1,IGFBPL1,Insulin-like growth factor-binding protein-like 1,Cardiometabolic
+igfl4,IGFL4,Insulin growth factor-like family member 4,Inflammation_II
+ighmbp2,IGHMBP2,DNA-binding protein SMUBP-2,Cardiometabolic_II
+iglc2,IGLC2,Immunoglobulin lambda constant 2,Inflammation_II
+iglon5,IGLON5,IgLON family member 5,Oncology_II
+igsf21,IGSF21,Immunoglobulin superfamily member 21,Cardiometabolic_II
+igsf3,IGSF3,Immunoglobulin superfamily member 3,Oncology
+igsf8,IGSF8,Immunoglobulin superfamily member 8,Cardiometabolic
+igsf9,IGSF9,Protein turtle homolog A,Cardiometabolic_II
+ikbkg,IKBKG,NF-kappa-B essential modulator,Inflammation
+ikzf2,IKZF2,Zinc finger protein Helios,Oncology
+il10,IL10,Interleukin-10,Inflammation
+il10ra,IL10RA,Interleukin-10 receptor subunit alpha,Inflammation
+il10rb,IL10RB,Interleukin-10 receptor subunit beta,Inflammation
+il11,IL11,Interleukin-11,Inflammation
+il12a_il12b,IL12A_IL12B,Interleukin-12,Oncology
+il12b,IL12B,Interleukin-12 subunit beta,Inflammation
+il12rb1,IL12RB1,Interleukin-12 receptor subunit beta-1,Inflammation
+il12rb2,IL12RB2,Interleukin-12 receptor subunit beta-2,Inflammation_II
+il13,IL13,Interleukin-13,Inflammation
+il13ra1,IL13RA1,Interleukin-13 receptor subunit alpha-1,Oncology
+il13ra2,IL13RA2,Interleukin-13 receptor subunit alpha-2,Neurology_II
+il15,IL15,Interleukin-15,Inflammation
+il15ra,IL15RA,Interleukin-15 receptor subunit alpha,Inflammation
+il16,IL16,Pro-interleukin-16,Inflammation
+il17a,IL17A,Interleukin-17A,Inflammation
+il17c,IL17C,Interleukin-17C,Inflammation
+il17d,IL17D,Interleukin-17D,Inflammation
+il17f,IL17F,Interleukin-17F,Inflammation
+il17ra,IL17RA,Interleukin-17 receptor A,Neurology
+il17rb,IL17RB,Interleukin-17 receptor B,Inflammation
+il18,IL18,Interleukin-18,Inflammation
+il18bp,IL18BP,Interleukin-18-binding protein,Cardiometabolic
+il18r1,IL18R1,Interleukin-18 receptor 1,Inflammation
+il18rap,IL18RAP,Interleukin-18 receptor accessory protein,Neurology
+il19,IL19,Interleukin-19,Cardiometabolic
+il1a,IL1A,Interleukin-1 alpha,Inflammation
+il1b,IL1B,Interleukin-1 beta,Inflammation
+il1r1,IL1R1,Interleukin-1 receptor type 1,Neurology
+il1r2,IL1R2,Interleukin-1 receptor type 2,Inflammation
+il1rap,IL1RAP,Interleukin-1 receptor accessory protein,Neurology
+il1rl1,IL1RL1,Interleukin-1 receptor-like 1,Cardiometabolic
+il1rl2,IL1RL2,Interleukin-1 receptor-like 2,Inflammation
+il1rn,IL1RN,Interleukin-1 receptor antagonist protein,Inflammation
+il2,IL2,Interleukin-2,Inflammation
+il20,IL20,Interleukin-20,Inflammation
+il20ra,IL20RA,Interleukin-20 receptor subunit alpha,Inflammation
+il20rb,IL20RB,Interleukin-20 receptor subunit beta,Inflammation_II
+il21r,IL21R,Interleukin-21 receptor,Inflammation_II
+il22,IL22,Interleukin-22,Oncology_II
+il22ra1,IL22RA1,Interleukin-22 receptor subunit alpha-1,Inflammation
+il24,IL24,Interleukin-24,Inflammation
+il25,IL25,Interleukin-25,Oncology_II
+il2ra,IL2RA,Interleukin-2 receptor subunit alpha,Cardiometabolic
+il2rb,IL2RB,Interleukin-2 receptor subunit beta,Inflammation
+il2rg,IL2RG,Cytokine receptor common subunit gamma,Oncology_II
+il3,IL3,Interleukin-3,Oncology_II
+il31,IL31,Interleukin-31,Inflammation_II
+il31ra,IL31RA,Interleukin-31 receptor subunit alpha,Inflammation_II
+il32,IL32,Interleukin-32,Inflammation
+il33,IL33,Interleukin-33,Inflammation
+il34,IL34,Interleukin-34,Neurology
+il36a,IL36A,Interleukin-36 alpha,Inflammation_II
+il36g,IL36G,Interleukin-36 gamma,Inflammation_II
+il3ra,IL3RA,Interleukin-3 receptor subunit alpha,Inflammation
+il4,IL4,Interleukin-4,Inflammation
+il4r,IL4R,Interleukin-4 receptor subunit alpha,Inflammation
+il5,IL5,Interleukin-5,Inflammation
+il5ra,IL5RA,Interleukin-5 receptor subunit alpha,Inflammation
+il6,IL6,Interleukin-6,Oncology
+il6r,IL6R,Interleukin-6 receptor subunit alpha,Cardiometabolic
+il6st,IL6ST,Interleukin-6 receptor subunit beta,Cardiometabolic
+il7,IL7,Interleukin-7,Inflammation
+il7r,IL7R,Interleukin-7 receptor subunit alpha,Neurology
+il9,IL9,Interleukin-9,Oncology_II
+ilkap,ILKAP,Integrin-linked kinase-associated serine/threonine phosphatase 2C,Neurology
+immt,IMMT,MICOS complex subunit MIC60,Oncology_II
+impa1,IMPA1,Inositol monophosphatase 1,Neurology
+impact,IMPACT,Protein IMPACT,Neurology_II
+impg1,IMPG1,Interphotoreceptor matrix proteoglycan 1,Neurology_II
+ing1,ING1,Inhibitor of growth protein 1,Neurology
+inhbb,INHBB,Inhibin beta B chain,Inflammation_II
+inhbc,INHBC,Inhibin beta C chain,Neurology
+inpp1,INPP1,Inositol polyphosphate 1-phosphatase,Oncology
+inpp5d,INPP5D,"Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 1",Cardiometabolic_II
+inpp5j,INPP5J,"Phosphatidylinositol 4,5-bisphosphate 5-phosphatase A",Neurology_II
+inppl1,INPPL1,"Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2",Oncology
+insl3,INSL3,Insulin-like 3,Neurology_II
+insl4,INSL4,Early placenta insulin-like peptide,Oncology_II
+insl5,INSL5,Insulin-like peptide INSL5,Oncology_II
+insr,INSR,Insulin receptor,Inflammation_II
+ipcef1,IPCEF1,Interactor protein for cytohesin exchange factors 1,Neurology
+iqgap2,IQGAP2,Ras GTPase-activating-like protein IQGAP2,Oncology
+irag2,IRAG2,"Inositol 1,4,5-triphosphate receptor associated 2",Cardiometabolic
+irak1,IRAK1,Interleukin-1 receptor-associated kinase 1,Inflammation
+irak4,IRAK4,Interleukin-1 receptor-associated kinase 4,Inflammation
+islr2,ISLR2,Immunoglobulin superfamily containing leucine-rich repeat protein 2,Neurology
+ism1,ISM1,Isthmin-1,Inflammation
+ism2,ISM2,Isthmin-2,Cardiometabolic_II
+ist1,IST1,IST1 homolog,Oncology_II
+itga11,ITGA11,Integrin alpha-11,Inflammation
+itga2,ITGA2,Integrin alpha-2,Inflammation_II
+itga5,ITGA5,Integrin alpha-5,Neurology
+itga6,ITGA6,Integrin alpha-6,Inflammation
+itgal,ITGAL,Integrin alpha-L,Inflammation_II
+itgam,ITGAM,Integrin alpha-M,Neurology
+itgav,ITGAV,Integrin alpha-V,Oncology
+itgax,ITGAX,Integrin alpha-X,Oncology_II
+itgb1,ITGB1,Integrin beta-1,Cardiometabolic
+itgb1bp1,ITGB1BP1,Integrin beta-1-binding protein 1,Oncology
+itgb1bp2,ITGB1BP2,Integrin beta-1-binding protein 2,Cardiometabolic
+itgb2,ITGB2,Integrin beta-2,Cardiometabolic
+itgb5,ITGB5,Integrin beta-5,Oncology
+itgb6,ITGB6,Integrin beta-6,Inflammation
+itgb7,ITGB7,Integrin beta-7,Oncology
+itgbl1,ITGBL1,Integrin beta-like protein 1,Cardiometabolic_II
+itih1,ITIH1,Inter-alpha-trypsin inhibitor heavy chain H1,Inflammation_II
+itih3,ITIH3,Inter-alpha-trypsin inhibitor heavy chain H3,Cardiometabolic
+itih4,ITIH4,Inter-alpha-trypsin inhibitor heavy chain H4,Inflammation_II
+itih5,ITIH5,Inter-alpha-trypsin inhibitor heavy chain H5,Oncology_II
+itm2a,ITM2A,Integral membrane protein 2A,Inflammation
+itpa,ITPA,Inosine triphosphate pyrophosphatase,Cardiometabolic_II
+itpr1,ITPR1,"Inositol 1,4,5-trisphosphate receptor type 1",Cardiometabolic_II
+itprip,ITPRIP,"Inositol 1,4,5-trisphosphate receptor-interacting protein",Neurology_II
+ivd,IVD,"Isovaleryl-CoA dehydrogenase, mitochondrial",Neurology
+izumo1,IZUMO1,Izumo sperm-egg fusion protein 1,Oncology_II
+jam2,JAM2,Junctional adhesion molecule B,Neurology
+jam3,JAM3,Junctional adhesion molecule C,Inflammation_II
+jchain,JCHAIN,Immunoglobulin J chain,Inflammation
+jmjd1c,JMJD1C,Probable JmjC domain-containing histone demethylation protein 2C,Oncology_II
+jpt2,JPT2,Jupiter microtubule associated homolog 2,Oncology_II
+jun,JUN,Transcription factor AP-1,Inflammation
+kazald1,KAZALD1,Kazal-type serine protease inhibitor domain-containing protein 1,Oncology
+kazn,KAZN,Kazrin,Oncology_II
+kcnc4,KCNC4,Potassium voltage-gated channel subfamily C member 4,Neurology_II
+kcnh2,KCNH2,Potassium voltage-gated channel subfamily H member 2,Neurology_II
+kcnip4,KCNIP4,Kv channel-interacting protein 4,Neurology
+kctd5,KCTD5,BTB/POZ domain-containing protein KCTD5,Neurology_II
+kdm3a,KDM3A,Lysine-specific demethylase 3A,Inflammation_II
+kdr,KDR,Vascular endothelial growth factor receptor 2,Oncology
+kel,KEL,Kell blood group glycoprotein,Neurology
+khdc3l,KHDC3L,KH domain-containing protein 3,Oncology_II
+khk,KHK,Ketohexokinase,Cardiometabolic_II
+kiaa0319,KIAA0319,Dyslexia-associated protein KIAA0319,Neurology_II
+kiaa1549,KIAA1549,UPF0606 protein KIAA1549,Oncology_II
+kiaa1549l,KIAA1549L,UPF0606 protein KIAA1549L,Oncology_II
+kiaa2013,KIAA2013,Uncharacterized protein KIAA2013,Oncology_II
+kif1c,KIF1C,Kinesin-like protein KIF1C,Cardiometabolic_II
+kif20b,KIF20B,Kinesin-like protein KIF20B,Neurology_II
+kif22,KIF22,Kinesin-like protein KIF22,Cardiometabolic_II
+kifbp,KIFBP,KIF-binding protein,Oncology
+kir2dl2,KIR2DL2,Killer cell immunoglobulin-like receptor 2DL2,Oncology_II
+kir2dl3,KIR2DL3,Killer cell immunoglobulin-like receptor 2DL3,Oncology
+kir2ds4,KIR2DS4,Killer cell immunoglobulin-like receptor 2DS4,Oncology_II
+kir3dl1,KIR3DL1,Killer cell immunoglobulin-like receptor 3DL1,Oncology
+kir3dl2,KIR3DL2,Killer cell immunoglobulin-like receptor 3DL2,Oncology_II
+kirrel1,KIRREL1,Kin of IRRE-like protein 1,Neurology_II
+kirrel2,KIRREL2,Kin of IRRE-like protein 2,Neurology
+kit,KIT,Mast/stem cell growth factor receptor Kit,Cardiometabolic
+kitlg,KITLG,Kit ligand,Cardiometabolic
+klb,KLB,Beta-klotho,Neurology
+klf4,KLF4,Krueppel-like factor 4,Neurology_II
+klhl41,KLHL41,Kelch-like protein 41,Neurology_II
+klk1,KLK1,Kallikrein-1,Oncology
+klk10,KLK10,Kallikrein-10,Oncology
+klk11,KLK11,Kallikrein-11,Oncology
+klk12,KLK12,Kallikrein-12,Oncology
+klk13,KLK13,Kallikrein-13,Oncology
+klk14,KLK14,Kallikrein-14,Oncology
+klk15,KLK15,Kallikrein-15,Oncology_II
+klk3,KLK3,Prostate-specific antigen,Cardiometabolic_II
+klk4,KLK4,Kallikrein-4,Oncology
+klk6,KLK6,Kallikrein-6,Oncology
+klk7,KLK7,Kallikrein-7,Inflammation_II
+klk8,KLK8,Kallikrein-8,Oncology
+klkb1,KLKB1,Plasma kallikrein,Inflammation_II
+klrb1,KLRB1,Killer cell lectin-like receptor subfamily B member 1,Inflammation
+klrc1,KLRC1,NKG2-A/NKG2-B type II integral membrane protein,Neurology_II
+klrd1,KLRD1,Natural killer cells antigen CD94,Inflammation
+klrf1,KLRF1,Killer cell lectin-like receptor subfamily F member 1,Inflammation_II
+klrk1,KLRK1,NKG2-D type II integral membrane protein,Neurology_II
+krt14,KRT14,"Keratin, type I cytoskeletal 14",Neurology
+krt17,KRT17,"Keratin, type I cytoskeletal 17",Cardiometabolic_II
+krt18,KRT18,"Keratin, type I cytoskeletal 18",Oncology
+krt19,KRT19,"Keratin, type I cytoskeletal 19",Inflammation
+krt5,KRT5,"Keratin, type II cytoskeletal 5",Neurology
+krt6c,KRT6C,"Keratin, type II cytoskeletal 6C",Cardiometabolic_II
+krt8,KRT8,"Keratin, type II cytoskeletal 8",Neurology_II
+kyat1,KYAT1,Kynurenine--oxoglutarate transaminase 1,Cardiometabolic
+kynu,KYNU,Kynureninase,Inflammation
+l1cam,L1CAM,Neural cell adhesion molecule L1,Oncology
+l3hypdh,L3HYPDH,Trans-3-hydroxy-L-proline dehydratase,Cardiometabolic_II
+lacrt,LACRT,Extracellular glycoprotein lacritin,Oncology_II
+lactb2,LACTB2,Endoribonuclease LACTB2,Cardiometabolic
+lag3,LAG3,Lymphocyte activation gene 3 protein,Oncology
+lair1,LAIR1,Leukocyte-associated immunoglobulin-like receptor 1,Inflammation
+lair2,LAIR2,Leukocyte-associated immunoglobulin-like receptor 2,Neurology
+lama1,LAMA1,Laminin subunit alpha-1,Cardiometabolic_II
+lama4,LAMA4,Laminin subunit alpha-4,Inflammation
+lamb1,LAMB1,Laminin subunit beta-1,Cardiometabolic_II
+lamp1,LAMP1,Lysosome-associated membrane glycoprotein 1,Cardiometabolic_II
+lamp2,LAMP2,Lysosome-associated membrane glycoprotein 2,Neurology
+lamp3,LAMP3,Lysosome-associated membrane glycoprotein 3,Inflammation
+lamtor5,LAMTOR5,Ragulator complex protein LAMTOR5,Oncology_II
+lap3,LAP3,Cytosol aminopeptidase,Inflammation
+larp1,LARP1,La-related protein 1,Oncology_II
+lat,LAT,Linker for activation of T-cells family member 1,Inflammation
+lat2,LAT2,Linker for activation of T-cells family member 2,Oncology
+lats1,LATS1,Serine/threonine-protein kinase LATS1,Inflammation_II
+layn,LAYN,Layilin,Neurology
+lbp,LBP,Lipopolysaccharide-binding protein,Cardiometabolic
+lbr,LBR,Delta(14)-sterol reductase LBR,Neurology
+lcat,LCAT,Phosphatidylcholine-sterol acyltransferase,Inflammation_II
+lcn15,LCN15,Lipocalin-15,Neurology_II
+lcn2,LCN2,Neutrophil gelatinase-associated lipocalin,Cardiometabolic
+lcp1,LCP1,Plastin-2,Cardiometabolic_II
+ldlr,LDLR,Low-density lipoprotein receptor,Cardiometabolic
+ldlrap1,LDLRAP1,Low density lipoprotein receptor adapter protein 1,Neurology_II
+lect2,LECT2,Leukocyte cell-derived chemotaxin-2,Cardiometabolic_II
+lefty2,LEFTY2,Left-right determination factor 2,Oncology
+leg1,LEG1,Protein LEG1 homolog,Inflammation_II
+lelp1,LELP1,Late cornified envelope-like proline-rich protein 1,Neurology_II
+leo1,LEO1,RNA polymerase-associated protein LEO1,Neurology_II
+lep,LEP,Leptin,Cardiometabolic
+lepr,LEPR,Leptin receptor,Cardiometabolic
+letm1,LETM1,Mitochondrial proton/calcium exchanger protein,Neurology_II
+lgals1,LGALS1,Galectin-1,Cardiometabolic
+lgals3,LGALS3,Galectin-3,Cardiometabolic
+lgals3bp,LGALS3BP,Galectin-3-binding protein,Inflammation_II
+lgals4,LGALS4,Galectin-4,Inflammation
+lgals7_lgals7b,LGALS7_LGALS7B,Galectin-7,Oncology
+lgals8,LGALS8,Galectin-8,Neurology
+lgals9,LGALS9,Galectin-9,Inflammation
+lgmn,LGMN,Legumain,Inflammation
+lhb,LHB,Lutropin subunit beta,Oncology
+lhpp,LHPP,Phospholysine phosphohistidine inorganic pyrophosphate phosphatase,Inflammation
+lif,LIF,Leukemia inhibitory factor,Neurology
+lifr,LIFR,Leukemia inhibitory factor receptor,Inflammation
+lilra2,LILRA2,Leukocyte immunoglobulin-like receptor subfamily A member 2,Neurology
+lilra3,LILRA3,Leukocyte immunoglobulin-like receptor subfamily A member 3,Cardiometabolic_II
+lilra4,LILRA4,Leukocyte immunoglobulin-like receptor subfamily A member 4,Cardiometabolic_II
+lilra5,LILRA5,Leukocyte immunoglobulin-like receptor subfamily A member 5,Cardiometabolic
+lilra6,LILRA6,Leukocyte immunoglobulin-like receptor subfamily A member 6,Cardiometabolic_II
+lilrb1,LILRB1,Leukocyte immunoglobulin-like receptor subfamily B member 1,Cardiometabolic
+lilrb2,LILRB2,Leukocyte immunoglobulin-like receptor subfamily B member 2,Cardiometabolic
+lilrb4,LILRB4,Leukocyte immunoglobulin-like receptor subfamily B member 4,Inflammation
+lilrb5,LILRB5,Leukocyte immunoglobulin-like receptor subfamily B member 5,Cardiometabolic
+lipf,LIPF,Gastric triacylglycerol lipase,Cardiometabolic_II
+lmnb1,LMNB1,Lamin-B1,Oncology_II
+lmnb2,LMNB2,Lamin-B2,Neurology_II
+lmod1,LMOD1,Leiomodin-1,Neurology_II
+lmod2,LMOD2,Leiomodin-2,Neurology_II
+lonp1,LONP1,"Lon protease homolog, mitochondrial",Cardiometabolic_II
+lpa,LPA,Apolipoprotein(a),Inflammation_II
+lpcat2,LPCAT2,Lysophosphatidylcholine acyltransferase 2,Oncology
+lpl,LPL,Lipoprotein lipase,Cardiometabolic
+lpo,LPO,Lactoperoxidase,Neurology
+lpp,LPP,Lipoma-preferred partner,Cardiometabolic_II
+lrch4,LRCH4,Leucine-rich repeat and calponin homology domain-containing protein 4,Cardiometabolic_II
+lrfn2,LRFN2,Leucine-rich repeat and fibronectin type-III domain-containing protein 2,Neurology_II
+lrg1,LRG1,Leucine-rich alpha-2-glycoprotein,Inflammation_II
+lrig1,LRIG1,Leucine-rich repeats and immunoglobulin-like domains protein 1,Oncology
+lrig3,LRIG3,Leucine-rich repeats and immunoglobulin-like domains protein 3,Inflammation_II
+lrp1,LRP1,Prolow-density lipoprotein receptor-related protein 1,Oncology
+lrp11,LRP11,Low-density lipoprotein receptor-related protein 11,Cardiometabolic
+lrp2,LRP2,Low-density lipoprotein receptor-related protein 2,Neurology_II
+lrp2bp,LRP2BP,LRP2-binding protein,Neurology_II
+lrpap1,LRPAP1,Alpha-2-macroglobulin receptor-associated protein,Neurology
+lrrc25,LRRC25,Leucine-rich repeat-containing protein 25,Oncology
+lrrc37a2,LRRC37A2,Leucine-rich repeat-containing protein 37A2,Oncology_II
+lrrc38,LRRC38,Leucine-rich repeat-containing protein 38,Neurology_II
+lrrc59,LRRC59,Leucine-rich repeat-containing protein 59,Cardiometabolic_II
+lrrfip1,LRRFIP1,Leucine-rich repeat flightless-interacting protein 1,Oncology_II
+lrrn1,LRRN1,Leucine-rich repeat neuronal protein 1,Inflammation
+lrtm1,LRTM1,Leucine-rich repeat and transmembrane domain-containing protein 1,Neurology_II
+lrtm2,LRTM2,Leucine-rich repeat and transmembrane domain-containing protein 2,Neurology_II
+lsm1,LSM1,U6 snRNA-associated Sm-like protein LSm1,Oncology
+lsm8,LSM8,U6 snRNA-associated Sm-like protein LSm8,Oncology_II
+lsp1,LSP1,Lymphocyte-specific protein 1,Inflammation
+lta,LTA,Lymphotoxin-alpha,Inflammation
+lta4h,LTA4H,Leukotriene A-4 hydrolase,Oncology
+ltb,LTB,Lymphotoxin-beta,Oncology_II
+ltbp2,LTBP2,Latent-transforming growth factor beta-binding protein 2,Cardiometabolic
+ltbp3,LTBP3,Latent-transforming growth factor beta-binding protein 3,Oncology
+ltbr,LTBR,Tumor necrosis factor receptor superfamily member 3,Inflammation
+lto1,LTO1,Protein LTO1 homolog,Inflammation
+luzp2,LUZP2,Leucine zipper protein 2,Oncology_II
+lxn,LXN,Latexin,Neurology
+ly6d,LY6D,Lymphocyte antigen 6D,Inflammation
+ly75,LY75,Lymphocyte antigen 75,Inflammation
+ly9,LY9,T-lymphocyte surface antigen Ly-9,Inflammation
+ly96,LY96,Lymphocyte antigen 96,Neurology
+lyar,LYAR,Cell growth-regulating nucleolar protein,Oncology
+lyn,LYN,Tyrosine-protein kinase Lyn,Oncology
+lypd1,LYPD1,Ly6/PLAUR domain-containing protein 1,Neurology
+lypd3,LYPD3,Ly6/PLAUR domain-containing protein 3,Oncology
+lypd8,LYPD8,Ly6/PLAUR domain-containing protein 8,Oncology
+lypla2,LYPLA2,Acyl-protein thioesterase 2,Neurology_II
+lysmd3,LYSMD3,LysM and putative peptidoglycan-binding domain-containing protein 3,Neurology_II
+lyve1,LYVE1,Lymphatic vessel endothelial hyaluronic acid receptor 1,Inflammation_II
+lyzl2,LYZL2,Lysozyme-like protein 2,Oncology_II
+lztfl1,LZTFL1,Leucine zipper transcription factor-like protein 1,Inflammation_II
+m6pr,M6PR,Cation-dependent mannose-6-phosphate receptor,Cardiometabolic_II
+mad1l1,MAD1L1,Mitotic spindle assembly checkpoint protein MAD1,Neurology
+maea,MAEA,E3 ubiquitin-protein transferase MAEA,Oncology
+mag,MAG,Myelin-associated glycoprotein,Neurology_II
+magea3,MAGEA3,Melanoma-associated antigen 3,Oncology_II
+maged1,MAGED1,Melanoma-associated antigen D1,Oncology
+mamdc2,MAMDC2,MAM domain-containing protein 2,Cardiometabolic_II
+mamdc4,MAMDC4,Apical endosomal glycoprotein,Oncology_II
+man1a2,MAN1A2,"Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB",Cardiometabolic_II
+man2b2,MAN2B2,Epididymis-specific alpha-mannosidase,Cardiometabolic_II
+maneal,MANEAL,"Glycoprotein endo-alpha-1,2-mannosidase-like protein",Oncology_II
+manf,MANF,Mesencephalic astrocyte-derived neurotrophic factor,Inflammation
+mansc1,MANSC1,MANSC domain-containing protein 1,Oncology
+mansc4,MANSC4,MANSC domain-containing protein 4,Cardiometabolic_II
+map1lc3a,MAP1LC3A,Microtubule-associated proteins 1A/1B light chain 3A,Neurology_II
+map1lc3b2,MAP1LC3B2,Microtubule-associated proteins 1A/1B light chain 3 beta 2,Cardiometabolic_II
+map2,MAP2,Microtubule-associated protein 2,Neurology_II
+map2k1,MAP2K1,Dual specificity mitogen-activated protein kinase kinase 1,Oncology_II
+map2k6,MAP2K6,Dual specificity mitogen-activated protein kinase kinase 6,Inflammation
+map3k5,MAP3K5,Mitogen-activated protein kinase kinase kinase 5,Oncology
+map4k5,MAP4K5,Mitogen-activated protein kinase kinase kinase kinase 5,Neurology
+mapk13,MAPK13,Mitogen-activated protein kinase 13,Oncology_II
+mapk9,MAPK9,Mitogen-activated protein kinase 9,Inflammation
+mapkapk2,MAPKAPK2,MAP kinase-activated protein kinase 2,Oncology_II
+mapre3,MAPRE3,Microtubule-associated protein RP/EB family member 3,Oncology_II
+mapt,MAPT,Microtubule-associated protein tau,Neurology
+marco,MARCO,Macrophage receptor MARCO,Cardiometabolic
+mars1,MARS1,"Methionine--tRNA ligase, cytoplasmic",Inflammation_II
+masp1,MASP1,Mannan-binding lectin serine protease 1,Neurology
+matn2,MATN2,Matrilin-2,Inflammation
+matn3,MATN3,Matrilin-3,Neurology
+mavs,MAVS,Mitochondrial antiviral-signaling protein,Oncology
+max,MAX,Protein max,Neurology
+mb,MB,Myoglobin,Cardiometabolic
+mbl2,MBL2,Mannose-binding protein C,Inflammation_II
+mcam,MCAM,Cell surface glycoprotein MUC18,Cardiometabolic
+mcee,MCEE,"Methylmalonyl-CoA epimerase, mitochondrial",Neurology_II
+mcemp1,MCEMP1,Mast cell-expressed membrane protein 1,Inflammation_II
+mcfd2,MCFD2,Multiple coagulation factor deficiency protein 2,Cardiometabolic
+mcts1,MCTS1,Malignant T-cell-amplified sequence 1,Oncology_II
+mdga1,MDGA1,MAM domain-containing glycosylphosphatidylinositol anchor protein 1,Neurology
+mdh1,MDH1,"Malate dehydrogenase, cytoplasmic",Inflammation_II
+mdk,MDK,Midkine,Oncology
+mdm1,MDM1,Nuclear protein MDM1,Neurology_II
+mecr,MECR,"Enoyl-[acyl-carrier-protein] reductase, mitochondrial",Cardiometabolic_II
+med18,MED18,Mediator of RNA polymerase II transcription subunit 18,Oncology
+med21,MED21,Mediator of RNA polymerase II transcription subunit 21,Cardiometabolic_II
+megf10,MEGF10,Multiple epidermal growth factor-like domains protein 10,Inflammation
+megf11,MEGF11,Multiple epidermal growth factor-like domains protein 11,Cardiometabolic_II
+megf9,MEGF9,Multiple epidermal growth factor-like domains protein 9,Cardiometabolic
+meltf,MELTF,Melanotransferrin,Cardiometabolic_II
+ment,MENT,Protein MENT,Inflammation_II
+mep1a,MEP1A,Meprin A subunit alpha,Oncology_II
+mep1b,MEP1B,Meprin A subunit beta,Cardiometabolic
+mepe,MEPE,Matrix extracellular phosphoglycoprotein,Inflammation
+mertk,MERTK,Tyrosine-protein kinase Mer,Inflammation
+mesd,MESD,LRP chaperone MESD,Neurology
+met,MET,Hepatocyte growth factor receptor,Cardiometabolic
+metap1,METAP1,Methionine aminopeptidase 1,Neurology
+metap1d,METAP1D,"Methionine aminopeptidase 1D, mitochondrial",Inflammation
+metap2,METAP2,Methionine aminopeptidase 2,Oncology
+mfap3,MFAP3,Microfibril-associated glycoprotein 3,Cardiometabolic
+mfap3l,MFAP3L,Microfibrillar-associated protein 3-like,Neurology_II
+mfap4,MFAP4,Microfibril-associated glycoprotein 4,Inflammation_II
+mfap5,MFAP5,Microfibrillar-associated protein 5,Cardiometabolic
+mfge8,MFGE8,Lactadherin,Neurology
+mgll,MGLL,Monoglyceride lipase,Inflammation
+mgmt,MGMT,Methylated-DNA--protein-cysteine methyltransferase,Inflammation
+mia,MIA,Melanoma-derived growth regulatory protein,Oncology
+micall2,MICALL2,MICAL-like protein 2,Neurology_II
+micb_mica,MICB_MICA,MHC class I polypeptide-related sequence A_MHC class I polypeptide-related sequence B,Inflammation
+mif,MIF,Macrophage migration inhibitory factor,Neurology
+milr1,MILR1,Allergin-1,Inflammation
+mindy1,MINDY1,Ubiquitin carboxyl-terminal hydrolase MINDY-1,Oncology_II
+mink1,MINK1,Misshapen-like kinase 1,Neurology_II
+mitd1,MITD1,MIT domain-containing protein 1,Neurology
+mki67,MKI67,Proliferation marker protein Ki-67,Inflammation_II
+mllt1,MLLT1,Protein ENL,Oncology_II
+mln,MLN,Promotilin,Inflammation
+mme,MME,Neprilysin,Oncology
+mmp1,MMP1,Interstitial collagenase,Inflammation
+mmp10,MMP10,Stromelysin-2,Inflammation
+mmp12,MMP12,Macrophage metalloelastase,Oncology
+mmp13,MMP13,Collagenase 3,Neurology
+mmp15,MMP15,Matrix metalloproteinase-15,Cardiometabolic_II
+mmp3,MMP3,Stromelysin-1,Neurology
+mmp7,MMP7,Matrilysin,Cardiometabolic
+mmp8,MMP8,Neutrophil collagenase,Neurology
+mmp9,MMP9,Matrix metalloproteinase-9,Neurology
+mmut,MMUT,"Methylmalonyl-CoA mutase, mitochondrial",Cardiometabolic_II
+mn1,MN1,Transcriptional activator MN1,Neurology_II
+mnat1,MNAT1,CDK-activating kinase assembly factor MAT1,Oncology_II
+mnda,MNDA,Myeloid cell nuclear differentiation antigen,Cardiometabolic
+mocs2,MOCS2,Molybdopterin synthase catalytic subunit,Inflammation_II
+mog,MOG,Myelin-oligodendrocyte glycoprotein,Oncology
+morc3,MORC3,MORC family CW-type zinc finger protein 3,Neurology_II
+morf4l1,MORF4L1,Mortality factor 4-like protein 1,Oncology_II
+morf4l2,MORF4L2,Mortality factor 4-like protein 2,Oncology_II
+morn4,MORN4,MORN repeat-containing protein 4,Oncology_II
+mphosph8,MPHOSPH8,M-phase phosphoprotein 8,Cardiometabolic
+mpi,MPI,Mannose-6-phosphate isomerase,Oncology
+mpig6b,MPIG6B,Megakaryocyte and platelet inhibitory receptor G6b,Inflammation
+mpo,MPO,Myeloperoxidase,Neurology
+mprip,MPRIP,Myosin phosphatase Rho-interacting protein,Oncology_II
+mrc1,MRC1,Macrophage mannose receptor 1,Inflammation_II
+mri1,MRI1,Methylthioribose-1-phosphate isomerase,Neurology_II
+mrpl24,MRPL24,"39S ribosomal protein L24, mitochondrial",Cardiometabolic_II
+mrpl28,MRPL28,"39S ribosomal protein L28, mitochondrial",Neurology_II
+mrpl46,MRPL46,"39S ribosomal protein L46, mitochondrial",Neurology
+mrpl52,MRPL52,"39S ribosomal protein L52, mitochondrial",Oncology_II
+mrpl58,MRPL58,"Peptidyl-tRNA hydrolase ICT1, mitochondrial",Neurology_II
+mrps16,MRPS16,"28S ribosomal protein S16, mitochondrial",Inflammation_II
+msln,MSLN,Mesothelin,Oncology
+mslnl,MSLNL,Mesothelin-like protein,Neurology_II
+msmb,MSMB,Beta-microseminoprotein,Cardiometabolic
+msr1,MSR1,Macrophage scavenger receptor types I and II,Neurology
+msra,MSRA,Mitochondrial peptide methionine sulfoxide reductase,Oncology
+mst1,MST1,Hepatocyte growth factor-like protein,Inflammation_II
+mstn,MSTN,Growth/differentiation factor 8,Cardiometabolic
+mtdh,MTDH,Protein LYRIC,Inflammation_II
+mthfd2,MTHFD2,"Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohydrolase, mitochondrial",Neurology_II
+mthfsd,MTHFSD,Methenyltetrahydrofolate synthase domain-containing protein,Oncology_II
+mtif3,MTIF3,"Translation initiation factor IF-3, mitochondrial",Oncology_II
+mtpn,MTPN,Myotrophin,Cardiometabolic
+mtr,MTR,Methionine synthase,Cardiometabolic_II
+mtss1,MTSS1,Protein MTSS 1,Oncology_II
+mtss2,MTSS2,Protein MTSS 2,Oncology_II
+mtus1,MTUS1,Microtubule-associated tumor suppressor 1,Oncology_II
+muc13,MUC13,Mucin-13,Neurology
+muc16,MUC16,Mucin-16,Oncology
+muc2,MUC2,Mucin-2,Cardiometabolic_II
+mucl3,MUCL3,Mucin-like protein 3,Oncology_II
+mvk,MVK,Mevalonate kinase,Inflammation
+mxra8,MXRA8,Matrix remodeling-associated protein 8,Inflammation_II
+mybpc1,MYBPC1,"Myosin-binding protein C, slow-type",Cardiometabolic_II
+mybpc2,MYBPC2,"Myosin-binding protein C, fast-type",Cardiometabolic_II
+mycbp2,MYCBP2,E3 ubiquitin-protein ligase MYCBP2,Neurology_II
+mydgf,MYDGF,Myeloid-derived growth factor,Cardiometabolic_II
+myh4,MYH4,Myosin-4,Cardiometabolic_II
+myh7b,MYH7B,Myosin-7B,Oncology_II
+myh9,MYH9,Myosin-9,Cardiometabolic_II
+myl1,MYL1,"Myosin light chain 1/3, skeletal muscle isoform",Cardiometabolic_II
+myl3,MYL3,Myosin light chain 3,Cardiometabolic_II
+myl4,MYL4,Myosin light chain 4,Cardiometabolic_II
+myl6b,MYL6B,Myosin light chain 6B,Neurology_II
+mylpf,MYLPF,"Myosin regulatory light chain 2, skeletal muscle isoform",Neurology_II
+myo6,MYO6,Unconventional myosin-VI,Neurology_II
+myo9b,MYO9B,Unconventional myosin-IXb,Inflammation
+myoc,MYOC,Myocilin,Neurology
+myom1,MYOM1,Myomesin-1,Neurology_II
+myom2,MYOM2,Myomesin-2,Cardiometabolic_II
+myom3,MYOM3,Myomesin-3,Inflammation_II
+mzb1,MZB1,Marginal zone B- and B1-cell-specific protein,Inflammation
+mzt1,MZT1,Mitotic-spindle organizing protein 1,Oncology
+naa10,NAA10,N-alpha-acetyltransferase 10,Cardiometabolic_II
+naa80,NAA80,N-alpha-acetyltransferase 80,Neurology_II
+naaa,NAAA,N-acylethanolamine-hydrolyzing acid amidase,Neurology
+nacc1,NACC1,Nucleus accumbens-associated protein 1,Oncology_II
+nadk,NADK,NAD kinase,Cardiometabolic
+naga,NAGA,Alpha-N-acetylgalactosaminidase,Inflammation_II
+nagk,NAGK,N-acetyl-D-glucosamine kinase,Cardiometabolic_II
+nagpa,NAGPA,N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase,Inflammation_II
+nampt,NAMPT,Nicotinamide phosphoribosyltransferase,Oncology
+nap1l4,NAP1L4,Nucleosome assembly protein 1-like 4,Oncology_II
+naprt,NAPRT,Nicotinate phosphoribosyltransferase,Neurology_II
+nars1,NARS1,"Asparagine--tRNA ligase, cytoplasmic",Neurology_II
+nbl1,NBL1,Neuroblastoma suppressor of tumorigenicity 1,Oncology
+nbn,NBN,Nibrin,Inflammation
+ncam1,NCAM1,Neural cell adhesion molecule 1,Cardiometabolic
+ncam2,NCAM2,Neural cell adhesion molecule 2,Neurology
+ncan,NCAN,Neurocan core protein,Neurology
+ncf2,NCF2,Neutrophil cytosol factor 2,Inflammation
+nck2,NCK2,Cytoplasmic protein NCK2,Inflammation
+ncln,NCLN,Nicalin,Inflammation
+ncr1,NCR1,Natural cytotoxicity triggering receptor 1,Inflammation
+ncr3lg1,NCR3LG1,Natural cytotoxicity triggering receptor 3 ligand 1,Oncology_II
+ncs1,NCS1,Neuronal calcium sensor 1,Oncology
+ndrg1,NDRG1,Protein NDRG1,Neurology
+ndst1,NDST1,Bifunctional heparan sulfate N-deacetylase/N-sulfotransferase 1,Oncology_II
+ndufa5,NDUFA5,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5,Inflammation_II
+ndufb7,NDUFB7,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7,Oncology_II
+ndufs6,NDUFS6,"NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitochondrial",Oncology
+neb,NEB,Nebulin,Cardiometabolic_II
+necap2,NECAP2,Adaptin ear-binding coat-associated protein 2,Cardiometabolic_II
+nectin1,NECTIN1,Nectin-1,Inflammation_II
+nectin2,NECTIN2,Nectin-2,Cardiometabolic
+nectin4,NECTIN4,Nectin-4,Oncology
+nedd4l,NEDD4L,E3 ubiquitin-protein ligase NEDD4-like,Inflammation_II
+nedd9,NEDD9,Enhancer of filamentation 1,Inflammation_II
+nefl,NEFL,Neurofilament light polypeptide,Neurology
+nek7,NEK7,Serine/threonine-protein kinase Nek7,Oncology_II
+nell1,NELL1,Protein kinase C-binding protein NELL1,Oncology
+nell2,NELL2,Protein kinase C-binding protein NELL2,Inflammation
+nenf,NENF,Neudesin,Oncology_II
+neo1,NEO1,Neogenin,Neurology_II
+nexn,NEXN,Nexilin,Inflammation_II
+nfasc,NFASC,Neurofascin,Inflammation
+nfat5,NFAT5,Nuclear factor of activated T-cells 5,Inflammation_II
+nfatc1,NFATC1,"Nuclear factor of activated T-cells, cytoplasmic 1",Inflammation
+nfatc3,NFATC3,"Nuclear factor of activated T-cells, cytoplasmic 3",Inflammation
+nfe2,NFE2,Transcription factor NF-E2 45 kDa subunit,Cardiometabolic_II
+nfic,NFIC,Nuclear factor 1 C-type,Neurology_II
+nfkb1,NFKB1,Nuclear factor NF-kappa-B p105 subunit,Cardiometabolic_II
+nfkb2,NFKB2,Nuclear factor NF-kappa-B p100 subunit,Oncology_II
+nfkbie,NFKBIE,NF-kappa-B inhibitor epsilon,Oncology
+nfu1,NFU1,"NFU1 iron-sulfur cluster scaffold homolog, mitochondrial",Oncology_II
+nfx1,NFX1,Transcriptional repressor NF-X1,Cardiometabolic_II
+nfya,NFYA,Nuclear transcription factor Y subunit alpha,Cardiometabolic_II
+ngf,NGF,Beta-nerve growth factor,Neurology
+ngfr,NGFR,Tumor necrosis factor receptor superfamily member 16,Cardiometabolic_II
+ngrn,NGRN,Neugrin,Neurology_II
+nhlrc3,NHLRC3,NHL repeat-containing protein 3,Inflammation_II
+nid1,NID1,Nidogen-1,Cardiometabolic
+nid2,NID2,Nidogen-2,Neurology
+ninj1,NINJ1,Ninjurin-1,Oncology
+nit1,NIT1,Deaminated glutathione amidase,Cardiometabolic_II
+nit2,NIT2,Omega-amidase NIT2,Cardiometabolic_II
+nlgn1,NLGN1,Neuroligin-1,Neurology_II
+nlgn2,NLGN2,Neuroligin-2,Neurology_II
+nme1,NME1,Nucleoside diphosphate kinase A,Inflammation_II
+nme3,NME3,Nucleoside diphosphate kinase 3,Inflammation
+nmi,NMI,N-myc-interactor,Oncology_II
+nmnat1,NMNAT1,Nicotinamide/nicotinic acid mononucleotide adenylyltransferase 1,Neurology
+nmrk2,NMRK2,Nicotinamide riboside kinase 2,Oncology_II
+nmt1,NMT1,Glycylpeptide N-tetradecanoyltransferase 1,Neurology_II
+nomo1,NOMO1,Nodal modulator 1,Neurology
+nop56,NOP56,Nucleolar protein 56,Cardiometabolic_II
+nos1,NOS1,"Nitric oxide synthase, brain",Neurology
+nos2,NOS2,"Nitric oxide synthase, inducible",Cardiometabolic_II
+nos3,NOS3,"Nitric oxide synthase, endothelial",Neurology
+notch1,NOTCH1,Neurogenic locus notch homolog protein 1,Cardiometabolic
+notch2,NOTCH2,Neurogenic locus notch homolog protein 2,Cardiometabolic_II
+notch3,NOTCH3,Neurogenic locus notch homolog protein 3,Cardiometabolic
+npc2,NPC2,NPC intracellular cholesterol transporter 2,Cardiometabolic_II
+npdc1,NPDC1,Neural proliferation differentiation and control protein 1,Cardiometabolic
+nphs1,NPHS1,Nephrin,Inflammation_II
+nphs2,NPHS2,Podocin,Inflammation_II
+npl,NPL,N-acetylneuraminate lyase,Cardiometabolic_II
+npm1,NPM1,Nucleophosmin,Neurology
+nppb,NPPB,Natriuretic peptides B,Cardiometabolic
+nppc,NPPC,C-type natriuretic peptide,Inflammation
+npr1,NPR1,Atrial natriuretic peptide receptor 1,Cardiometabolic_II
+nptn,NPTN,Neuroplastin,Oncology
+nptx1,NPTX1,Neuronal pentraxin-1,Neurology
+nptx2,NPTX2,Neuronal pentraxin-2,Cardiometabolic_II
+nptxr,NPTXR,Neuronal pentraxin receptor,Cardiometabolic
+npy,NPY,Pro-neuropeptide Y,Oncology
+nrcam,NRCAM,Neuronal cell adhesion molecule,Cardiometabolic
+nrgn,NRGN,Neurogranin,Inflammation_II
+nrn1,NRN1,Neuritin,Neurology_II
+nrp1,NRP1,Neuropilin-1,Cardiometabolic
+nrp2,NRP2,Neuropilin-2,Neurology
+nrtn,NRTN,Neurturin,Inflammation
+nrxn3,NRXN3,Neurexin-3,Neurology_II
+nsfl1c,NSFL1C,NSFL1 cofactor p47,Neurology
+nt5c,NT5C,"5'(3')-deoxyribonucleotidase, cytosolic type",Cardiometabolic_II
+nt5c1a,NT5C1A,Cytosolic 5'-nucleotidase 1A,Neurology_II
+nt5c3a,NT5C3A,Cytosolic 5'-nucleotidase 3A,Inflammation
+nt5e,NT5E,5'-nucleotidase,Oncology
+ntf3,NTF3,Neurotrophin-3,Inflammation
+ntf4,NTF4,Neurotrophin-4,Oncology
+ntprobnp,NTproBNP,N-terminal prohormone of brain natriuretic peptide,Cardiometabolic
+ntrk2,NTRK2,BDNF/NT-3 growth factors receptor,Cardiometabolic
+ntrk3,NTRK3,NT-3 growth factor receptor,Neurology
+nub1,NUB1,NEDD8 ultimate buster 1,Inflammation
+nubp1,NUBP1,Cytosolic Fe-S cluster assembly factor NUBP1,Oncology_II
+nucb2,NUCB2,Nucleobindin-2,Oncology
+nudc,NUDC,Nuclear migration protein nudC,Inflammation
+nudt10,NUDT10,Diphosphoinositol polyphosphate phosphohydrolase 3-alpha,Cardiometabolic_II
+nudt15,NUDT15,Nucleotide triphosphate diphosphatase NUDT15,Cardiometabolic_II
+nudt16,NUDT16,U8 snoRNA-decapping enzyme,Oncology_II
+nudt2,NUDT2,Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical],Oncology
+nudt5,NUDT5,ADP-sugar pyrophosphatase,Neurology
+numb,NUMB,Protein numb homolog,Inflammation_II
+nup50,NUP50,Nuclear pore complex protein Nup50,Cardiometabolic_II
+nxpe4,NXPE4,NXPE family member 4,Cardiometabolic_II
+nxph1,NXPH1,Neurexophilin-1,Neurology
+nxph3,NXPH3,Neurexophilin-3,Inflammation_II
+obp2b,OBP2B,Odorant-binding protein 2b,Neurology
+ocln,OCLN,Occludin,Neurology_II
+odam,ODAM,Odontogenic ameloblast-associated protein,Neurology
+ofd1,OFD1,Oral-facial-digital syndrome 1 protein,Oncology_II
+oga,OGA,Protein O-GlcNAcase,Oncology_II
+ogfr,OGFR,Opioid growth factor receptor,Oncology
+ogn,OGN,Mimecan,Neurology
+ogt,OGT,UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase 110 kDa subunit,Oncology_II
+olfm4,OLFM4,Olfactomedin-4,Inflammation_II
+olr1,OLR1,Oxidized low-density lipoprotein receptor 1,Cardiometabolic
+omd,OMD,Osteomodulin,Inflammation
+omg,OMG,Oligodendrocyte-myelin glycoprotein,Oncology
+omp,OMP,Olfactory marker protein,Neurology_II
+ophn1,OPHN1,Oligophrenin-1,Neurology_II
+oplah,OPLAH,5-oxoprolinase,Cardiometabolic_II
+optc,OPTC,Opticin,Oncology
+orm1,ORM1,Alpha-1-acid glycoprotein 1,Inflammation_II
+osbpl2,OSBPL2,Oxysterol-binding protein-related protein 2,Neurology_II
+oscar,OSCAR,Osteoclast-associated immunoglobulin-like receptor,Inflammation
+osm,OSM,Oncostatin-M,Inflammation
+osmr,OSMR,Oncostatin-M-specific receptor subunit beta,Cardiometabolic
+ostn,OSTN,Osteocrin,Neurology_II
+otoa,OTOA,Otoancorin,Neurology_II
+otud6b,OTUD6B,Deubiquitinase OTUD6B,Oncology_II
+otud7b,OTUD7B,OTU domain-containing protein 7B,Neurology_II
+oxct1,OXCT1,"Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial",Cardiometabolic_II
+oxt,OXT,Oxytocin-neurophysin 1,Neurology
+p4hb,P4HB,Protein disulfide-isomerase,Oncology
+pacs2,PACS2,Phosphofurin acidic cluster sorting protein 2,Cardiometabolic_II
+padi2,PADI2,Protein-arginine deiminase type-2,Inflammation
+padi4,PADI4,Protein-arginine deiminase type-4,Neurology
+paep,PAEP,Glycodelin,Neurology
+pafah1b3,PAFAH1B3,Platelet-activating factor acetylhydrolase IB subunit alpha1,Neurology_II
+pafah2,PAFAH2,"Platelet-activating factor acetylhydrolase 2, cytoplasmic",Oncology_II
+pag1,PAG1,Phosphoprotein associated with glycosphingolipid-enriched microdomains 1,Cardiometabolic
+pagr1,PAGR1,PAXIP1-associated glutamate-rich protein 1,Cardiometabolic_II
+paip2b,PAIP2B,Polyadenylate-binding protein-interacting protein 2B,Oncology_II
+pak4,PAK4,Serine/threonine-protein kinase PAK 4,Neurology
+palld,PALLD,Palladin,Inflammation_II
+palm,PALM,Paralemmin-1,Oncology_II
+palm2,PALM2,Paralemmin-2,Neurology_II
+palm3,PALM3,Paralemmin-3,Cardiometabolic_II
+pam,PAM,Peptidyl-glycine alpha-amidating monooxygenase,Cardiometabolic
+pamr1,PAMR1,Inactive serine protease PAMR1,Neurology
+pappa,PAPPA,Pappalysin-1,Inflammation
+pard3,PARD3,Partitioning defective 3 homolog,Oncology_II
+park7,PARK7,Parkinson disease protein 7,Neurology
+parp1,PARP1,Poly [ADP-ribose] polymerase 1,Inflammation
+paxx,PAXX,Protein PAXX,Inflammation_II
+pbk,PBK,Lymphokine-activated killer T-cell-originated protein kinase,Oncology_II
+pbld,PBLD,Phenazine biosynthesis-like domain-containing protein,Neurology
+pbxip1,PBXIP1,Pre-B-cell leukemia transcription factor-interacting protein 1,Oncology_II
+pcare,PCARE,Photoreceptor cilium actin regulator,Neurology_II
+pcbd1,PCBD1,Pterin-4-alpha-carbinolamine dehydratase,Inflammation_II
+pcbp2,PCBP2,Poly(rC)-binding protein 2,Neurology_II
+pcdh1,PCDH1,Protocadherin-1,Inflammation
+pcdh12,PCDH12,Protocadherin-12,Neurology_II
+pcdh17,PCDH17,Protocadherin-17,Cardiometabolic
+pcdh7,PCDH7,Protocadherin-7,Oncology_II
+pcdh9,PCDH9,Protocadherin-9,Oncology_II
+pcdhb15,PCDHB15,Protocadherin beta-15,Oncology_II
+pcna,PCNA,Proliferating cell nuclear antigen,Oncology_II
+pcolce,PCOLCE,Procollagen C-endopeptidase enhancer 1,Cardiometabolic
+pcsk7,PCSK7,Proprotein convertase subtilisin/kexin type 7,Oncology_II
+pcsk9,PCSK9,Proprotein convertase subtilisin/kexin type 9,Cardiometabolic
+pcyt2,PCYT2,Ethanolamine-phosphate cytidylyltransferase,Oncology_II
+pdap1,PDAP1,28 kDa heat- and acid-stable phosphoprotein,Cardiometabolic_II
+pdcd1,PDCD1,Programmed cell death protein 1,Oncology
+pdcd1lg2,PDCD1LG2,Programmed cell death 1 ligand 2,Oncology
+pdcd5,PDCD5,Programmed cell death protein 5,Neurology
+pdcd6,PDCD6,Programmed cell death protein 6,Cardiometabolic
+pdcl2,PDCL2,Phosducin-like protein 2,Oncology_II
+pde1c,PDE1C,"Calcium/calmodulin-dependent 3',5'-cyclic nucleotide phosphodiesterase 1C",Oncology_II
+pde4d,PDE4D,"cAMP-specific 3',5'-cyclic phosphodiesterase 4D",Cardiometabolic_II
+pde5a,PDE5A,"cGMP-specific 3',5'-cyclic phosphodiesterase",Inflammation_II
+pdgfa,PDGFA,Platelet-derived growth factor subunit A,Cardiometabolic
+pdgfb,PDGFB,Platelet-derived growth factor subunit B,Inflammation
+pdgfc,PDGFC,Platelet-derived growth factor C,Oncology
+pdgfra,PDGFRA,Platelet-derived growth factor receptor alpha,Cardiometabolic
+pdgfrb,PDGFRB,Platelet-derived growth factor receptor beta,Cardiometabolic
+pdia2,PDIA2,Protein disulfide-isomerase A2,Oncology_II
+pdia3,PDIA3,Protein disulfide-isomerase A3,Inflammation_II
+pdia4,PDIA4,Protein disulfide-isomerase A4,Cardiometabolic_II
+pdia5,PDIA5,Protein disulfide-isomerase A5,Oncology_II
+pdlim5,PDLIM5,PDZ and LIM domain protein 5,Neurology_II
+pdlim7,PDLIM7,PDZ and LIM domain protein 7,Inflammation
+pdp1,PDP1,"[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 1, mitochondrial",Oncology
+pdrg1,PDRG1,p53 and DNA damage-regulated protein 1,Neurology_II
+pdxdc1,PDXDC1,Pyridoxal-dependent decarboxylase domain-containing protein 1,Oncology_II
+pdzd2,PDZD2,PDZ domain-containing protein 2,Cardiometabolic_II
+pdzk1,PDZK1,Na(+)/H(+) exchange regulatory cofactor NHE-RF3,Inflammation_II
+pear1,PEAR1,Platelet endothelial aggregation receptor 1,Cardiometabolic
+pebp1,PEBP1,Phosphatidylethanolamine-binding protein 1,Neurology
+pecam1,PECAM1,Platelet endothelial cell adhesion molecule,Neurology
+pecr,PECR,Peroxisomal trans-2-enoyl-CoA reductase,Cardiometabolic_II
+penk,PENK,Proenkephalin-A,Inflammation_II
+pepd,PEPD,Xaa-Pro dipeptidase,Inflammation_II
+per3,PER3,Period circadian protein homolog 3,Inflammation_II
+pf4,PF4,Platelet factor 4,Inflammation_II
+pfdn2,PFDN2,Prefoldin subunit 2,Neurology
+pfdn4,PFDN4,Prefoldin subunit 4,Oncology_II
+pfdn6,PFDN6,Prefoldin subunit 6,Neurology_II
+pfkfb2,PFKFB2,"6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2",Oncology
+pga4,PGA4,Pepsin A-4,Inflammation_II
+pgd,PGD,"6-phosphogluconate dehydrogenase, decarboxylating",Cardiometabolic_II
+pgf,PGF,Placenta growth factor,Inflammation
+pglyrp1,PGLYRP1,Peptidoglycan recognition protein 1,Cardiometabolic
+pglyrp2,PGLYRP2,N-acetylmuramoyl-L-alanine amidase,Inflammation_II
+pglyrp4,PGLYRP4,Peptidoglycan recognition protein 4,Cardiometabolic_II
+pgm2,PGM2,Phosphoglucomutase-2,Neurology_II
+pgr,PGR,Progesterone receptor,Inflammation_II
+phactr2,PHACTR2,Phosphatase and actin regulator 2,Neurology_II
+phldb1,PHLDB1,Pleckstrin homology-like domain family B member 1,Oncology_II
+phldb2,PHLDB2,Pleckstrin homology-like domain family B member 2,Oncology_II
+phospho1,PHOSPHO1,Phosphoethanolamine/phosphocholine phosphatase,Neurology
+phykpl,PHYKPL,5-phosphohydroxy-L-lysine phospho-lyase,Inflammation_II
+pi16,PI16,Peptidase inhibitor 16,Inflammation_II
+pi3,PI3,Elafin,Cardiometabolic
+pibf1,PIBF1,"Progesterone-induced-blocking factor 1, Isoform 4",Neurology_II
+pigr,PIGR,Polymeric immunoglobulin receptor,Neurology
+pik3ap1,PIK3AP1,Phosphoinositide 3-kinase adapter protein 1,Inflammation
+pik3ip1,PIK3IP1,Phosphoinositide-3-kinase-interacting protein 1,Neurology
+pikfyve,PIKFYVE,1-phosphatidylinositol 3-phosphate 5-kinase,Inflammation_II
+pilra,PILRA,Paired immunoglobulin-like type 2 receptor alpha,Neurology
+pilrb,PILRB,Paired immunoglobulin-like type 2 receptor beta,Cardiometabolic
+pinlyp,PINLYP,phospholipase A2 inhibitor and Ly6/PLAUR domain-containing protein,Inflammation_II
+pithd1,PITHD1,PITH domain-containing protein 1,Oncology_II
+pkd1,PKD1,Polycystin-1,Cardiometabolic_II
+pkd2,PKD2,Polycystin-2,Cardiometabolic_II
+pklr,PKLR,Pyruvate kinase PKLR,Inflammation
+pkn3,PKN3,Serine/threonine-protein kinase N3,Oncology_II
+pla2g10,PLA2G10,Group 10 secretory phospholipase A2,Neurology
+pla2g15,PLA2G15,Phospholipase A2 group XV,Oncology
+pla2g1b,PLA2G1B,Phospholipase A2,Cardiometabolic
+pla2g2a,PLA2G2A,"Phospholipase A2, membrane associated",Cardiometabolic
+pla2g4a,PLA2G4A,Cytosolic phospholipase A2,Inflammation
+pla2g7,PLA2G7,Platelet-activating factor acetylhydrolase,Neurology
+plat,PLAT,Tissue-type plasminogen activator,Cardiometabolic
+plau,PLAU,Urokinase-type plasminogen activator,Neurology
+plaur,PLAUR,Urokinase plasminogen activator surface receptor,Inflammation
+plb1,PLB1,"Phospholipase B1, membrane-associated",Neurology_II
+plcb1,PLCB1,"1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase beta-1",Inflammation_II
+plcb2,PLCB2,"1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase beta-2",Neurology_II
+plekho1,PLEKHO1,Pleckstrin homology domain-containing family O member 1,Neurology_II
+plg,PLG,Plasminogen,Inflammation_II
+plin1,PLIN1,Perilipin-1,Neurology
+plin3,PLIN3,Perilipin-3,Cardiometabolic
+plpbp,PLPBP,Pyridoxal phosphate homeostasis protein,Cardiometabolic
+plscr3,PLSCR3,Phospholipid scramblase 3,Neurology_II
+pltp,PLTP,Phospholipid transfer protein,Cardiometabolic
+plxdc1,PLXDC1,Plexin domain-containing protein 1,Oncology
+plxdc2,PLXDC2,Plexin domain-containing protein 2,Neurology_II
+plxna4,PLXNA4,Plexin-A4,Inflammation
+plxnb2,PLXNB2,Plexin-B2,Cardiometabolic
+plxnb3,PLXNB3,Plexin-B3,Cardiometabolic
+pm20d1,PM20D1,N-fatty-acyl-amino acid synthase/hydrolase PM20D1,Cardiometabolic
+pmch,PMCH,Pro-MCH,Cardiometabolic_II
+pmm2,PMM2,Phosphomannomutase 2,Cardiometabolic_II
+pms1,PMS1,PMS1 protein homolog 1,Neurology_II
+pmvk,PMVK,Phosphomevalonate kinase,Neurology
+pnlip,PNLIP,Pancreatic triacylglycerol lipase,Inflammation_II
+pnliprp1,PNLIPRP1,Inactive pancreatic lipase-related protein 1,Neurology_II
+pnliprp2,PNLIPRP2,Pancreatic lipase-related protein 2,Inflammation
+pnma1,PNMA1,Paraneoplastic antigen Ma1,Cardiometabolic_II
+pnma2,PNMA2,Paraneoplastic antigen Ma2,Neurology_II
+pnpt1,PNPT1,"Polyribonucleotide nucleotidyltransferase 1, mitochondrial",Inflammation
+podxl,PODXL,Podocalyxin,Oncology
+podxl2,PODXL2,Podocalyxin-like protein 2,Oncology
+pof1b,POF1B,Protein POF1B,Inflammation_II
+polr2a,POLR2A,DNA-directed RNA polymerase II subunit RPB1,Inflammation_II
+polr2f,POLR2F,"DNA-directed RNA polymerases I, II, and III subunit RPABC2",Oncology
+pomc,POMC,Pro-opiomelanocortin,Cardiometabolic_II
+pon1,PON1,Serum paraoxonase/arylesterase 1,Inflammation_II
+pon2,PON2,Serum paraoxonase/arylesterase 2,Cardiometabolic
+pon3,PON3,Serum paraoxonase/lactonase 3,Inflammation
+postn,POSTN,Periostin,Cardiometabolic_II
+ppbp,PPBP,Platelet basic protein,Inflammation_II
+ppcdc,PPCDC,Phosphopantothenoylcysteine decarboxylase,Neurology
+ppib,PPIB,Peptidyl-prolyl cis-trans isomerase B,Cardiometabolic
+ppie,PPIE,Peptidyl-prolyl cis-trans isomerase E,Oncology_II
+ppif,PPIF,"Peptidyl-prolyl cis-trans isomerase F, mitochondrial",Cardiometabolic_II
+ppl,PPL,Periplakin,Inflammation_II
+ppm1a,PPM1A,Protein phosphatase 1A,Oncology
+ppm1b,PPM1B,Protein phosphatase 1B,Inflammation_II
+ppm1f,PPM1F,Protein phosphatase 1F,Cardiometabolic_II
+ppme1,PPME1,Protein phosphatase methylesterase 1,Oncology
+ppp1cc,PPP1CC,Serine/threonine-protein phosphatase PP1-gamma catalytic subunit,Oncology_II
+ppp1r12a,PPP1R12A,Protein phosphatase 1 regulatory subunit 12A,Oncology
+ppp1r12b,PPP1R12B,Protein phosphatase 1 regulatory subunit 12B,Oncology_II
+ppp1r14a,PPP1R14A,Protein phosphatase 1 regulatory subunit 14A,Neurology_II
+ppp1r14d,PPP1R14D,Protein phosphatase 1 regulatory subunit 14D,Neurology_II
+ppp1r2,PPP1R2,Protein phosphatase inhibitor 2,Cardiometabolic
+ppp1r9b,PPP1R9B,Neurabin-2,Inflammation
+ppp2r5a,PPP2R5A,Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit alpha isoform,Oncology_II
+ppp3r1,PPP3R1,Calcineurin subunit B type 1,Neurology
+ppt1,PPT1,Palmitoyl-protein thioesterase 1,Neurology_II
+ppy,PPY,Pancreatic prohormone,Oncology
+pqbp1,PQBP1,Polyglutamine-binding protein 1,Oncology
+prame,PRAME,Melanoma antigen preferentially expressed in tumors,Oncology_II
+prap1,PRAP1,Proline-rich acidic protein 1,Cardiometabolic_II
+prc1,PRC1,Protein regulator of cytokinesis 1,Oncology_II
+prcp,PRCP,Lysosomal Pro-X carboxypeptidase,Cardiometabolic
+prdx1,PRDX1,Peroxiredoxin-1,Neurology
+prdx2,PRDX2,Peroxiredoxin-2,Inflammation_II
+prdx3,PRDX3,"Thioredoxin-dependent peroxide reductase, mitochondrial",Inflammation
+prdx5,PRDX5,"Peroxiredoxin-5, mitochondrial",Inflammation
+prdx6,PRDX6,Peroxiredoxin-6,Oncology
+preb,PREB,Prolactin regulatory element-binding protein,Inflammation
+prelp,PRELP,Prolargin,Inflammation
+prg2,PRG2,Bone marrow proteoglycan,Cardiometabolic_II
+prg3,PRG3,Proteoglycan 3,Cardiometabolic_II
+prkab1,PRKAB1,5'-AMP-activated protein kinase subunit beta-1,Inflammation
+prkag3,PRKAG3,5'-AMP-activated protein kinase subunit gamma-3,Neurology_II
+prkar1a,PRKAR1A,cAMP-dependent protein kinase type I-alpha regulatory subunit,Cardiometabolic
+prkar2a,PRKAR2A,cAMP-dependent protein kinase type II-alpha regulatory subunit,Neurology_II
+prkcq,PRKCQ,Protein kinase C theta type,Inflammation
+prkd2,PRKD2,Serine/threonine-protein kinase D2,Cardiometabolic_II
+prkg1,PRKG1,cGMP-dependent protein kinase 1,Inflammation_II
+prkra,PRKRA,Interferon-inducible double-stranded RNA-dependent protein kinase activator A,Oncology
+prl,PRL,Prolactin,Neurology
+prnd,PRND,Prion-like protein doppel,Neurology_II
+proc,PROC,Vitamin K-dependent protein C,Cardiometabolic
+procr,PROCR,Endothelial protein C receptor,Cardiometabolic_II
+prok1,PROK1,Prokineticin-1,Inflammation
+pros1,PROS1,Vitamin K-dependent protein S,Inflammation_II
+prr4,PRR4,Proline-rich protein 4,Inflammation_II
+prr5,PRR5,Proline-rich protein 5,Inflammation_II
+prrt3,PRRT3,Proline-rich transmembrane protein 3,Cardiometabolic_II
+prss2,PRSS2,Trypsin-2,Cardiometabolic
+prss22,PRSS22,Brain-specific serine protease 4,Inflammation_II
+prss27,PRSS27,Serine protease 27,Cardiometabolic
+prss53,PRSS53,Serine protease 53,Neurology_II
+prss8,PRSS8,Prostasin,Inflammation
+prtfdc1,PRTFDC1,Phosphoribosyltransferase domain-containing protein 1,Neurology
+prtg,PRTG,Protogenin,Oncology
+prtn3,PRTN3,Myeloblastin,Cardiometabolic
+prune2,PRUNE2,Protein prune homolog 2,Oncology_II
+psap,PSAP,Prosaposin,Cardiometabolic_II
+psapl1,PSAPL1,Proactivator polypeptide-like 1,Oncology_II
+psca,PSCA,Prostate stem cell antigen,Oncology_II
+psg1,PSG1,Pregnancy-specific beta-1-glycoprotein 1,Neurology
+psip1,PSIP1,PC4 and SFRS1-interacting protein,Inflammation
+psma1,PSMA1,Proteasome subunit alpha type-1,Oncology
+psmc3,PSMC3,26S proteasome regulatory subunit 6A,Oncology_II
+psmd1,PSMD1,26S proteasome non-ATPase regulatory subunit 1,Neurology_II
+psmd5,PSMD5,26S proteasome non-ATPase regulatory subunit 5,Neurology_II
+psmd9,PSMD9,26S proteasome non-ATPase regulatory subunit 9,Oncology
+psme1,PSME1,Proteasome activator complex subunit 1,Neurology
+psme2,PSME2,Proteasome activator complex subunit 2,Neurology
+psmg3,PSMG3,Proteasome assembly chaperone 3,Inflammation
+psmg4,PSMG4,Proteasome assembly chaperone 4,Inflammation_II
+pspn,PSPN,Persephin,Inflammation
+psrc1,PSRC1,Proline/serine-rich coiled-coil protein 1,Oncology
+pstpip2,PSTPIP2,Proline-serine-threonine phosphatase-interacting protein 2,Inflammation_II
+pten,PTEN,"Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and dual-specificity protein phosphatase PTEN",Neurology
+ptgds,PTGDS,Prostaglandin-H2 D-isomerase,Cardiometabolic
+ptges2,PTGES2,Prostaglandin E synthase 2,Inflammation_II
+ptgr1,PTGR1,Prostaglandin reductase 1,Cardiometabolic_II
+pth,PTH,Parathyroid hormone,Neurology_II
+pth1r,PTH1R,Parathyroid hormone/parathyroid hormone-related peptide receptor,Inflammation
+ptk7,PTK7,Inactive tyrosine-protein kinase 7,Neurology
+ptn,PTN,Pleiotrophin,Cardiometabolic
+ptp4a3,PTP4A3,Protein tyrosine phosphatase type IVA 3,Inflammation_II
+ptpn1,PTPN1,Tyrosine-protein phosphatase non-receptor type 1,Neurology
+ptpn6,PTPN6,Tyrosine-protein phosphatase non-receptor type 6,Inflammation
+ptpn9,PTPN9,Tyrosine-protein phosphatase non-receptor type 9,Inflammation_II
+ptprb,PTPRB,Receptor-type tyrosine-protein phosphatase beta,Cardiometabolic_II
+ptprc,PTPRC,Receptor-type tyrosine-protein phosphatase C,Cardiometabolic_II
+ptprf,PTPRF,Receptor-type tyrosine-protein phosphatase F,Cardiometabolic
+ptprh,PTPRH,Receptor-type tyrosine-protein phosphatase H,Oncology_II
+ptprk,PTPRK,Receptor-type tyrosine-protein phosphatase kappa,Oncology_II
+ptprm,PTPRM,Receptor-type tyrosine-protein phosphatase mu,Inflammation
+ptprn2,PTPRN2,Receptor-type tyrosine-protein phosphatase N2,Neurology
+ptprr,PTPRR,Receptor-type tyrosine-protein phosphatase R,Neurology_II
+ptprs,PTPRS,Receptor-type tyrosine-protein phosphatase S,Cardiometabolic
+ptprz1,PTPRZ1,Receptor-type tyrosine-protein phosphatase zeta,Cardiometabolic_II
+ptrhd1,PTRHD1,Putative peptidyl-tRNA hydrolase PTRHD1,Inflammation_II
+pts,PTS,6-pyruvoyl tetrahydrobiopterin synthase,Neurology
+pttg1,PTTG1,Securin,Oncology_II
+ptx3,PTX3,Pentraxin-related protein PTX3,Inflammation
+pvalb,PVALB,Parvalbumin alpha,Oncology
+pvr,PVR,Poliovirus receptor,Neurology
+pxdnl,PXDNL,Peroxidasin-like protein,Oncology_II
+pxn,PXN,Paxillin,Neurology
+pydc1,PYDC1,Pyrin domain-containing protein 1,Cardiometabolic_II
+pyy,PYY,Peptide YY,Cardiometabolic_II
+pzp,PZP,Pregnancy zone protein,Inflammation_II
+qdpr,QDPR,Dihydropteridine reductase,Cardiometabolic
+qpct,QPCT,Glutaminyl-peptide cyclotransferase,Cardiometabolic
+qsox1,QSOX1,Sulfhydryl oxidase 1,Inflammation_II
+rab10,RAB10,Ras-related protein Rab-10,Cardiometabolic_II
+rab11fip3,RAB11FIP3,Rab11 family-interacting protein 3,Cardiometabolic_II
+rab27b,RAB27B,Ras-related protein Rab-27B,Cardiometabolic_II
+rab2b,RAB2B,Ras-related protein Rab-2B,Oncology_II
+rab33a,RAB33A,Ras-related protein Rab-33A,Cardiometabolic_II
+rab37,RAB37,Ras-related protein Rab-37,Inflammation
+rab39b,RAB39B,Ras-related protein Rab-39B,Cardiometabolic_II
+rab3gap1,RAB3GAP1,Rab3 GTPase-activating protein catalytic subunit,Neurology_II
+rab44,RAB44,Ras-related protein Rab-44,Oncology_II
+rab6a,RAB6A,Ras-related protein Rab-6A,Inflammation
+rab6b,RAB6B,Ras-related protein Rab-6B,Neurology
+rabep1,RABEP1,Rab GTPase-binding effector protein 1,Inflammation_II
+rabepk,RABEPK,Rab9 effector protein with kelch motifs,Oncology
+rabgap1l,RABGAP1L,Rab GTPase-activating protein 1-like,Inflammation
+rac3,RAC3,Ras-related C3 botulinum toxin substrate 3,Neurology_II
+rad23b,RAD23B,UV excision repair protein RAD23 homolog B,Oncology
+rad51,RAD51,DNA repair protein RAD51 homolog 1,Oncology_II
+ralb,RALB,Ras-related protein Ral-B,Inflammation_II
+raly,RALY,RNA-binding protein Raly,Oncology_II
+ranbp1,RANBP1,Ran-specific GTPase-activating protein,Cardiometabolic_II
+ranbp2,RANBP2,E3 SUMO-protein ligase RanBP2,Neurology_II
+rangap1,RANGAP1,Ran GTPase-activating protein 1,Oncology
+rap1a,RAP1A,Ras-related protein Rap-1A,Inflammation_II
+rapgef2,RAPGEF2,Rap guanine nucleotide exchange factor 2,Oncology_II
+rarres1,RARRES1,Retinoic acid receptor responder protein 1,Oncology
+rarres2,RARRES2,Retinoic acid receptor responder protein 2,Cardiometabolic
+rasa1,RASA1,Ras GTPase-activating protein 1,Neurology
+rasgrf1,RASGRF1,Ras-specific guanine nucleotide-releasing factor 1,Oncology_II
+rassf2,RASSF2,Ras association domain-containing protein 2,Oncology
+rbfox3,RBFOX3,RNA binding protein fox-1 homolog 3,Neurology_II
+rbks,RBKS,Ribokinase,Neurology
+rbm17,RBM17,Splicing factor 45,Neurology_II
+rbm19,RBM19,Probable RNA-binding protein 19,Cardiometabolic_II
+rbm25,RBM25,RNA-binding protein 25,Oncology_II
+rbp1,RBP1,Retinol-binding protein 1,Neurology_II
+rbp2,RBP2,Retinol-binding protein 2,Oncology
+rbp5,RBP5,Retinol-binding protein 5,Oncology
+rbp7,RBP7,Retinoid-binding protein 7,Oncology_II
+rbpms,RBPMS,RNA-binding protein with multiple splicing,Inflammation_II
+rbpms2,RBPMS2,RNA-binding protein with multiple splicing 2,Cardiometabolic_II
+rcc1,RCC1,Regulator of chromosome condensation,Oncology_II
+rcor1,RCOR1,REST corepressor 1,Cardiometabolic
+reck,RECK,Reversion-inducing cysteine-rich protein with Kazal motifs,Cardiometabolic_II
+reep4,REEP4,Receptor expression-enhancing protein 4,Neurology_II
+reg1a,REG1A,Lithostathine-1-alpha,Cardiometabolic
+reg1b,REG1B,Lithostathine-1-beta,Cardiometabolic
+reg3a,REG3A,Regenerating islet-derived protein 3-alpha,Cardiometabolic
+reg3g,REG3G,Regenerating islet-derived protein 3-gamma,Oncology_II
+reg4,REG4,Regenerating islet-derived protein 4,Inflammation
+relb,RELB,Transcription factor RelB,Inflammation_II
+relt,RELT,Tumor necrosis factor receptor superfamily member 19L,Neurology
+ren,REN,Renin,Cardiometabolic
+reps1,REPS1,RalBP1-associated Eps domain-containing protein 1,Inflammation_II
+rest,REST,RE1-silencing transcription factor,Oncology_II
+ret,RET,Proto-oncogene tyrosine-protein kinase receptor Ret,Oncology
+retn,RETN,Resistin,Cardiometabolic
+rexo2,REXO2,"Oligoribonuclease, mitochondrial",Cardiometabolic_II
+rfc4,RFC4,Replication factor C subunit 4,Oncology_II
+rgcc,RGCC,Regulator of cell cycle RGCC,Neurology_II
+rgl2,RGL2,Ral guanine nucleotide dissociation stimulator-like 2,Oncology_II
+rgma,RGMA,Repulsive guidance molecule A,Neurology
+rgmb,RGMB,RGM domain family member B,Neurology
+rgs10,RGS10,Regulator of G-protein signaling 10,Neurology_II
+rgs8,RGS8,Regulator of G-protein signaling 8,Inflammation
+rhoc,RHOC,Rho-related GTP-binding protein RhoC,Neurology
+rictor,RICTOR,Rapamycin-insensitive companion of mTOR,Inflammation_II
+rida,RIDA,2-iminobutanoate/2-iminopropanoate deaminase,Inflammation_II
+rilp,RILP,Rab-interacting lysosomal protein,Oncology
+rilpl2,RILPL2,RILP-like protein 2,Cardiometabolic_II
+ripk4,RIPK4,Receptor-interacting serine/threonine-protein kinase 4,Cardiometabolic_II
+rln1,RLN1,Prorelaxin H1,Neurology_II
+rln2,RLN2,Prorelaxin H2,Inflammation_II
+rnase1,RNASE1,Ribonuclease pancreatic,Inflammation_II
+rnase10,RNASE10,Inactive ribonuclease-like protein 10,Cardiometabolic_II
+rnase3,RNASE3,Eosinophil cationic protein,Cardiometabolic
+rnase4,RNASE4,Ribonuclease 4,Inflammation_II
+rnase6,RNASE6,Ribonuclease K6,Inflammation_II
+rnaseh2a,RNASEH2A,Ribonuclease H2 subunit A,Neurology_II
+rnaset2,RNASET2,Ribonuclease T2,Cardiometabolic
+rnf149,RNF149,E3 ubiquitin-protein ligase RNF149,Cardiometabolic_II
+rnf168,RNF168,E3 ubiquitin-protein ligase RNF168,Inflammation_II
+rnf31,RNF31,E3 ubiquitin-protein ligase RNF31,Inflammation_II
+rnf4,RNF4,E3 ubiquitin-protein ligase RNF4,Oncology_II
+rnf41,RNF41,E3 ubiquitin-protein ligase NRDP1,Oncology
+rnf43,RNF43,E3 ubiquitin-protein ligase RNF43,Oncology_II
+rnf5,RNF5,E3 ubiquitin-protein ligase RNF5,Cardiometabolic_II
+robo1,ROBO1,Roundabout homolog 1,Inflammation
+robo2,ROBO2,Roundabout homolog 2,Neurology
+robo4,ROBO4,Roundabout homolog 4,Cardiometabolic_II
+ror1,ROR1,Inactive tyrosine-protein kinase transmembrane receptor ROR1,Cardiometabolic
+rp2,RP2,Protein XRP2,Oncology
+rpa2,RPA2,Replication protein A 32 kDa subunit,Inflammation_II
+rpe,RPE,Ribulose-phosphate 3-epimerase,Oncology_II
+rpgr,RPGR,X-linked retinitis pigmentosa GTPase regulator,Neurology_II
+rpl14,RPL14,60S ribosomal protein L14,Cardiometabolic_II
+rps10,RPS10,40S ribosomal protein S10,Cardiometabolic_II
+rras,RRAS,Ras-related protein R-Ras,Neurology_II
+rrm2,RRM2,Ribonucleoside-diphosphate reductase subunit M2,Oncology
+rrm2b,RRM2B,Ribonucleoside-diphosphate reductase subunit M2 B,Oncology
+rrp15,RRP15,RRP15-like protein,Neurology_II
+rspo1,RSPO1,R-spondin-1,Neurology
+rspo3,RSPO3,R-spondin-3,Oncology
+rtbdn,RTBDN,Retbindin,Oncology
+rtkn2,RTKN2,Rhotekin-2,Cardiometabolic_II
+rtn4ip1,RTN4IP1,"Reticulon-4-interacting protein 1, mitochondrial",Neurology_II
+rtn4r,RTN4R,Reticulon-4 receptor,Oncology
+ruvbl1,RUVBL1,RuvB-like 1,Oncology
+rwdd1,RWDD1,RWD domain-containing protein 1,Neurology
+ryr1,RYR1,Ryanodine receptor 1,Cardiometabolic_II
+s100a11,S100A11,Protein S100-A11,Cardiometabolic
+s100a12,S100A12,Protein S100-A12,Oncology
+s100a13,S100A13,Protein S100-A13,Inflammation_II
+s100a14,S100A14,Protein S100-A14,Neurology_II
+s100a16,S100A16,Protein S100-A16,Neurology
+s100a3,S100A3,Protein S100-A3,Oncology_II
+s100a4,S100A4,Protein S100-A4,Oncology
+s100g,S100G,Protein S100-G,Neurology_II
+s100p,S100P,Protein S100-P,Cardiometabolic
+saa4,SAA4,Serum amyloid A-4 protein,Inflammation_II
+safb2,SAFB2,Scaffold attachment factor B2,Neurology_II
+sag,SAG,S-arrestin,Neurology_II
+samd9l,SAMD9L,Sterile alpha motif domain-containing protein 9-like,Inflammation
+sap18,SAP18,Histone deacetylase complex subunit SAP18,Oncology_II
+sarg,SARG,Specifically androgen-regulated gene protein,Cardiometabolic_II
+sart1,SART1,U4/U6.U5 tri-snRNP-associated protein 1,Cardiometabolic_II
+sat1,SAT1,Diamine acetyltransferase 1,Cardiometabolic_II
+sat2,SAT2,Thialysine N-epsilon-acetyltransferase,Oncology_II
+satb1,SATB1,DNA-binding protein SATB1,Neurology_II
+sbsn,SBSN,Suprabasin,Cardiometabolic_II
+scamp3,SCAMP3,Secretory carrier-associated membrane protein 3,Oncology
+scara5,SCARA5,Scavenger receptor class A member 5,Neurology
+scarb1,SCARB1,Scavenger receptor class B member 1,Neurology
+scarb2,SCARB2,Lysosome membrane protein 2,Neurology
+scarf1,SCARF1,Scavenger receptor class F member 1,Cardiometabolic
+scarf2,SCARF2,Scavenger receptor class F member 2,Neurology
+scg2,SCG2,Secretogranin-2,Oncology
+scg3,SCG3,Secretogranin-3,Inflammation
+scgb1a1,SCGB1A1,Uteroglobin,Inflammation
+scgb2a2,SCGB2A2,Mammaglobin-A,Cardiometabolic_II
+scgb3a1,SCGB3A1,Secretoglobin family 3A member 1,Inflammation_II
+scgb3a2,SCGB3A2,Secretoglobin family 3A member 2,Inflammation
+scgn,SCGN,Secretagogin,Inflammation
+scin,SCIN,Adseverin,Neurology_II
+scly,SCLY,Selenocysteine lyase,Oncology
+scn2a,SCN2A,Sodium channel protein type 2 subunit alpha,Neurology_II
+scn2b,SCN2B,Sodium channel subunit beta-2,Neurology_II
+scn3a,SCN3A,Sodium channel protein type 3 subunit alpha,Neurology_II
+scn3b,SCN3B,Sodium channel subunit beta-3,Neurology_II
+scn4b,SCN4B,Sodium channel subunit beta-4,Cardiometabolic_II
+scp2,SCP2,Non-specific lipid-transfer protein,Oncology
+scpep1,SCPEP1,Retinoid-inducible serine carboxypeptidase,Cardiometabolic_II
+scrg1,SCRG1,Scrapie-responsive protein 1,Cardiometabolic_II
+scrib,SCRIB,Protein scribble homolog,Cardiometabolic_II
+scrn1,SCRN1,Secernin-1,Inflammation
+sct,SCT,Secretin,Neurology_II
+sdc1,SDC1,Syndecan-1,Cardiometabolic
+sdc4,SDC4,Syndecan-4,Cardiometabolic
+sdccag8,SDCCAG8,Serologically defined colon cancer antigen 8,Oncology_II
+sdhb,SDHB,Succinate dehydrogenase,Oncology_II
+sdk2,SDK2,Protein sidekick-2,Inflammation_II
+sec31a,SEC31A,Protein transport protein Sec31A,Cardiometabolic_II
+sel1l,SEL1L,Protein sel-1 homolog 1,Cardiometabolic_II
+sele,SELE,E-selectin,Cardiometabolic
+selenop,SELENOP,Selenoprotein P,Inflammation_II
+sell,SELL,L-selectin,Inflammation_II
+selp,SELP,P-selectin,Cardiometabolic
+selplg,SELPLG,P-selectin glycoprotein ligand 1,Inflammation
+sema3f,SEMA3F,Semaphorin-3F,Cardiometabolic
+sema3g,SEMA3G,Semaphorin-3G,Inflammation_II
+sema4c,SEMA4C,Semaphorin-4C,Oncology
+sema4d,SEMA4D,Semaphorin-4D,Neurology
+sema6c,SEMA6C,Semaphorin-6C,Inflammation_II
+sema7a,SEMA7A,Semaphorin-7A,Cardiometabolic
+septin3,SEPTIN3,Neuronal-specific septin-3,Neurology_II
+septin7,SEPTIN7,Septin-7,Oncology_II
+septin8,SEPTIN8,Septin-8,Neurology_II
+septin9,SEPTIN9,Septin-9,Oncology
+serpina1,SERPINA1,Alpha-1-antitrypsin,Inflammation_II
+serpina11,SERPINA11,Serpin A11,Cardiometabolic
+serpina12,SERPINA12,Serpin A12,Cardiometabolic
+serpina3,SERPINA3,Alpha-1-antichymotrypsin,Inflammation_II
+serpina4,SERPINA4,Kallistatin,Inflammation_II
+serpina5,SERPINA5,Plasma serine protease inhibitor,Inflammation_II
+serpina6,SERPINA6,Corticosteroid-binding globulin,Inflammation_II
+serpina7,SERPINA7,Thyroxine-binding globulin,Inflammation_II
+serpina9,SERPINA9,Serpin A9,Oncology
+serpinb1,SERPINB1,Leukocyte elastase inhibitor,Neurology
+serpinb5,SERPINB5,Serpin B5,Cardiometabolic
+serpinb6,SERPINB6,Serpin B6,Neurology
+serpinb8,SERPINB8,Serpin B8,Inflammation
+serpinb9,SERPINB9,Serpin B9,Neurology
+serpinc1,SERPINC1,Antithrombin-III,Inflammation_II
+serpind1,SERPIND1,Heparin cofactor 2,Inflammation_II
+serpine1,SERPINE1,Plasminogen activator inhibitor 1,Cardiometabolic
+serpine2,SERPINE2,Glia-derived nexin,Cardiometabolic_II
+serpinf1,SERPINF1,Pigment epithelium-derived factor,Inflammation_II
+serpinf2,SERPINF2,Alpha-2-antiplasmin,Inflammation_II
+serping1,SERPING1,Plasma protease C1 inhibitor,Inflammation_II
+serpinh1,SERPINH1,Serpin H1,Oncology_II
+serpini1,SERPINI1,Neuroserpin,Inflammation_II
+serpini2,SERPINI2,Serpin I2,Oncology_II
+sestd1,SESTD1,SEC14 domain and spectrin repeat-containing protein 1,Neurology
+setmar,SETMAR,Histone-lysine N-methyltransferase SETMAR,Neurology
+sez6,SEZ6,Seizure protein 6 homolog,Neurology_II
+sez6l,SEZ6L,Seizure 6-like protein,Oncology
+sez6l2,SEZ6L2,Seizure 6-like protein 2,Oncology
+sf3b4,SF3B4,Splicing factor 3B subunit 4,Oncology
+sfrp1,SFRP1,Secreted frizzled-related protein 1,Neurology
+sfrp4,SFRP4,Secreted frizzled-related protein 4,Inflammation_II
+sftpa1,SFTPA1,Pulmonary surfactant-associated protein A1,Oncology
+sftpa2,SFTPA2,Pulmonary surfactant-associated protein A2,Oncology
+sftpd,SFTPD,Pulmonary surfactant-associated protein D,Cardiometabolic
+sgsh,SGSH,N-sulphoglucosamine sulphohydrolase,Cardiometabolic_II
+sh2b3,SH2B3,SH2B adapter protein 3,Oncology
+sh2d1a,SH2D1A,SH2 domain-containing protein 1A,Inflammation
+sh3bgrl2,SH3BGRL2,SH3 domain-binding glutamic acid-rich-like protein 2,Neurology_II
+sh3bp1,SH3BP1,SH3 domain-binding protein 1,Oncology_II
+sh3gl3,SH3GL3,Endophilin-A3,Oncology_II
+sh3glb2,SH3GLB2,Endophilin-B2,Neurology_II
+shbg,SHBG,Sex hormone-binding globulin,Inflammation_II
+shc1,SHC1,SHC-transforming protein 1,Oncology_II
+shd,SHD,SH2 domain-containing adapter protein D,Cardiometabolic_II
+shh,SHH,Sonic hedgehog protein,Inflammation_II
+shisa5,SHISA5,Protein shisa-5,Cardiometabolic_II
+shmt1,SHMT1,"Serine hydroxymethyltransferase, cytosolic",Inflammation
+shpk,SHPK,Sedoheptulokinase,Oncology_II
+siae,SIAE,Sialate O-acetylesterase,Oncology
+siglec1,SIGLEC1,Sialoadhesin,Inflammation
+siglec10,SIGLEC10,Sialic acid-binding Ig-like lectin 10,Inflammation
+siglec15,SIGLEC15,Sialic acid-binding Ig-like lectin 15,Neurology
+siglec5,SIGLEC5,Sialic acid-binding Ig-like lectin 5,Neurology
+siglec6,SIGLEC6,Sialic acid-binding Ig-like lectin 6,Oncology
+siglec7,SIGLEC7,Sialic acid-binding Ig-like lectin 7,Cardiometabolic
+siglec8,SIGLEC8,Sialic acid-binding Ig-like lectin 8,Cardiometabolic_II
+siglec9,SIGLEC9,Sialic acid-binding Ig-like lectin 9,Oncology
+sil1,SIL1,Nucleotide exchange factor SIL1,Cardiometabolic_II
+sirpa,SIRPA,Tyrosine-protein phosphatase non-receptor type substrate 1,Cardiometabolic
+sirpb1,SIRPB1,Signal-regulatory protein beta-1,Inflammation
+sirt1,SIRT1,NAD-dependent protein deacetylase sirtuin-1,Inflammation_II
+sirt2,SIRT2,NAD-dependent protein deacetylase sirtuin-2,Oncology
+sirt5,SIRT5,"NAD-dependent protein deacylase sirtuin-5, mitochondrial",Neurology
+sit1,SIT1,Signaling threshold-regulating transmembrane adapter 1,Inflammation
+skap1,SKAP1,Src kinase-associated phosphoprotein 1,Neurology
+skap2,SKAP2,Src kinase-associated phosphoprotein 2,Inflammation
+skiv2l,SKIV2L,Helicase SKI2W,Cardiometabolic_II
+sla2,SLA2,Src-like-adapter 2,Neurology_II
+slamf1,SLAMF1,Signaling lymphocytic activation molecule,Inflammation
+slamf6,SLAMF6,SLAM family member 6,Oncology
+slamf7,SLAMF7,SLAM family member 7,Inflammation
+slamf8,SLAMF8,SLAM family member 8,Oncology
+slc12a2,SLC12A2,Solute carrier family 12 member 2,Cardiometabolic_II
+slc13a1,SLC13A1,Solute carrier family 13 member 1,Oncology_II
+slc16a1,SLC16A1,Monocarboxylate transporter 1,Neurology
+slc1a4,SLC1A4,Neutral amino acid transporter A,Neurology_II
+slc27a4,SLC27A4,Long-chain fatty acid transport protein 4,Neurology
+slc28a1,SLC28A1,Sodium/nucleoside cotransporter 1,Oncology_II
+slc34a3,SLC34A3,Sodium-dependent phosphate transport protein 2C,Oncology_II
+slc39a14,SLC39A14,Zinc transporter ZIP14,Neurology
+slc39a5,SLC39A5,Zinc transporter ZIP5,Inflammation
+slc44a4,SLC44A4,Choline transporter-like protein 4,Neurology_II
+slc4a1,SLC4A1,Band 3 anion transport protein,Cardiometabolic_II
+slc51b,SLC51B,Organic solute transporter subunit beta,Cardiometabolic_II
+slc9a3r1,SLC9A3R1,Na(+)/H(+) exchange regulatory cofactor NHE-RF1,Inflammation_II
+slc9a3r2,SLC9A3R2,Na(+)/H(+) exchange regulatory cofactor NHE-RF2,Oncology_II
+slirp,SLIRP,"SRA stem-loop-interacting RNA-binding protein, mitochondrial",Oncology_II
+slit2,SLIT2,Slit homolog 2 protein,Neurology
+slitrk1,SLITRK1,SLIT and NTRK-like protein 1,Inflammation_II
+slitrk2,SLITRK2,SLIT and NTRK-like protein 2,Oncology
+slitrk6,SLITRK6,SLIT and NTRK-like protein 6,Cardiometabolic
+slk,SLK,STE20-like serine/threonine-protein kinase,Oncology_II
+slmap,SLMAP,Sarcolemmal membrane-associated protein,Oncology_II
+slurp1,SLURP1,Secreted Ly-6/uPAR-related protein 1,Cardiometabolic_II
+smad1,SMAD1,Mothers against decapentaplegic homolog 1,Oncology
+smad2,SMAD2,Mothers against decapentaplegic homolog 2,Oncology_II
+smad3,SMAD3,Mothers against decapentaplegic homolog 3,Oncology_II
+smad5,SMAD5,Mothers against decapentaplegic homolog 5,Oncology
+smarca2,SMARCA2,Probable global transcription activator SNF2L2,Neurology
+smc3,SMC3,Structural maintenance of chromosomes protein 3,Oncology_II
+smndc1,SMNDC1,Survival of motor neuron-related-splicing factor 30,Oncology_II
+smoc1,SMOC1,SPARC-related modular calcium-binding protein 1,Oncology
+smoc2,SMOC2,SPARC-related modular calcium-binding protein 2,Inflammation
+smpd1,SMPD1,Sphingomyelin phosphodiesterase,Neurology
+smpd3,SMPD3,Sphingomyelin phosphodiesterase 3,Inflammation_II
+smpdl3a,SMPDL3A,Acid sphingomyelinase-like phosphodiesterase 3a,Inflammation
+smpdl3b,SMPDL3B,Acid sphingomyelinase-like phosphodiesterase 3b,Oncology_II
+sms,SMS,Spermine synthase,Neurology_II
+smtn,SMTN,Smoothelin,Neurology_II
+snap23,SNAP23,Synaptosomal-associated protein 23,Cardiometabolic
+snap25,SNAP25,Synaptosomal-associated protein 25,Neurology_II
+snap29,SNAP29,Synaptosomal-associated protein 29,Oncology
+snapin,SNAPIN,SNARE-associated protein Snapin,Neurology_II
+snca,SNCA,Alpha-synuclein,Inflammation_II
+sncg,SNCG,Gamma-synuclein,Neurology
+sned1,SNED1,"Sushi, nidogen and EGF-like domain-containing protein 1",Cardiometabolic_II
+snrpb2,SNRPB2,U2 small nuclear ribonucleoprotein B'',Neurology_II
+snu13,SNU13,NHP2-like protein 1,Cardiometabolic_II
+snx15,SNX15,Sorting nexin-15,Inflammation_II
+snx18,SNX18,Sorting nexin-18,Oncology_II
+snx2,SNX2,Sorting nexin-2,Oncology_II
+snx5,SNX5,Sorting nexin-5,Cardiometabolic_II
+snx9,SNX9,Sorting nexin-9,Cardiometabolic
+sod1,SOD1,Superoxide dismutase [Cu-Zn],Cardiometabolic
+sod2,SOD2,"Superoxide dismutase [Mn], mitochondrial",Neurology
+sod3,SOD3,Extracellular superoxide dismutase,Inflammation_II
+sorbs1,SORBS1,Sorbin and SH3 domain-containing protein 1,Neurology_II
+sorcs2,SORCS2,VPS10 domain-containing receptor SorCS2,Oncology
+sord,SORD,Sorbitol dehydrogenase,Oncology
+sort1,SORT1,Sortilin,Cardiometabolic
+sost,SOST,Sclerostin,Cardiometabolic
+sowaha,SOWAHA,Ankyrin repeat domain-containing protein SOWAHA,Neurology_II
+sox2,SOX2,Transcription factor SOX-2,Neurology_II
+sox9,SOX9,Transcription factor SOX-9,Neurology_II
+spaca5_spaca5b,SPACA5_SPACA5B,Sperm acrosome-associated protein 5,Neurology_II
+spag1,SPAG1,Sperm-associated antigen 1,Neurology_II
+sparc,SPARC,SPARC,Oncology
+sparcl1,SPARCL1,SPARC-like protein 1,Cardiometabolic
+spart,SPART,Spartin,Inflammation_II
+spesp1,SPESP1,Sperm equatorial segment protein 1,Cardiometabolic_II
+spink1,SPINK1,Serine protease inhibitor Kazal-type 1,Neurology
+spink2,SPINK2,Serine protease inhibitor Kazal-type 2,Inflammation_II
+spink4,SPINK4,Serine protease inhibitor Kazal-type 4,Inflammation
+spink5,SPINK5,Serine protease inhibitor Kazal-type 5,Neurology
+spink6,SPINK6,Serine protease inhibitor Kazal-type 6,Oncology
+spink8,SPINK8,Serine protease inhibitor Kazal-type 8,Cardiometabolic_II
+spint1,SPINT1,Kunitz-type protease inhibitor 1,Neurology
+spint2,SPINT2,Kunitz-type protease inhibitor 2,Inflammation
+spint3,SPINT3,Kunitz-type protease inhibitor 3,Oncology_II
+spock1,SPOCK1,Testican-1,Neurology
+spon1,SPON1,Spondin-1,Inflammation
+spon2,SPON2,Spondin-2,Cardiometabolic
+spp1,SPP1,Osteopontin,Cardiometabolic
+spred2,SPRED2,"Sprouty-related, EVH1 domain-containing protein 2",Inflammation_II
+spring1,SPRING1,SREBP regulating gene protein,Oncology_II
+sprr1b,SPRR1B,Cornifin-B,Oncology_II
+sprr3,SPRR3,Small proline-rich protein 3,Neurology_II
+spry2,SPRY2,Protein sprouty homolog 2,Inflammation
+sptbn2,SPTBN2,"Spectrin beta chain, non-erythrocytic 2",Neurology_II
+sptlc1,SPTLC1,Serine palmitoyltransferase 1,Neurology_II
+src,SRC,Proto-oncogene tyrosine-protein kinase Src,Oncology
+srp14,SRP14,Signal recognition particle 14 kDa protein,Oncology
+srpk2,SRPK2,SRSF protein kinase 2,Inflammation
+srpx,SRPX,Sushi repeat-containing protein SRPX,Cardiometabolic_II
+ssb,SSB,Lupus La protein,Neurology
+ssbp1,SSBP1,"Single-stranded DNA-binding protein, mitochondrial",Inflammation_II
+ssc4d,SSC4D,Scavenger receptor cysteine-rich domain-containing group B protein,Cardiometabolic
+ssc5d,SSC5D,Soluble scavenger receptor cysteine-rich domain-containing protein SSC5D,Cardiometabolic
+ssh3,SSH3,Protein phosphatase Slingshot homolog 3,Oncology_II
+ssna1,SSNA1,Sjoegren syndrome nuclear autoantigen 1,Oncology_II
+st13,ST13,Hsc70-interacting protein,Inflammation_II
+st3gal1,ST3GAL1,"CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialyltransferase 1",Oncology
+st6gal1,ST6GAL1,"Beta-galactoside alpha-2,6-sialyltransferase 1",Cardiometabolic
+st8sia1,ST8SIA1,"Alpha-N-acetylneuraminide alpha-2,8-sialyltransferase",Inflammation_II
+stab2,STAB2,Stabilin-2,Cardiometabolic_II
+stam,STAM,Signal transducing adapter molecule 1,Oncology_II
+stambp,STAMBP,STAM-binding protein,Neurology
+stat2,STAT2,Signal transducer and activator of transcription 2,Inflammation_II
+stat5b,STAT5B,Signal transducer and activator of transcription 5B,Oncology
+stau1,STAU1,Double-stranded RNA-binding protein Staufen homolog 1,Oncology_II
+stc1,STC1,Stanniocalcin-1,Neurology
+stc2,STC2,Stanniocalcin-2,Neurology
+steap4,STEAP4,Metalloreductase STEAP4,Neurology_II
+stip1,STIP1,Stress-induced-phosphoprotein 1,Neurology
+stk11,STK11,Serine/threonine-protein kinase STK11,Cardiometabolic
+stk24,STK24,Serine/threonine-protein kinase 24,Neurology
+stk4,STK4,Serine/threonine-protein kinase 4,Cardiometabolic
+stoml2,STOML2,"Stomatin-like protein 2, mitochondrial",Oncology_II
+stx16,STX16,Syntaxin-16,Oncology
+stx1b,STX1B,Syntaxin-1B,Neurology_II
+stx3,STX3,Syntaxin-3,Neurology_II
+stx4,STX4,Syntaxin-4,Oncology
+stx5,STX5,Syntaxin-5,Inflammation_II
+stx6,STX6,Syntaxin-6,Oncology
+stx7,STX7,Syntaxin-7,Inflammation_II
+stx8,STX8,Syntaxin-8,Inflammation
+stxbp1,STXBP1,Syntaxin-binding protein 1,Neurology_II
+stxbp3,STXBP3,Syntaxin-binding protein 3,Oncology
+sugp1,SUGP1,SURP and G-patch domain-containing protein 1,Oncology_II
+sugt1,SUGT1,Protein SGT1 homolog,Oncology
+sult1a1,SULT1A1,Sulfotransferase 1A1,Neurology
+sult2a1,SULT2A1,Bile salt sulfotransferase,Inflammation
+sumf1,SUMF1,Formylglycine-generating enzyme,Inflammation_II
+sumf2,SUMF2,Inactive C-alpha-formylglycine-generating enzyme 2,Neurology
+suox,SUOX,"Sulfite oxidase, mitochondrial",Neurology_II
+susd1,SUSD1,Sushi domain-containing protein 1,Cardiometabolic
+susd2,SUSD2,Sushi domain-containing protein 2,Neurology
+susd4,SUSD4,Sushi domain-containing protein 4,Oncology_II
+susd5,SUSD5,Sushi domain-containing protein 5,Inflammation_II
+sv2a,SV2A,Synaptic vesicle glycoprotein 2A,Neurology_II
+swap70,SWAP70,Switch-associated protein 70,Oncology_II
+syap1,SYAP1,Synapse-associated protein 1,Inflammation_II
+syngap1,SYNGAP1,Ras/Rap GTPase-activating protein SynGAP,Neurology_II
+syt1,SYT1,Synaptotagmin-1,Neurology_II
+sytl4,SYTL4,Synaptotagmin-like protein 4,Cardiometabolic_II
+tab2,TAB2,TGF-beta-activated kinase 1 and MAP3K7-binding protein 2,Oncology_II
+tacc3,TACC3,Transforming acidic coiled-coil-containing protein 3,Oncology
+tacstd2,TACSTD2,Tumor-associated calcium signal transducer 2,Oncology
+tada3,TADA3,Transcriptional adapter 3,Oncology_II
+tafa5,TAFA5,Chemokine-like protein TAFA-5,Oncology
+tagln3,TAGLN3,Transgelin-3,Oncology_II
+taldo1,TALDO1,Transaldolase,Cardiometabolic_II
+tank,TANK,TRAF family member-associated NF-kappa-B activator,Inflammation
+tap1,TAP1,Antigen peptide transporter 1,Oncology_II
+tarbp2,TARBP2,RISC-loading complex subunit TARBP2,Neurology
+tarm1,TARM1,"T-cell-interacting, activating receptor on myeloid cells protein 1",Neurology_II
+tars1,TARS1,"Threonine--tRNA ligase 1, cytoplasmic",Oncology_II
+tax1bp1,TAX1BP1,Tax1-binding protein 1,Neurology_II
+tbc1d17,TBC1D17,TBC1 domain family member 17,Neurology
+tbc1d23,TBC1D23,TBC1 domain family member 23,Oncology
+tbc1d5,TBC1D5,TBC1 domain family member 5,Inflammation
+tbca,TBCA,Tubulin-specific chaperone A,Inflammation_II
+tbcb,TBCB,Tubulin-folding cofactor B,Neurology
+tbcc,TBCC,Tubulin-specific chaperone C,Neurology
+tbl1x,TBL1X,F-box-like/WD repeat-containing protein TBL1X,Oncology
+tbr1,TBR1,T-box brain protein 1,Neurology_II
+tcl1a,TCL1A,T-cell leukemia/lymphoma protein 1A,Neurology
+tcl1b,TCL1B,T-cell leukemia/lymphoma protein 1B,Cardiometabolic
+tcn1,TCN1,Transcobalamin-1,Inflammation_II
+tcn2,TCN2,Transcobalamin-2,Cardiometabolic
+tcof1,TCOF1,Treacle protein,Cardiometabolic_II
+tcp11,TCP11,T-complex protein 11 homolog,Oncology_II
+tctn3,TCTN3,Tectonic-3,Cardiometabolic_II
+tdgf1,TDGF1,Teratocarcinoma-derived growth factor 1,Neurology
+tdo2,TDO2,"Tryptophan 2,3-dioxygenase",Neurology_II
+tdp1,TDP1,Tyrosyl-DNA phosphodiesterase 1,Oncology_II
+tdrkh,TDRKH,Tudor and KH domain-containing protein,Neurology
+tef,TEF,Thyrotroph embryonic factor,Cardiometabolic_II
+tek,TEK,Angiopoietin-1 receptor,Oncology
+terf1,TERF1,Telomeric repeat-binding factor 1,Inflammation_II
+tet2,TET2,Methylcytosine dioxygenase TET2,Oncology_II
+tex101,TEX101,Testis-expressed protein 101,Neurology_II
+tex33,TEX33,Testis-expressed protein 33,Oncology_II
+tf,TF,Serotransferrin,Inflammation_II
+tfap2a,TFAP2A,Transcription factor AP-2-alpha,Neurology_II
+tff1,TFF1,Trefoil factor 1,Neurology
+tff2,TFF2,Trefoil factor 2,Inflammation
+tff3,TFF3,Trefoil factor 3,Cardiometabolic
+tfpi,TFPI,Tissue factor pathway inhibitor,Cardiometabolic
+tfpi2,TFPI2,Tissue factor pathway inhibitor 2,Oncology
+tfrc,TFRC,Transferrin receptor protein 1,Cardiometabolic
+tg,TG,Thyroglobulin,Oncology_II
+tgfa,TGFA,Protransforming growth factor alpha,Inflammation
+tgfb1,TGFB1,Transforming growth factor beta-1 proprotein,Inflammation
+tgfb2,TGFB2,Transforming growth factor beta-2 proprotein,Oncology_II
+tgfbi,TGFBI,Transforming growth factor-beta-induced protein ig-h3,Cardiometabolic
+tgfbr1,TGFBR1,TGF-beta receptor type-1,Inflammation_II
+tgfbr2,TGFBR2,TGF-beta receptor type-2,Oncology
+tgfbr3,TGFBR3,Transforming growth factor beta receptor type 3,Cardiometabolic
+tgm2,TGM2,Protein-glutamine gamma-glutamyltransferase 2,Cardiometabolic
+tgoln2,TGOLN2,Trans-Golgi network integral membrane protein 2,Inflammation_II
+thap12,THAP12,52 kDa repressor of the inhibitor of the protein kinase,Oncology_II
+thbd,THBD,Thrombomodulin,Cardiometabolic
+thbs2,THBS2,Thrombospondin-2,Neurology
+thbs4,THBS4,Thrombospondin-4,Cardiometabolic
+thop1,THOP1,Thimet oligopeptidase,Cardiometabolic
+thpo,THPO,Thrombopoietin,Cardiometabolic
+thrap3,THRAP3,Thyroid hormone receptor-associated protein 3,Cardiometabolic_II
+thsd1,THSD1,Thrombospondin type-1 domain-containing protein 1,Inflammation_II
+thtpa,THTPA,Thiamine-triphosphatase,Oncology_II
+thy1,THY1,Thy-1 membrane glycoprotein,Neurology
+tia1,TIA1,Nucleolysin TIA-1 isoform p40,Cardiometabolic
+tie1,TIE1,Tyrosine-protein kinase receptor Tie-1,Cardiometabolic
+tigar,TIGAR,"Fructose-2,6-bisphosphatase TIGAR",Neurology
+tigit,TIGIT,T-cell immunoreceptor with Ig and ITIM domains,Oncology_II
+timd4,TIMD4,T-cell immunoglobulin and mucin domain-containing protein 4,Cardiometabolic
+timm10,TIMM10,Mitochondrial import inner membrane translocase subunit Tim10,Cardiometabolic_II
+timm8a,TIMM8A,Mitochondrial import inner membrane translocase subunit Tim8 A,Neurology_II
+timp1,TIMP1,Metalloproteinase inhibitor 1,Cardiometabolic
+timp2,TIMP2,Metalloproteinase inhibitor 2,Cardiometabolic_II
+timp3,TIMP3,Metalloproteinase inhibitor 3,Inflammation
+timp4,TIMP4,Metalloproteinase inhibitor 4,Neurology
+tinagl1,TINAGL1,Tubulointerstitial nephritis antigen-like,Cardiometabolic
+tjap1,TJAP1,Tight junction-associated protein 1,Oncology
+tjp3,TJP3,Tight junction protein ZO-3,Neurology_II
+tk1,TK1,"Thymidine kinase, cytosolic",Oncology_II
+tlr1,TLR1,Toll-like receptor 1,Inflammation_II
+tlr2,TLR2,Toll-like receptor 2,Oncology_II
+tlr3,TLR3,Toll-like receptor 3,Inflammation
+tlr4,TLR4,Toll-like receptor 4,Inflammation_II
+tmco5a,TMCO5A,Transmembrane and coiled-coil domain-containing protein 5A,Neurology_II
+tmed1,TMED1,Transmembrane emp24 domain-containing protein 1,Oncology_II
+tmed10,TMED10,Transmembrane emp24 domain-containing protein 10,Cardiometabolic_II
+tmed4,TMED4,Transmembrane emp24 domain-containing protein 4,Cardiometabolic_II
+tmed8,TMED8,Protein TMED8,Oncology_II
+tmem106a,TMEM106A,Transmembrane protein 106A,Oncology_II
+tmem132a,TMEM132A,Transmembrane protein 132A,Cardiometabolic_II
+tmem25,TMEM25,Transmembrane protein 25,Neurology_II
+tmod4,TMOD4,Tropomodulin-4,Oncology_II
+tmprss11b,TMPRSS11B,Transmembrane protease serine 11B,Neurology_II
+tmprss11d,TMPRSS11D,Transmembrane protease serine 11D,Neurology_II
+tmprss15,TMPRSS15,Enteropeptidase,Oncology
+tmprss5,TMPRSS5,Transmembrane protease serine 5,Neurology
+tmsb10,TMSB10,Thymosin beta-10,Neurology
+tnc,TNC,Tenascin,Cardiometabolic
+tnf,TNF,Tumor necrosis factor,Cardiometabolic
+tnfaip2,TNFAIP2,Tumor necrosis factor alpha-induced protein 2,Oncology_II
+tnfaip8,TNFAIP8,Tumor necrosis factor alpha-induced protein 8,Inflammation
+tnfaip8l2,TNFAIP8L2,Tumor necrosis factor alpha-induced protein 8-like protein 2,Inflammation_II
+tnfrsf10a,TNFRSF10A,Tumor necrosis factor receptor superfamily member 10A,Neurology
+tnfrsf10b,TNFRSF10B,Tumor necrosis factor receptor superfamily member 10B,Neurology
+tnfrsf10c,TNFRSF10C,Tumor necrosis factor receptor superfamily member 10C,Cardiometabolic
+tnfrsf11a,TNFRSF11A,Tumor necrosis factor receptor superfamily member 11A,Inflammation
+tnfrsf11b,TNFRSF11B,Tumor necrosis factor receptor superfamily member 11B,Inflammation
+tnfrsf12a,TNFRSF12A,Tumor necrosis factor receptor superfamily member 12A,Oncology
+tnfrsf13b,TNFRSF13B,Tumor necrosis factor receptor superfamily member 13B,Inflammation
+tnfrsf13c,TNFRSF13C,Tumor necrosis factor receptor superfamily member 13C,Inflammation
+tnfrsf14,TNFRSF14,Tumor necrosis factor receptor superfamily member 14,Inflammation
+tnfrsf17,TNFRSF17,Tumor necrosis factor receptor superfamily member 17,Inflammation_II
+tnfrsf19,TNFRSF19,Tumor necrosis factor receptor superfamily member 19,Oncology
+tnfrsf1a,TNFRSF1A,Tumor necrosis factor receptor superfamily member 1A,Neurology
+tnfrsf1b,TNFRSF1B,Tumor necrosis factor receptor superfamily member 1B,Neurology
+tnfrsf21,TNFRSF21,Tumor necrosis factor receptor superfamily member 21,Neurology
+tnfrsf4,TNFRSF4,Tumor necrosis factor receptor superfamily member 4,Inflammation
+tnfrsf6b,TNFRSF6B,Tumor necrosis factor receptor superfamily member 6B,Neurology
+tnfrsf8,TNFRSF8,Tumor necrosis factor receptor superfamily member 8,Neurology
+tnfrsf9,TNFRSF9,Tumor necrosis factor receptor superfamily member 9,Neurology
+tnfsf10,TNFSF10,Tumor necrosis factor ligand superfamily member 10,Inflammation
+tnfsf11,TNFSF11,Tumor necrosis factor ligand superfamily member 11,Inflammation
+tnfsf12,TNFSF12,Tumor necrosis factor ligand superfamily member 12,Inflammation
+tnfsf13,TNFSF13,Tumor necrosis factor ligand superfamily member 13,Inflammation
+tnfsf13b,TNFSF13B,Tumor necrosis factor ligand superfamily member 13B,Cardiometabolic
+tnfsf14,TNFSF14,Tumor necrosis factor ligand superfamily member 14,Neurology
+tnfsf8,TNFSF8,Tumor necrosis factor ligand superfamily member 8,Cardiometabolic_II
+tnip1,TNIP1,TNFAIP3-interacting protein 1,Neurology_II
+tnn,TNN,Tenascin-N,Cardiometabolic_II
+tnni3,TNNI3,"Troponin I, cardiac muscle",Cardiometabolic
+tnpo1,TNPO1,Transportin-1,Oncology_II
+tnr,TNR,Tenascin-R,Neurology
+tnxb,TNXB,Tenascin-X,Neurology
+tomm20,TOMM20,Mitochondrial import receptor subunit TOM20 homolog,Cardiometabolic_II
+top1,TOP1,DNA topoisomerase 1,Oncology_II
+top1mt,TOP1MT,"DNA topoisomerase I, mitochondrial",Oncology_II
+top2b,TOP2B,DNA topoisomerase 2-beta,Inflammation_II
+tor1aip1,TOR1AIP1,Torsin-1A-interacting protein 1,Cardiometabolic_II
+tp53,TP53,Cellular tumor antigen p53,Oncology
+tp53bp1,TP53BP1,TP53-binding protein 1,Inflammation_II
+tp53i3,TP53I3,Quinone oxidoreductase PIG3,Inflammation_II
+tp53inp1,TP53INP1,Tumor protein p53-inducible nuclear protein 1,Cardiometabolic
+tp73,TP73,Tumor protein p73,Neurology_II
+tpbgl,TPBGL,Trophoblast glycoprotein-like,Neurology_II
+tpd52l2,TPD52L2,Tumor protein D54,Inflammation_II
+tpk1,TPK1,Thiamin pyrophosphokinase 1,Cardiometabolic_II
+tpm3,TPM3,Tropomyosin alpha-3 chain,Cardiometabolic_II
+tpmt,TPMT,Thiopurine S-methyltransferase,Oncology
+tpp1,TPP1,Tripeptidyl-peptidase 1,Inflammation
+tppp2,TPPP2,Tubulin polymerization-promoting protein family member 2,Oncology_II
+tppp3,TPPP3,Tubulin polymerization-promoting protein family member 3,Neurology
+tpr,TPR,Nucleoprotein TPR,Cardiometabolic_II
+tprkb,TPRKB,EKC/KEOPS complex subunit TPRKB,Oncology_II
+tpsab1,TPSAB1,Tryptase alpha/beta-1,Inflammation
+tpsd1,TPSD1,Tryptase delta,Neurology_II
+tpsg1,TPSG1,Tryptase gamma,Inflammation_II
+tpt1,TPT1,Translationally-controlled tumor protein,Inflammation
+traf2,TRAF2,TNF receptor-associated factor 2,Inflammation
+traf3,TRAF3,"TNF receptor-associated factor 3, Isoform 2",Inflammation_II
+traf3ip2,TRAF3IP2,E3 ubiquitin ligase TRAF3IP2,Cardiometabolic_II
+trdmt1,TRDMT1,tRNA (cytosine(38)-C(5))-methyltransferase,Oncology_II
+treh,TREH,Trehalase,Cardiometabolic_II
+trem2,TREM2,Triggering receptor expressed on myeloid cells 2,Inflammation
+treml1,TREML1,Trem-like transcript 1 protein,Inflammation_II
+treml2,TREML2,Trem-like transcript 2 protein,Neurology
+triap1,TRIAP1,TP53-regulated inhibitor of apoptosis 1,Oncology
+trim21,TRIM21,E3 ubiquitin-protein ligase TRIM21,Inflammation
+trim24,TRIM24,Transcription intermediary factor 1-alpha,Oncology_II
+trim25,TRIM25,E3 ubiquitin/ISG15 ligase TRIM25,Oncology_II
+trim26,TRIM26,Tripartite motif-containing protein 26,Oncology_II
+trim40,TRIM40,E3 ubiquitin ligase TRIM40,Neurology_II
+trim5,TRIM5,Tripartite motif-containing protein 5,Inflammation
+trim58,TRIM58,E3 ubiquitin-protein ligase TRIM58,Oncology_II
+trpv3,TRPV3,Transient receptor potential cation channel subfamily V member 3,Cardiometabolic_II
+tsc1,TSC1,Hamartin,Inflammation_II
+tsc22d1,TSC22D1,TSC22 domain family protein 1,Neurology_II
+tshb,TSHB,Thyrotropin subunit beta,Cardiometabolic
+tslp,TSLP,Thymic stromal lymphopoietin,Cardiometabolic
+tsnax,TSNAX,Translin-associated protein X,Cardiometabolic_II
+tspan1,TSPAN1,Tetraspanin-1,Cardiometabolic
+tspan15,TSPAN15,Tetraspanin-15,Cardiometabolic_II
+tspan7,TSPAN7,Tetraspanin-7,Neurology_II
+tspan8,TSPAN8,Tetraspanin-8,Oncology_II
+tspyl1,TSPYL1,Testis-specific Y-encoded-like protein 1,Inflammation_II
+tst,TST,Thiosulfate sulfurtransferase,Neurology
+ttf2,TTF2,Transcription termination factor 2,Neurology_II
+ttn,TTN,Titin,Cardiometabolic_II
+ttr,TTR,Transthyretin,Inflammation_II
+tubb3,TUBB3,Tubulin beta-3 chain,Neurology_II
+twf2,TWF2,Twinfilin-2,Cardiometabolic_II
+txk,TXK,Tyrosine-protein kinase TXK,Oncology_II
+txlna,TXLNA,Alpha-taxilin,Neurology
+txn,TXN,Thioredoxin,Inflammation_II
+txndc15,TXNDC15,Thioredoxin domain-containing protein 15,Oncology
+txndc5,TXNDC5,Thioredoxin domain-containing protein 5,Neurology
+txndc9,TXNDC9,Thioredoxin domain-containing protein 9,Neurology_II
+txnl1,TXNL1,Thioredoxin-like protein 1,Neurology_II
+txnrd1,TXNRD1,"Thioredoxin reductase 1, cytoplasmic",Neurology
+tymp,TYMP,Thymidine phosphorylase,Cardiometabolic
+tyro3,TYRO3,Tyrosine-protein kinase receptor TYRO3,Cardiometabolic
+tyrp1,TYRP1,"5,6-dihydroxyindole-2-carboxylic acid oxidase",Inflammation_II
+ubac1,UBAC1,Ubiquitin-associated domain-containing protein 1,Oncology
+ube2b,UBE2B,Ubiquitin-conjugating enzyme E2 B,Oncology_II
+ube2l6,UBE2L6,Ubiquitin/ISG15-conjugating enzyme E2 L6,Cardiometabolic_II
+ube2z,UBE2Z,Ubiquitin-conjugating enzyme E2 Z,Inflammation_II
+ubqln3,UBQLN3,Ubiquilin-3,Cardiometabolic_II
+ubxn1,UBXN1,UBX domain-containing protein 1,Inflammation_II
+ufd1,UFD1,Ubiquitin recognition factor in ER-associated degradation protein 1,Oncology_II
+ugdh,UGDH,UDP-glucose 6-dehydrogenase,Cardiometabolic_II
+uhrf2,UHRF2,E3 ubiquitin-protein ligase UHRF2,Cardiometabolic_II
+ulbp2,ULBP2,UL16-binding protein 2,Neurology
+umod,UMOD,Uromodulin,Cardiometabolic
+unc5d,UNC5D,Netrin receptor UNC5D,Inflammation_II
+unc79,UNC79,Protein unc-79 homolog,Oncology_II
+ung,UNG,Uracil-DNA glycosylase,Oncology_II
+upb1,UPB1,Beta-ureidopropionase,Cardiometabolic_II
+upk3a,UPK3A,Uroplakin-3a,Neurology_II
+upk3bl1,UPK3BL1,Uroplakin-3b-like protein 1,Oncology_II
+urod,UROD,Uroporphyrinogen decarboxylase,Inflammation_II
+uros,UROS,Uroporphyrinogen-III synthase,Neurology_II
+uso1,USO1,General vesicular transport factor p115,Oncology
+usp25,USP25,Ubiquitin carboxyl-terminal hydrolase 25,Oncology_II
+usp28,USP28,Ubiquitin carboxyl-terminal hydrolase 28,Neurology_II
+usp47,USP47,Ubiquitin carboxyl-terminal hydrolase 47,Cardiometabolic_II
+usp8,USP8,Ubiquitin carboxyl-terminal hydrolase 8,Cardiometabolic
+uxs1,UXS1,UDP-glucuronic acid decarboxylase 1,Oncology
+vamp5,VAMP5,Vesicle-associated membrane protein 5,Cardiometabolic
+vamp8,VAMP8,Vesicle-associated membrane protein 8,Inflammation_II
+vash1,VASH1,Tubulinyl-Tyr carboxypeptidase 1,Inflammation
+vasn,VASN,Vasorin,Cardiometabolic
+vasp,VASP,Vasodilator-stimulated phosphoprotein,Inflammation_II
+vat1,VAT1,Synaptic vesicle membrane protein VAT-1 homolog,Oncology
+vav3,VAV3,Guanine nucleotide exchange factor VAV3,Neurology_II
+vcam1,VCAM1,Vascular cell adhesion protein 1,Cardiometabolic
+vcan,VCAN,Versican core protein,Neurology
+vcpkmt,VCPKMT,Protein-lysine methyltransferase METTL21D,Oncology_II
+vegfa,VEGFA,Vascular endothelial growth factor A,Inflammation
+vegfb,VEGFB,Vascular endothelial growth factor B,Inflammation_II
+vegfc,VEGFC,Vascular endothelial growth factor C,Oncology
+vegfd,VEGFD,Vascular endothelial growth factor D,Inflammation
+vgf,VGF,Neurosecretory protein VGF,Neurology_II
+vim,VIM,Vimentin,Cardiometabolic
+vipr1,VIPR1,Vasoactive intestinal polypeptide receptor 1,Cardiometabolic_II
+vit,VIT,Vitrin,Cardiometabolic_II
+vmo1,VMO1,Vitelline membrane outer layer protein 1 homolog,Oncology
+vnn1,VNN1,Pantetheinase,Inflammation_II
+vnn2,VNN2,Vascular non-inflammatory molecule 2,Oncology
+vps28,VPS28,Vacuolar protein sorting-associated protein 28 homolog,Oncology_II
+vps37a,VPS37A,Vacuolar protein sorting-associated protein 37A,Oncology
+vps4b,VPS4B,Vacuolar protein sorting-associated protein 4B,Oncology_II
+vps53,VPS53,Vacuolar protein sorting-associated protein 53 homolog,Oncology
+vsig10,VSIG10,V-set and immunoglobulin domain-containing protein 10,Oncology_II
+vsig10l,VSIG10L,V-set and immunoglobulin domain-containing protein 10-like,Cardiometabolic_II
+vsig2,VSIG2,V-set and immunoglobulin domain-containing protein 2,Oncology_II
+vsig4,VSIG4,V-set and immunoglobulin domain-containing protein 4,Neurology
+vsir,VSIR,V-type immunoglobulin domain-containing suppressor of T-cell activation,Cardiometabolic
+vsnl1,VSNL1,Visinin-like protein 1,Neurology_II
+vstm1,VSTM1,V-set and transmembrane domain-containing protein 1,Neurology
+vstm2b,VSTM2B,V-set and transmembrane domain-containing protein 2B,Oncology_II
+vstm2l,VSTM2L,V-set and transmembrane domain-containing protein 2-like protein,Cardiometabolic
+vta1,VTA1,Vacuolar protein sorting-associated protein VTA1 homolog,Neurology
+vtcn1,VTCN1,V-set domain-containing T-cell activation inhibitor 1,Oncology
+vti1a,VTI1A,Vesicle transport through interaction with t-SNAREs homolog 1A,Inflammation_II
+vwa1,VWA1,von Willebrand factor A domain-containing protein 1,Oncology
+vwa5a,VWA5A,von Willebrand factor A domain-containing protein 5A,Oncology_II
+vwc2,VWC2,Brorin,Neurology
+vwc2l,VWC2L,von Willebrand factor C domain-containing protein 2-like,Neurology_II
+vwf,VWF,von Willebrand factor,Cardiometabolic
+wars,WARS,"Tryptophan--tRNA ligase, cytoplasmic",Neurology
+was,WAS,Wiskott-Aldrich syndrome protein,Inflammation
+wasf1,WASF1,Wiskott-Aldrich syndrome protein family member 1,Cardiometabolic
+wasf3,WASF3,Wiskott-Aldrich syndrome protein family member 3,Neurology
+washc3,WASHC3,WASH complex subunit 3,Neurology_II
+wasl,WASL,Neural Wiskott-Aldrich syndrome protein,Inflammation_II
+wdr46,WDR46,WD repeat-containing protein 46,Oncology_II
+wfdc1,WFDC1,WAP four-disulfide core domain protein 1,Oncology_II
+wfdc12,WFDC12,WAP four-disulfide core domain protein 12,Oncology
+wfdc2,WFDC2,WAP four-disulfide core domain protein 2,Oncology
+wfikkn1,WFIKKN1,"WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 1",Neurology
+wfikkn2,WFIKKN2,"WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing protein 2",Inflammation
+wif1,WIF1,Wnt inhibitory factor 1,Oncology
+wnt9a,WNT9A,Protein Wnt-9a,Inflammation
+wwp2,WWP2,NEDD4-like E3 ubiquitin-protein ligase WWP2,Neurology
+xcl1,XCL1,Lymphotactin,Oncology
+xg,XG,Glycoprotein Xg,Cardiometabolic
+xiap,XIAP,E3 ubiquitin-protein ligase XIAP,Inflammation_II
+xpnpep2,XPNPEP2,Xaa-Pro aminopeptidase 2,Oncology
+xrcc4,XRCC4,DNA repair protein XRCC4,Neurology
+yap1,YAP1,Transcriptional coactivator YAP1,Neurology_II
+yars1,YARS1,"Tyrosine--tRNA ligase, cytoplasmic",Oncology_II
+yes1,YES1,Tyrosine-protein kinase Yes,Oncology
+yju2,YJU2,Splicing factor YJU2,Oncology_II
+yod1,YOD1,Ubiquitin thioesterase OTU1,Cardiometabolic_II
+ythdf3,YTHDF3,YTH domain-containing family protein 3,Inflammation
+ywhaq,YWHAQ,14-3-3 protein theta,Inflammation_II
+yy1,YY1,Transcriptional repressor protein YY1,Inflammation_II
+zbp1,ZBP1,Z-DNA-binding protein 1,Inflammation_II
+zbtb16,ZBTB16,Zinc finger and BTB domain-containing protein 16,Oncology
+zbtb17,ZBTB17,Zinc finger and BTB domain-containing protein 17,Cardiometabolic
+zcchc8,ZCCHC8,Zinc finger CCHC domain-containing protein 8,Cardiometabolic_II
+zfyve19,ZFYVE19,Abscission/NoCut checkpoint regulator,Oncology_II
+zhx2,ZHX2,Zinc fingers and homeoboxes protein 2,Neurology_II
+znf174,ZNF174,Zinc finger protein 174,Inflammation_II
+znf75d,ZNF75D,Zinc finger protein 75D,Oncology_II
+znf830,ZNF830,Zinc finger protein 830,Oncology_II
+znrd2,ZNRD2,Protein ZNRD2,Oncology_II
+znrf4,ZNRF4,E3 ubiquitin-protein ligase ZNRF4,Oncology_II
+zp3,ZP3,Zona pellucida sperm-binding protein 3,Cardiometabolic_II
+zp4,ZP4,Zona pellucida sperm-binding protein 4,Oncology_II
+zpr1,ZPR1,Zinc finger protein ZPR1,Neurology_II
